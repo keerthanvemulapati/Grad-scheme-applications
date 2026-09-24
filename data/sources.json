@@ -1,14 +1,14 @@
 {
- "abbvie/phenom": {
+ "abbvie/pagewatch": {
   "company": "AbbVie",
-  "error": "HTTPError: 404 Client Error: Not Found for url: https://careers.abbvie.com/en/search-results?keywords=graduate&from=0&s=1",
-  "failures_in_a_row": 1,
-  "last_ok": null,
+  "error": null,
+  "failures_in_a_row": 0,
+  "last_ok": "2026-09-24",
   "matches": 0,
   "note": "",
-  "ok": false,
-  "scanned": 0,
-  "type": "phenom"
+  "ok": true,
+  "scanned": 10,
+  "type": "pagewatch"
  },
  "amgen/workday": {
   "company": "Amgen",
@@ -16,10 +16,21 @@
   "failures_in_a_row": 0,
   "last_ok": "2026-09-24",
   "matches": 2,
-  "note": "filtered by country (LocationCountry)",
+  "note": "filtered by location (country)",
   "ok": true,
   "scanned": 13,
   "type": "workday"
+ },
+ "astellas/successfactors": {
+  "company": "Astellas",
+  "error": null,
+  "failures_in_a_row": 0,
+  "last_ok": "2026-09-24",
+  "matches": 1,
+  "note": "country filter",
+  "ok": true,
+  "scanned": 8,
+  "type": "successfactors"
  },
  "astrazeneca/workday": {
   "company": "AstraZeneca",
@@ -27,9 +38,9 @@
   "failures_in_a_row": 0,
   "last_ok": "2026-09-24",
   "matches": 2,
-  "note": "keyword search (board has no country filter)",
+  "note": "filtered by location (11 offices)",
   "ok": true,
-  "scanned": 384,
+  "scanned": 80,
   "type": "workday"
  },
  "astrazeneca/workday-2": {
@@ -38,9 +49,9 @@
   "failures_in_a_row": 0,
   "last_ok": "2026-09-24",
   "matches": 0,
-  "note": "keyword search (board has no country filter)",
+  "note": "filtered by location (4 offices)",
   "ok": true,
-  "scanned": 20,
+  "scanned": 18,
   "type": "workday"
  },
  "bayer/eightfold": {
@@ -51,8 +62,19 @@
   "matches": 0,
   "note": "",
   "ok": true,
-  "scanned": 0,
+  "scanned": 400,
   "type": "eightfold"
+ },
+ "beone-medicines/workday": {
+  "company": "BeOne Medicines",
+  "error": null,
+  "failures_in_a_row": 0,
+  "last_ok": "2026-09-24",
+  "matches": 0,
+  "note": "filtered by location (country)",
+  "ok": true,
+  "scanned": 4,
+  "type": "workday"
  },
  "biogen/workday": {
   "company": "Biogen",
@@ -60,20 +82,20 @@
   "failures_in_a_row": 0,
   "last_ok": "2026-09-24",
   "matches": 0,
-  "note": "filtered by country (locationCountry)",
+  "note": "filtered by location (country)",
   "ok": true,
   "scanned": 1,
   "type": "workday"
  },
  "boehringer-ingelheim/successfactors": {
   "company": "Boehringer Ingelheim",
-  "error": "Page is not a SuccessFactors job search",
-  "failures_in_a_row": 1,
-  "last_ok": null,
+  "error": null,
+  "failures_in_a_row": 0,
+  "last_ok": "2026-09-24",
   "matches": 0,
-  "note": "",
-  "ok": false,
-  "scanned": 0,
+  "note": "location search",
+  "ok": true,
+  "scanned": 188,
   "type": "successfactors"
  },
  "bristol-myers-squibb/workday": {
@@ -82,9 +104,9 @@
   "failures_in_a_row": 0,
   "last_ok": "2026-09-24",
   "matches": 0,
-  "note": "keyword search (board has no country filter)",
+  "note": "filtered by location (region)",
   "ok": true,
-  "scanned": 345,
+  "scanned": 29,
   "type": "workday"
  },
  "cencora-pharmalex/workday": {
@@ -93,7 +115,7 @@
   "failures_in_a_row": 0,
   "last_ok": "2026-09-24",
   "matches": 0,
-  "note": "filtered by country (locationCountry)",
+  "note": "filtered by location (country)",
   "ok": true,
   "scanned": 109,
   "type": "workday"
@@ -104,26 +126,26 @@
   "failures_in_a_row": 0,
   "last_ok": "2026-09-24",
   "matches": 0,
-  "note": "filtered by country (locationCountry)",
+  "note": "filtered by location (country)",
   "ok": true,
   "scanned": 27,
   "type": "workday"
  },
- "daiichi-sankyo/workday": {
+ "daiichi-sankyo/successfactors_csb": {
   "company": "Daiichi Sankyo",
-  "error": "HTTPError: 403 Client Error: Forbidden for url: https://daiichisankyo.wd1.myworkdayjobs.com/wday/cxs/daiichisankyo/DSI/jobs",
-  "failures_in_a_row": 1,
-  "last_ok": null,
+  "error": null,
+  "failures_in_a_row": 0,
+  "last_ok": "2026-09-24",
   "matches": 0,
   "note": "",
-  "ok": false,
-  "scanned": 0,
-  "type": "workday"
+  "ok": true,
+  "scanned": 54,
+  "type": "successfactors_csb"
  },
  "eli-lilly/workday": {
   "company": "Eli Lilly",
   "error": "HTTPError: 422 Client Error: Unprocessable Entity for url: https://lilly.wd5.myworkdayjobs.com/wday/cxs/lilly/LLY/jobs",
-  "failures_in_a_row": 1,
+  "failures_in_a_row": 2,
   "last_ok": null,
   "matches": 0,
   "note": "",
@@ -137,7 +159,7 @@
   "failures_in_a_row": 0,
   "last_ok": "2026-09-24",
   "matches": 3,
-  "note": "filtered by country (locationCountry)",
+  "note": "filtered by location (country)",
   "ok": true,
   "scanned": 44,
   "type": "workday"
@@ -148,9 +170,9 @@
   "failures_in_a_row": 0,
   "last_ok": "2026-09-24",
   "matches": 0,
-  "note": "keyword search (board has no country filter)",
+  "note": "filtered by location (4 offices)",
   "ok": true,
-  "scanned": 355,
+  "scanned": 21,
   "type": "workday"
  },
  "gsk/workday": {
@@ -159,7 +181,7 @@
   "failures_in_a_row": 0,
   "last_ok": "2026-09-24",
   "matches": 4,
-  "note": "filtered by country (Location_Country)",
+  "note": "filtered by location (country)",
   "ok": true,
   "scanned": 101,
   "type": "workday"
@@ -170,21 +192,10 @@
   "failures_in_a_row": 0,
   "last_ok": "2026-09-24",
   "matches": 1,
-  "note": "filtered by country (locationCountry)",
+  "note": "filtered by location (country)",
   "ok": true,
   "scanned": 33,
   "type": "workday"
- },
- "hammersmith-medicines-research/pagewatch": {
-  "company": "Hammersmith Medicines Research",
-  "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.hmrlondon.com/careers",
-  "failures_in_a_row": 1,
-  "last_ok": null,
-  "matches": 0,
-  "note": "",
-  "ok": false,
-  "scanned": 0,
-  "type": "pagewatch"
  },
  "icon/workday": {
   "company": "ICON",
@@ -192,7 +203,7 @@
   "failures_in_a_row": 0,
   "last_ok": "2026-09-24",
   "matches": 7,
-  "note": "filtered by country (locationCountry)",
+  "note": "filtered by location (country)",
   "ok": true,
   "scanned": 105,
   "type": "workday"
@@ -203,7 +214,7 @@
   "failures_in_a_row": 0,
   "last_ok": "2026-09-24",
   "matches": 1,
-  "note": "filtered by country (locationCountry)",
+  "note": "filtered by location (country)",
   "ok": true,
   "scanned": 70,
   "type": "workday"
@@ -214,7 +225,7 @@
   "failures_in_a_row": 0,
   "last_ok": "2026-09-24",
   "matches": 4,
-  "note": "filtered by country (Location_Country)",
+  "note": "filtered by location (country)",
   "ok": true,
   "scanned": 249,
   "type": "workday"
@@ -224,10 +235,10 @@
   "error": null,
   "failures_in_a_row": 0,
   "last_ok": "2026-09-24",
-  "matches": 2,
-  "note": "keyword search (board has no country filter)",
+  "matches": 3,
+  "note": "filtered by location (13 offices)",
   "ok": true,
-  "scanned": 522,
+  "scanned": 153,
   "type": "workday"
  },
  "labcorp/workday": {
@@ -236,9 +247,9 @@
   "failures_in_a_row": 0,
   "last_ok": "2026-09-24",
   "matches": 0,
-  "note": "keyword search (board has no country filter)",
+  "note": "filtered by location (12 offices)",
   "ok": true,
-  "scanned": 369,
+  "scanned": 32,
   "type": "workday"
  },
  "mac-clinical-research/pagewatch": {
@@ -249,19 +260,19 @@
   "matches": 0,
   "note": "",
   "ok": true,
-  "scanned": 2,
+  "scanned": 20,
   "type": "pagewatch"
  },
- "medpace/jibe": {
+ "medpace/icims": {
   "company": "Medpace",
-  "error": null,
-  "failures_in_a_row": 0,
-  "last_ok": "2026-09-24",
+  "error": "No jobs found on the iCIMS portal",
+  "failures_in_a_row": 1,
+  "last_ok": null,
   "matches": 0,
   "note": "",
-  "ok": true,
+  "ok": false,
   "scanned": 0,
-  "type": "jibe"
+  "type": "icims"
  },
  "moderna/workday": {
   "company": "Moderna",
@@ -280,9 +291,9 @@
   "failures_in_a_row": 0,
   "last_ok": "2026-09-24",
   "matches": 2,
-  "note": "keyword search (board has no country filter)",
+  "note": "filtered by location (9 offices)",
   "ok": true,
-  "scanned": 469,
+  "scanned": 146,
   "type": "workday"
  },
  "novartis/workday": {
@@ -291,10 +302,21 @@
   "failures_in_a_row": 0,
   "last_ok": "2026-09-24",
   "matches": 1,
-  "note": "filtered by country (locationCountry)",
+  "note": "filtered by location (country)",
   "ok": true,
   "scanned": 30,
   "type": "workday"
+ },
+ "novo-nordisk/successfactors": {
+  "company": "Novo Nordisk",
+  "error": null,
+  "failures_in_a_row": 0,
+  "last_ok": "2026-09-24",
+  "matches": 0,
+  "note": "country filter",
+  "ok": true,
+  "scanned": 3,
+  "type": "successfactors"
  },
  "parexel/workday": {
   "company": "Parexel",
@@ -302,7 +324,7 @@
   "failures_in_a_row": 0,
   "last_ok": "2026-09-24",
   "matches": 0,
-  "note": "filtered by country (locationCountry)",
+  "note": "filtered by location (country)",
   "ok": true,
   "scanned": 35,
   "type": "workday"
@@ -313,42 +335,31 @@
   "failures_in_a_row": 0,
   "last_ok": "2026-09-24",
   "matches": 0,
-  "note": "filtered by country (Location_Country)",
+  "note": "filtered by location (country)",
   "ok": true,
   "scanned": 10,
   "type": "workday"
  },
- "psi-cro/pagewatch": {
+ "psi-cro/smartrecruiters": {
   "company": "PSI CRO",
   "error": null,
   "failures_in_a_row": 0,
   "last_ok": "2026-09-24",
-  "matches": 0,
+  "matches": 1,
   "note": "",
   "ok": true,
-  "scanned": 3,
-  "type": "pagewatch"
- },
- "quotient-sciences/greenhouse": {
-  "company": "Quotient Sciences",
-  "error": "HTTPError: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/quotientsciences/jobs?content=true",
-  "failures_in_a_row": 1,
-  "last_ok": null,
-  "matches": 0,
-  "note": "",
-  "ok": false,
-  "scanned": 0,
-  "type": "greenhouse"
+  "scanned": 217,
+  "type": "smartrecruiters"
  },
  "regeneron/workday": {
   "company": "Regeneron",
   "error": null,
   "failures_in_a_row": 0,
   "last_ok": "2026-09-24",
-  "matches": 2,
-  "note": "keyword search (board has no country filter)",
+  "matches": 0,
+  "note": "filtered by location (3 offices)",
   "ok": true,
-  "scanned": 313,
+  "scanned": 27,
   "type": "workday"
  },
  "richmond-pharmacology/pinpoint": {
@@ -367,10 +378,10 @@
   "error": null,
   "failures_in_a_row": 0,
   "last_ok": "2026-09-24",
-  "matches": 1,
-  "note": "filtered by country (locations)",
+  "matches": 3,
+  "note": "filtered by location (2 offices)",
   "ok": true,
-  "scanned": 8,
+  "scanned": 36,
   "type": "workday"
  },
  "sanofi/workday": {
@@ -379,7 +390,7 @@
   "failures_in_a_row": 0,
   "last_ok": "2026-09-24",
   "matches": 0,
-  "note": "filtered by country (locationCountry)",
+  "note": "filtered by location (country)",
   "ok": true,
   "scanned": 3,
   "type": "workday"
@@ -390,31 +401,31 @@
   "failures_in_a_row": 0,
   "last_ok": "2026-09-24",
   "matches": 2,
-  "note": "filtered by country (locationCountry)",
+  "note": "filtered by location (country)",
   "ok": true,
   "scanned": 55,
   "type": "workday"
  },
- "takeda/workday": {
+ "takeda/radancy": {
   "company": "Takeda",
-  "error": "HTTPError: 422 Client Error: Unprocessable Entity for url: https://takeda.wd3.myworkdayjobs.com/wday/cxs/takeda/External/jobs",
-  "failures_in_a_row": 1,
-  "last_ok": null,
-  "matches": 0,
+  "error": null,
+  "failures_in_a_row": 0,
+  "last_ok": "2026-09-24",
+  "matches": 4,
   "note": "",
-  "ok": false,
-  "scanned": 0,
-  "type": "workday"
+  "ok": true,
+  "scanned": 844,
+  "type": "radancy"
  },
  "thermo-fisher-ppd/workday": {
   "company": "Thermo Fisher (PPD)",
   "error": null,
   "failures_in_a_row": 0,
   "last_ok": "2026-09-24",
-  "matches": 16,
-  "note": "keyword search (board has no country filter)",
+  "matches": 2,
+  "note": "filtered by location (27 offices)",
   "ok": true,
-  "scanned": 519,
+  "scanned": 164,
   "type": "workday"
  },
  "ucb/phenom": {
@@ -434,7 +445,7 @@
   "failures_in_a_row": 0,
   "last_ok": "2026-09-24",
   "matches": 0,
-  "note": "filtered by country (locationCountry)",
+  "note": "filtered by location (country)",
   "ok": true,
   "scanned": 10,
   "type": "workday"
@@ -445,7 +456,7 @@
   "failures_in_a_row": 0,
   "last_ok": "2026-09-24",
   "matches": 2,
-  "note": "filtered by country (locationCountry)",
+  "note": "filtered by location (country)",
   "ok": true,
   "scanned": 33,
   "type": "workday"

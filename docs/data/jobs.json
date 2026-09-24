@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-24T09:23:05Z",
+ "generated": "2026-09-24T09:31:59Z",
  "repo": "keerthanvemulapati/Grad-scheme-applications",
  "jobs": [
   {
@@ -43,6 +43,25 @@
    "closed_on": null
   },
   {
+   "id": "fortrea:251342",
+   "company": "Fortrea",
+   "company_type": "cro",
+   "title": "Clinical Research Associate I",
+   "url": "https://fortrea.wd1.myworkdayjobs.com/en-US/Fortrea/job/Maidenhead/Clinical-Research-Associate-I_251342",
+   "location": "Maidenhead",
+   "posted": "2026-07-30",
+   "category": "clinical_operations",
+   "category_label": "Clinical Operations",
+   "priority": true,
+   "level": "entry_level",
+   "tags": [],
+   "score": 120,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24",
+   "status": "open",
+   "closed_on": null
+  },
+  {
    "id": "fortrea:264861-1",
    "company": "Fortrea",
    "company_type": "cro",
@@ -62,13 +81,13 @@
    "closed_on": null
   },
   {
-   "id": "fortrea:251342",
-   "company": "Fortrea",
+   "id": "icon:JR156686-1",
+   "company": "ICON",
    "company_type": "cro",
-   "title": "Clinical Research Associate I",
-   "url": "https://fortrea.wd1.myworkdayjobs.com/en-US/Fortrea/job/Maidenhead/Clinical-Research-Associate-I_251342",
-   "location": "Maidenhead",
-   "posted": "2026-07-30",
+   "title": "Patient Recruitment Associate I",
+   "url": "https://icon.wd3.myworkdayjobs.com/en-US/broadbean_external/job/UK-Warwickshire/Patient-Recruitment-Associate-I_JR156686-1",
+   "location": "UK, Warwickshire",
+   "posted": "2026-09-22",
    "category": "clinical_operations",
    "category_label": "Clinical Operations",
    "priority": true,
@@ -106,25 +125,6 @@
    "title": "Clinical Site Contracting Coordinator",
    "url": "https://icon.wd3.myworkdayjobs.com/en-US/broadbean_external/job/Regional-Great-Britain-Northern-Ireland/Clinical-Site-Contracting-Coordinator_JR157722",
    "location": "Regional Great Britain (Northern Ireland); Romania, Bucharest; Portugal, Lisbon; Poland, Warsaw; Spain, Barcelona; Bulgaria, Sofia",
-   "posted": "2026-09-22",
-   "category": "clinical_operations",
-   "category_label": "Clinical Operations",
-   "priority": true,
-   "level": "entry_level",
-   "tags": [],
-   "score": 120,
-   "first_seen": "2026-09-24",
-   "last_seen": "2026-09-24",
-   "status": "open",
-   "closed_on": null
-  },
-  {
-   "id": "icon:JR156686-1",
-   "company": "ICON",
-   "company_type": "cro",
-   "title": "Patient Recruitment Associate I",
-   "url": "https://icon.wd3.myworkdayjobs.com/en-US/broadbean_external/job/UK-Warwickshire/Patient-Recruitment-Associate-I_JR156686-1",
-   "location": "UK, Warwickshire",
    "posted": "2026-09-22",
    "category": "clinical_operations",
    "category_label": "Clinical Operations",
@@ -235,13 +235,34 @@
    "closed_on": null
   },
   {
-   "id": "thermo-fisher-ppd:R-01368834",
+   "id": "thermo-fisher-ppd:R-01340398",
    "company": "Thermo Fisher (PPD)",
    "company_type": "cro",
-   "title": "FSP Clinical Trial Coordinator",
-   "url": "https://thermofisher.wd5.myworkdayjobs.com/en-US/ThermoFisherCareers/job/Remote-Serbia/FSP-Clinical-Trial-Coordinator_R-01368834",
-   "location": "Remote, Serbia",
-   "posted": "2026-09-24",
+   "title": "Clinical Research Associate (CRA) - All Levels",
+   "url": "https://thermofisher.wd5.myworkdayjobs.com/en-US/ThermoFisherCareers/job/Remote-Turkey/Clinical-Research-Associate--CRA----All-Levels_R-01340398",
+   "location": "Remote, Turkey",
+   "posted": "2026-09-17",
+   "category": "clinical_operations",
+   "category_label": "Clinical Operations",
+   "priority": true,
+   "level": "entry_level",
+   "tags": [
+    "location_unclear"
+   ],
+   "score": 120,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24",
+   "status": "open",
+   "closed_on": null
+  },
+  {
+   "id": "thermo-fisher-ppd:R-01362164",
+   "company": "Thermo Fisher (PPD)",
+   "company_type": "cro",
+   "title": "FSP Clinical Trial Coordinator I",
+   "url": "https://thermofisher.wd5.myworkdayjobs.com/en-US/ThermoFisherCareers/job/Remote-Philippines/FSP-Clinical-Trial-Coordinator-I_R-01362164",
+   "location": "Remote, Philippines",
+   "posted": "2026-09-19",
    "category": "clinical_operations",
    "category_label": "Clinical Operations",
    "priority": true,
@@ -265,27 +286,6 @@
    "posted": "2026-08-13",
    "category": "regulatory_affairs",
    "category_label": "Regulatory Affairs",
-   "priority": true,
-   "level": "entry_level",
-   "tags": [
-    "location_unclear"
-   ],
-   "score": 120,
-   "first_seen": "2026-09-24",
-   "last_seen": "2026-09-24",
-   "status": "open",
-   "closed_on": null
-  },
-  {
-   "id": "thermo-fisher-ppd:R-01362164",
-   "company": "Thermo Fisher (PPD)",
-   "company_type": "cro",
-   "title": "FSP Clinical Trial Coordinator I",
-   "url": "https://thermofisher.wd5.myworkdayjobs.com/en-US/ThermoFisherCareers/job/Remote-Philippines/FSP-Clinical-Trial-Coordinator-I_R-01362164",
-   "location": "Remote, Philippines",
-   "posted": "2026-09-19",
-   "category": "clinical_operations",
-   "category_label": "Clinical Operations",
    "priority": true,
    "level": "entry_level",
    "tags": [
@@ -340,13 +340,13 @@
    "closed_on": null
   },
   {
-   "id": "thermo-fisher-ppd:R-01340398",
+   "id": "thermo-fisher-ppd:R-01368834",
    "company": "Thermo Fisher (PPD)",
    "company_type": "cro",
-   "title": "Clinical Research Associate (CRA) - All Levels",
-   "url": "https://thermofisher.wd5.myworkdayjobs.com/en-US/ThermoFisherCareers/job/Remote-Turkey/Clinical-Research-Associate--CRA----All-Levels_R-01340398",
-   "location": "Remote, Turkey",
-   "posted": "2026-09-17",
+   "title": "FSP Clinical Trial Coordinator",
+   "url": "https://thermofisher.wd5.myworkdayjobs.com/en-US/ThermoFisherCareers/job/Remote-Serbia/FSP-Clinical-Trial-Coordinator_R-01368834",
+   "location": "Remote, Serbia",
+   "posted": "2026-09-24",
    "category": "clinical_operations",
    "category_label": "Clinical Operations",
    "priority": true,
@@ -401,19 +401,38 @@
    "closed_on": null
   },
   {
-   "id": "amgen:R-254067",
-   "company": "Amgen",
-   "company_type": "pharma",
-   "title": "Snr Medical Science Liaison (Obesity)",
-   "url": "https://amgen.wd1.myworkdayjobs.com/en-US/Careers/job/United-Kingdom---Cambridge/Snr-Medical-Science-Liaison--Obesity-_R-254067",
-   "location": "United Kingdom - Cambridge; United Kingdom - London; United Kingdom - Manchester; United Kingdom - Uxbridge",
-   "posted": "2026-09-03",
-   "category": "medical_affairs",
-   "category_label": "Medical Affairs",
+   "id": "thermo-fisher-ppd:R-01339167",
+   "company": "Thermo Fisher (PPD)",
+   "company_type": "cro",
+   "title": "Assistant CRA",
+   "url": "https://thermofisher.wd5.myworkdayjobs.com/en-US/ThermoFisherCareers/job/Remote-United-Kingdom/Assistant-CRA_R-01339167",
+   "location": "Remote, United Kingdom",
+   "posted": "2026-06-30",
+   "category": "clinical_operations",
+   "category_label": "Clinical Operations",
    "priority": true,
-   "level": "check",
+   "level": "entry_level",
    "tags": [],
-   "score": 100,
+   "score": 120,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24",
+   "status": "open",
+   "closed_on": null
+  },
+  {
+   "id": "thermo-fisher-ppd:R-01348797",
+   "company": "Thermo Fisher (PPD)",
+   "company_type": "cro",
+   "title": "Clinical Trial Coordinator - Glasgow",
+   "url": "https://thermofisher.wd5.myworkdayjobs.com/en-US/ThermoFisherCareers/job/Bellshill-United-Kingdom/Clinical-Trial-Coordinator---Glasgow_R-01348797",
+   "location": "Bellshill, United Kingdom",
+   "posted": "2026-04-08",
+   "category": "clinical_operations",
+   "category_label": "Clinical Operations",
+   "priority": true,
+   "level": "entry_level",
+   "tags": [],
+   "score": 120,
    "first_seen": "2026-09-24",
    "last_seen": "2026-09-24",
    "status": "open",
@@ -429,6 +448,25 @@
    "posted": "2026-08-11",
    "category": "clinical_operations",
    "category_label": "Clinical Operations",
+   "priority": true,
+   "level": "check",
+   "tags": [],
+   "score": 100,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24",
+   "status": "open",
+   "closed_on": null
+  },
+  {
+   "id": "amgen:R-254067",
+   "company": "Amgen",
+   "company_type": "pharma",
+   "title": "Snr Medical Science Liaison (Obesity)",
+   "url": "https://amgen.wd1.myworkdayjobs.com/en-US/Careers/job/United-Kingdom---Cambridge/Snr-Medical-Science-Liaison--Obesity-_R-254067",
+   "location": "United Kingdom - Cambridge; United Kingdom - London; United Kingdom - Manchester; United Kingdom - Uxbridge",
+   "posted": "2026-09-03",
+   "category": "medical_affairs",
+   "category_label": "Medical Affairs",
    "priority": true,
    "level": "check",
    "tags": [],
@@ -593,13 +631,13 @@
    "closed_on": null
   },
   {
-   "id": "syneos-health:25112022",
+   "id": "syneos-health:25106983",
    "company": "Syneos Health",
    "company_type": "cro",
-   "title": "CRA UK",
-   "url": "https://syneoshealth.wd12.myworkdayjobs.com/en-US/Syneos_Health_External_Site/job/GBR-Remote/CRA-UK_25112022",
-   "location": "GBR-Remote",
-   "posted": "2026-09-14",
+   "title": "CRA - Future Roles (UK)",
+   "url": "https://syneoshealth.wd12.myworkdayjobs.com/en-US/Syneos_Health_External_Site/job/GBR-London-Hybrid/CRA---Future-Roles--UK-_25106983",
+   "location": "GBR-London-Hybrid",
+   "posted": "2026-09-03",
    "category": "clinical_operations",
    "category_label": "Clinical Operations",
    "priority": true,
@@ -612,13 +650,13 @@
    "closed_on": null
   },
   {
-   "id": "syneos-health:25106983",
+   "id": "syneos-health:25112022",
    "company": "Syneos Health",
    "company_type": "cro",
-   "title": "CRA - Future Roles (UK)",
-   "url": "https://syneoshealth.wd12.myworkdayjobs.com/en-US/Syneos_Health_External_Site/job/GBR-London-Hybrid/CRA---Future-Roles--UK-_25106983",
-   "location": "GBR-London-Hybrid",
-   "posted": "2026-09-03",
+   "title": "CRA UK",
+   "url": "https://syneoshealth.wd12.myworkdayjobs.com/en-US/Syneos_Health_External_Site/job/GBR-Remote/CRA-UK_25112022",
+   "location": "GBR-Remote",
+   "posted": "2026-09-14",
    "category": "clinical_operations",
    "category_label": "Clinical Operations",
    "priority": true,
@@ -661,6 +699,187 @@
    "posted": "2026-09-18",
    "category": "clinical_operations",
    "category_label": "Clinical Operations",
+   "priority": true,
+   "level": "check",
+   "tags": [
+    "location_unclear"
+   ],
+   "score": 100,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24",
+   "status": "open",
+   "closed_on": null
+  },
+  {
+   "id": "astellas:1430935400",
+   "company": "Astellas",
+   "company_type": "pharma",
+   "title": "Medical Science Liaison, Lung",
+   "url": "https://careers.astellas.com/job/Addlestone-Medical-Science-Liaison%2C-Lung-KT15-2NX/1430935400/",
+   "location": "Addlestone, GB, KT15 2NX",
+   "posted": "2026-09-17",
+   "category": "medical_affairs",
+   "category_label": "Medical Affairs",
+   "priority": true,
+   "level": "check",
+   "tags": [],
+   "score": 100,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24",
+   "status": "open",
+   "closed_on": null
+  },
+  {
+   "id": "johnson-johnson:R-018387",
+   "company": "Johnson & Johnson",
+   "company_type": "pharma",
+   "title": "Medical Affairs Specialist",
+   "url": "https://jj.wd5.myworkdayjobs.com/en-US/JJ/job/Brussels-Brussels-Capital-Region-Belgium/Medical-Affairs-Specialist_R-018387",
+   "location": "Brussels, Brussels-Capital Region, Belgium; Dublin, Ireland; GB025 ACT London, UK; DK005 Copenhagen; SE007 Stockholm; Paris, Île-de-France, France; London, United Kingdom; NO001 Oslo; IE006 Airton; NL017 Roden; Limerick, Ireland; Milano, Italy; CZ005 Walterovo Namesti; FR015 Rungis; FI001 Espoo; Pomezia, Roma, Italy; GB019 Bessemer; IT002 Milano; IT004 Pratica di Mare   Pomezia; IE009 Janssen Cilag Ltd",
+   "posted": "2025-06-23",
+   "category": "medical_affairs",
+   "category_label": "Medical Affairs",
+   "priority": true,
+   "level": "check",
+   "tags": [],
+   "score": 100,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24",
+   "status": "open",
+   "closed_on": null
+  },
+  {
+   "id": "psi-cro:744000149413559",
+   "company": "PSI CRO",
+   "company_type": "cro",
+   "title": "Clinical Trial Liaison (Oncology)",
+   "url": "https://jobs.smartrecruiters.com/PSICRO/744000149413559",
+   "location": "Remote, REMOTE, United States",
+   "posted": "2026-09-14",
+   "category": "clinical_operations",
+   "category_label": "Clinical Operations",
+   "priority": true,
+   "level": "check",
+   "tags": [
+    "location_unclear"
+   ],
+   "score": 100,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24",
+   "status": "open",
+   "closed_on": null
+  },
+  {
+   "id": "roche:202603-107122-1",
+   "company": "Roche",
+   "company_type": "pharma",
+   "title": "Country Study Start-Up Team Leader (cSTL)",
+   "url": "https://roche.wd3.myworkdayjobs.com/en-US/roche-ext/job/Welwyn/Country-Study-Start-Up-Team-Leader--cSTL-_202603-107122-1",
+   "location": "Welwyn",
+   "posted": "2026-09-17",
+   "category": "clinical_operations",
+   "category_label": "Clinical Operations",
+   "priority": true,
+   "level": "check",
+   "tags": [],
+   "score": 100,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24",
+   "status": "open",
+   "closed_on": null
+  },
+  {
+   "id": "roche:202608-121489-1",
+   "company": "Roche",
+   "company_type": "pharma",
+   "title": "Regulatory Innovation & Sustainment Leader",
+   "url": "https://roche.wd3.myworkdayjobs.com/en-US/roche-ext/job/Welwyn/Regulatory-Innovation---Sustainment-Leader_202608-121489-1",
+   "location": "Welwyn; South San Francisco; Mississauga; Basel",
+   "posted": "2026-09-10",
+   "category": "regulatory_affairs",
+   "category_label": "Regulatory Affairs",
+   "priority": true,
+   "level": "check",
+   "tags": [],
+   "score": 100,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24",
+   "status": "open",
+   "closed_on": null
+  },
+  {
+   "id": "takeda:100074859664",
+   "company": "Takeda",
+   "company_type": "pharma",
+   "title": "MSL Plasma-derived Therapies",
+   "url": "https://jobs.takeda.com/job/zurich/msl-plasma-derived-therapies/1113/100074859664",
+   "location": "Remote",
+   "posted": null,
+   "category": "medical_affairs",
+   "category_label": "Medical Affairs",
+   "priority": true,
+   "level": "check",
+   "tags": [
+    "location_unclear"
+   ],
+   "score": 100,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24",
+   "status": "open",
+   "closed_on": null
+  },
+  {
+   "id": "takeda:100102263232",
+   "company": "Takeda",
+   "company_type": "pharma",
+   "title": "Medical Science Liaison, Rare Diseases",
+   "url": "https://jobs.takeda.com/job/toronto/medical-science-liaison-rare-diseases/1113/100102263232",
+   "location": "Remote",
+   "posted": null,
+   "category": "medical_affairs",
+   "category_label": "Medical Affairs",
+   "priority": true,
+   "level": "check",
+   "tags": [
+    "location_unclear"
+   ],
+   "score": 100,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24",
+   "status": "open",
+   "closed_on": null
+  },
+  {
+   "id": "takeda:90773933056",
+   "company": "Takeda",
+   "company_type": "pharma",
+   "title": "Medical Science Liaison, Dermatology (Central)",
+   "url": "https://jobs.takeda.com/job/toronto/medical-science-liaison-dermatology-central/1113/90773933056",
+   "location": "Remote",
+   "posted": null,
+   "category": "medical_affairs",
+   "category_label": "Medical Affairs",
+   "priority": true,
+   "level": "check",
+   "tags": [
+    "location_unclear"
+   ],
+   "score": 100,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24",
+   "status": "open",
+   "closed_on": null
+  },
+  {
+   "id": "takeda:98699480816",
+   "company": "Takeda",
+   "company_type": "pharma",
+   "title": "MSL, Medical Engagement, Japan Medical Office, JPBU / JPBU ジャパンメディカルオフィス メディカルエンゲージメント メディカルサイエンスリエゾン（MSL）（免疫疾患・腎疾患領域）",
+   "url": "https://jobs.takeda.com/job/tokyo/msl-medical-engagement-japan-medical-office-jpbu-jpbu-%e3%82%b7%e3%83%a3%e3%83%8f%e3%83%b3%e3%83%a1%e3%83%86%e3%82%a3%e3%82%ab%e3%83%ab%e3%82%aa%e3%83%95%e3%82%a3%e3%82%b9-%e3%83%a1%e3%83%86%e3%82%a3%e3%82%ab%e3%83%ab%e3%82%a8%e3%83%b3%e3%82%b1%e3%83%bc%e3%82%b7%e3%83%a1%e3%83%b3%e3%83%88-%e3%83%a1%e3%83%86%e3%82%a3%e3%82%ab%e3%83%ab%e3%82%b5%e3%82%a4%e3%82%a8%e3%83%b3%e3%82%b9%e3%83%aa%e3%82%a8%e3%82%bd%e3%83%b3-ms/1113/98699480816",
+   "location": "Multiple Locations",
+   "posted": null,
+   "category": "medical_affairs",
+   "category_label": "Medical Affairs",
    "priority": true,
    "level": "check",
    "tags": [
@@ -737,6 +956,27 @@
    "closed_on": null
   },
   {
+   "id": "gsk:448163",
+   "company": "GSK",
+   "company_type": "pharma",
+   "title": "Communications and Government Affairs Graduate Programme, UK, 2027",
+   "url": "https://gsk.wd5.myworkdayjobs.com/en-US/GSKCareers/job/UK--London--New-Oxford-Street/Communications-and-Government-Affairs-Graduate-Programme--UK--2027_448163",
+   "location": "UK – London – New Oxford Street",
+   "posted": "2026-09-23",
+   "category": "other_graduate",
+   "category_label": "Other Graduate Scheme",
+   "priority": false,
+   "level": "graduate_scheme",
+   "tags": [
+    "2027"
+   ],
+   "score": 85,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24",
+   "status": "open",
+   "closed_on": null
+  },
+  {
    "id": "gsk:448225",
    "company": "GSK",
    "company_type": "pharma",
@@ -779,13 +1019,13 @@
    "closed_on": null
   },
   {
-   "id": "gsk:448163",
-   "company": "GSK",
+   "id": "johnson-johnson:R-096443",
+   "company": "Johnson & Johnson",
    "company_type": "pharma",
-   "title": "Communications and Government Affairs Graduate Programme, UK, 2027",
-   "url": "https://gsk.wd5.myworkdayjobs.com/en-US/GSKCareers/job/UK--London--New-Oxford-Street/Communications-and-Government-Affairs-Graduate-Programme--UK--2027_448163",
-   "location": "UK – London – New Oxford Street",
-   "posted": "2026-09-23",
+   "title": "Research & Development Leadership Development Program (RDLDP)- Full-Time Class of 2027",
+   "url": "https://jj.wd5.myworkdayjobs.com/en-US/JJ/job/Santa-Clara-California-United-States-of-America/Research---Development-Leadership-Development-Program--RDLDP---Full-Time-Class-of-2027_R-096443",
+   "location": "Santa Clara, California, United States of America; Jacksonville, Florida, United States of America; Raritan, New Jersey, United States of America; Cincinnati, Ohio, United States of America; Redwood City, California, United States of America; Irvine, California, United States of America",
+   "posted": "2026-08-28",
    "category": "other_graduate",
    "category_label": "Other Graduate Scheme",
    "priority": false,
@@ -821,27 +1061,6 @@
    "closed_on": null
   },
   {
-   "id": "johnson-johnson:R-096443",
-   "company": "Johnson & Johnson",
-   "company_type": "pharma",
-   "title": "Research & Development Leadership Development Program (RDLDP)- Full-Time Class of 2027",
-   "url": "https://jj.wd5.myworkdayjobs.com/en-US/JJ/job/Santa-Clara-California-United-States-of-America/Research---Development-Leadership-Development-Program--RDLDP---Full-Time-Class-of-2027_R-096443",
-   "location": "Santa Clara, California, United States of America; Jacksonville, Florida, United States of America; Raritan, New Jersey, United States of America; Cincinnati, Ohio, United States of America; Redwood City, California, United States of America; Irvine, California, United States of America",
-   "posted": "2026-08-28",
-   "category": "other_graduate",
-   "category_label": "Other Graduate Scheme",
-   "priority": false,
-   "level": "graduate_scheme",
-   "tags": [
-    "2027"
-   ],
-   "score": 85,
-   "first_seen": "2026-09-24",
-   "last_seen": "2026-09-24",
-   "status": "open",
-   "closed_on": null
-  },
-  {
    "id": "fortrea:251030",
    "company": "Fortrea",
    "company_type": "cro",
@@ -849,6 +1068,27 @@
    "url": "https://fortrea.wd1.myworkdayjobs.com/en-US/Fortrea/job/Maidenhead/Site-Start-Up-Specialist_251030",
    "location": "Maidenhead; Warsaw; Dublin",
    "posted": "2026-07-15",
+   "category": "clinical_operations",
+   "category_label": "Clinical Operations",
+   "priority": true,
+   "level": "check",
+   "tags": [
+    "experience_required"
+   ],
+   "score": 75,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24",
+   "status": "open",
+   "closed_on": null
+  },
+  {
+   "id": "iqvia:R1565158",
+   "company": "IQVIA",
+   "company_type": "cro",
+   "title": "Clinical Independent Rater for Clinical Trial - Polish Speaking",
+   "url": "https://iqvia.wd1.myworkdayjobs.com/en-US/IQVIA/job/Warsaw-Poland/Clinical-Independent-Rater---Polish-Speaking_R1565158",
+   "location": "Warsaw, Poland; Noumea, France; Taucha, Germany; Paris, France; Manchester, United Kingdom; Papeete, France; Chicago, Illinois, United States of America; Nottingham, United Kingdom; Stafford, United Kingdom; Reading, Berkshire, United Kingdom; London, United Kingdom; Saint Cloud, France; Pewsham, United Kingdom; Dortmund, Germany; Portishead, United Kingdom; Leipzig, Germany; Salford, United Kingdom; Saint-Leu, France; Kaunas, Lithuania; Vairao, France",
+   "posted": "2026-08-24",
    "category": "clinical_operations",
    "category_label": "Clinical Operations",
    "priority": true,
@@ -884,27 +1124,6 @@
    "closed_on": null
   },
   {
-   "id": "iqvia:R1565158",
-   "company": "IQVIA",
-   "company_type": "cro",
-   "title": "Clinical Independent Rater for Clinical Trial - Polish Speaking",
-   "url": "https://iqvia.wd1.myworkdayjobs.com/en-US/IQVIA/job/Warsaw-Poland/Clinical-Independent-Rater---Polish-Speaking_R1565158",
-   "location": "Warsaw, Poland; Noumea, France; Taucha, Germany; Paris, France; Manchester, United Kingdom; Papeete, France; Chicago, Illinois, United States of America; Nottingham, United Kingdom; Stafford, United Kingdom; Reading, Berkshire, United Kingdom; London, United Kingdom; Saint Cloud, France; Pewsham, United Kingdom; Dortmund, Germany; Portishead, United Kingdom; Leipzig, Germany; Salford, United Kingdom; Saint-Leu, France; Kaunas, Lithuania; Vairao, France",
-   "posted": "2026-08-24",
-   "category": "clinical_operations",
-   "category_label": "Clinical Operations",
-   "priority": true,
-   "level": "check",
-   "tags": [
-    "experience_required"
-   ],
-   "score": 75,
-   "first_seen": "2026-09-24",
-   "last_seen": "2026-09-24",
-   "status": "open",
-   "closed_on": null
-  },
-  {
    "id": "thermo-fisher-ppd:R-01361506",
    "company": "Thermo Fisher (PPD)",
    "company_type": "cro",
@@ -927,13 +1146,13 @@
    "closed_on": null
   },
   {
-   "id": "thermo-fisher-ppd:R-01369299",
+   "id": "thermo-fisher-ppd:R-01362190",
    "company": "Thermo Fisher (PPD)",
    "company_type": "cro",
-   "title": "FSP Pharmacovigilance Coordinator (Night Shift)",
-   "url": "https://thermofisher.wd5.myworkdayjobs.com/en-US/ThermoFisherCareers/job/Remote-Philippines/FSP-Pharmacovigilance-Coordinator_R-01369299",
+   "title": "FSP Pharmacovigilance Coordinator",
+   "url": "https://thermofisher.wd5.myworkdayjobs.com/en-US/ThermoFisherCareers/job/Remote-Philippines/FSP-Pharmacovigilance-Coordinator_R-01362190",
    "location": "Remote, Philippines",
-   "posted": "2026-09-23",
+   "posted": "2026-08-29",
    "category": "drug_safety",
    "category_label": "Drug Safety / PV",
    "priority": false,
@@ -969,13 +1188,13 @@
    "closed_on": null
   },
   {
-   "id": "thermo-fisher-ppd:R-01362190",
+   "id": "thermo-fisher-ppd:R-01369299",
    "company": "Thermo Fisher (PPD)",
    "company_type": "cro",
-   "title": "FSP Pharmacovigilance Coordinator",
-   "url": "https://thermofisher.wd5.myworkdayjobs.com/en-US/ThermoFisherCareers/job/Remote-Philippines/FSP-Pharmacovigilance-Coordinator_R-01362190",
+   "title": "FSP Pharmacovigilance Coordinator (Night Shift)",
+   "url": "https://thermofisher.wd5.myworkdayjobs.com/en-US/ThermoFisherCareers/job/Remote-Philippines/FSP-Pharmacovigilance-Coordinator_R-01369299",
    "location": "Remote, Philippines",
-   "posted": "2026-08-29",
+   "posted": "2026-09-23",
    "category": "drug_safety",
    "category_label": "Drug Safety / PV",
    "priority": false,
@@ -1135,7 +1354,7 @@
     "programme": "Global Graduate Programme",
     "area": "Various",
     "url": "https://www.novonordisk.com/careers/early-career-programmes/graduate.html",
-    "notes": "Novo Nordisk's site says applications open 6 December 2026 and close 5 January 2027. Its job board isn't checked automatically."
+    "notes": "Novo Nordisk's site says applications open 6 December 2026 and close 5 January 2027."
    },
    {
     "company": "Medpace",
@@ -1149,7 +1368,14 @@
     "programme": "Careers and apprenticeships",
     "area": "Clinical Operations",
     "url": "https://www.hmrlondon.com/careers",
-    "notes": "Early-phase unit in London. Offers a Clinical Trials Specialist apprenticeship with the University of Kent. Page checked automatically."
+    "notes": "Early-phase unit in London. Offers a Clinical Trials Specialist apprenticeship with the University of Kent. Its site blocks automated checks, so look at it by hand every week or two."
+   },
+   {
+    "company": "Parexel",
+    "programme": "APEX Clinical Research Associate training programme",
+    "area": "Clinical Operations",
+    "url": "https://jobs.parexel.com/en/APEX-CRA-Program",
+    "notes": "Six months of CRA training for recent life-science graduates, then a CRA I role. The UK intake needs the right to work in the UK without sponsorship. Parexel's early-careers page is https://jobs.parexel.com/en/emerging-talent."
    },
    {
     "company": "Cencora PharmaLex",
@@ -1179,16 +1405,6 @@
   ]
  },
  "health": {
-  "abbvie/phenom": {
-   "company": "AbbVie",
-   "type": "phenom",
-   "ok": false,
-   "scanned": 0,
-   "matches": 0,
-   "error": "HTTPError: 404 Client Error: Not Found for url: https://careers.abbvie.com/en/search-results?keywords=graduate&from=0&s=1",
-   "note": "",
-   "last_ok": null
-  },
   "amgen/workday": {
    "company": "Amgen",
    "type": "workday",
@@ -1196,34 +1412,34 @@
    "scanned": 13,
    "matches": 2,
    "error": null,
-   "note": "filtered by country (LocationCountry)",
+   "note": "filtered by location (country)",
    "last_ok": "2026-09-24"
   },
   "astrazeneca/workday": {
    "company": "AstraZeneca",
    "type": "workday",
    "ok": true,
-   "scanned": 384,
+   "scanned": 80,
    "matches": 2,
    "error": null,
-   "note": "keyword search (board has no country filter)",
+   "note": "filtered by location (11 offices)",
    "last_ok": "2026-09-24"
   },
   "astrazeneca/workday-2": {
    "company": "AstraZeneca",
    "type": "workday",
    "ok": true,
-   "scanned": 20,
+   "scanned": 18,
    "matches": 0,
    "error": null,
-   "note": "keyword search (board has no country filter)",
+   "note": "filtered by location (4 offices)",
    "last_ok": "2026-09-24"
   },
   "bayer/eightfold": {
    "company": "Bayer",
    "type": "eightfold",
    "ok": true,
-   "scanned": 0,
+   "scanned": 400,
    "matches": 0,
    "error": null,
    "note": "",
@@ -1236,27 +1452,27 @@
    "scanned": 1,
    "matches": 0,
    "error": null,
-   "note": "filtered by country (locationCountry)",
+   "note": "filtered by location (country)",
    "last_ok": "2026-09-24"
   },
   "boehringer-ingelheim/successfactors": {
    "company": "Boehringer Ingelheim",
    "type": "successfactors",
-   "ok": false,
-   "scanned": 0,
+   "ok": true,
+   "scanned": 188,
    "matches": 0,
-   "error": "Page is not a SuccessFactors job search",
-   "note": "",
-   "last_ok": null
+   "error": null,
+   "note": "location search",
+   "last_ok": "2026-09-24"
   },
   "bristol-myers-squibb/workday": {
    "company": "Bristol Myers Squibb",
    "type": "workday",
    "ok": true,
-   "scanned": 345,
+   "scanned": 29,
    "matches": 0,
    "error": null,
-   "note": "keyword search (board has no country filter)",
+   "note": "filtered by location (region)",
    "last_ok": "2026-09-24"
   },
   "cencora-pharmalex/workday": {
@@ -1266,7 +1482,7 @@
    "scanned": 109,
    "matches": 0,
    "error": null,
-   "note": "filtered by country (locationCountry)",
+   "note": "filtered by location (country)",
    "last_ok": "2026-09-24"
   },
   "csl-incl-csl-seqirus/workday": {
@@ -1276,18 +1492,8 @@
    "scanned": 27,
    "matches": 0,
    "error": null,
-   "note": "filtered by country (locationCountry)",
+   "note": "filtered by location (country)",
    "last_ok": "2026-09-24"
-  },
-  "daiichi-sankyo/workday": {
-   "company": "Daiichi Sankyo",
-   "type": "workday",
-   "ok": false,
-   "scanned": 0,
-   "matches": 0,
-   "error": "HTTPError: 403 Client Error: Forbidden for url: https://daiichisankyo.wd1.myworkdayjobs.com/wday/cxs/daiichisankyo/DSI/jobs",
-   "note": "",
-   "last_ok": null
   },
   "eli-lilly/workday": {
    "company": "Eli Lilly",
@@ -1306,17 +1512,17 @@
    "scanned": 44,
    "matches": 3,
    "error": null,
-   "note": "filtered by country (locationCountry)",
+   "note": "filtered by location (country)",
    "last_ok": "2026-09-24"
   },
   "gilead/workday": {
    "company": "Gilead",
    "type": "workday",
    "ok": true,
-   "scanned": 355,
+   "scanned": 21,
    "matches": 0,
    "error": null,
-   "note": "keyword search (board has no country filter)",
+   "note": "filtered by location (4 offices)",
    "last_ok": "2026-09-24"
   },
   "gsk/workday": {
@@ -1326,7 +1532,7 @@
    "scanned": 101,
    "matches": 4,
    "error": null,
-   "note": "filtered by country (Location_Country)",
+   "note": "filtered by location (country)",
    "last_ok": "2026-09-24"
   },
   "haleon/workday": {
@@ -1336,18 +1542,8 @@
    "scanned": 33,
    "matches": 1,
    "error": null,
-   "note": "filtered by country (locationCountry)",
+   "note": "filtered by location (country)",
    "last_ok": "2026-09-24"
-  },
-  "hammersmith-medicines-research/pagewatch": {
-   "company": "Hammersmith Medicines Research",
-   "type": "pagewatch",
-   "ok": false,
-   "scanned": 0,
-   "matches": 0,
-   "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.hmrlondon.com/careers",
-   "note": "",
-   "last_ok": null
   },
   "icon/workday": {
    "company": "ICON",
@@ -1356,7 +1552,7 @@
    "scanned": 105,
    "matches": 7,
    "error": null,
-   "note": "filtered by country (locationCountry)",
+   "note": "filtered by location (country)",
    "last_ok": "2026-09-24"
   },
   "ipsen/workday": {
@@ -1366,7 +1562,7 @@
    "scanned": 70,
    "matches": 1,
    "error": null,
-   "note": "filtered by country (locationCountry)",
+   "note": "filtered by location (country)",
    "last_ok": "2026-09-24"
   },
   "iqvia/workday": {
@@ -1376,44 +1572,34 @@
    "scanned": 249,
    "matches": 4,
    "error": null,
-   "note": "filtered by country (Location_Country)",
+   "note": "filtered by location (country)",
    "last_ok": "2026-09-24"
   },
   "johnson-johnson/workday": {
    "company": "Johnson & Johnson",
    "type": "workday",
    "ok": true,
-   "scanned": 522,
-   "matches": 2,
+   "scanned": 153,
+   "matches": 3,
    "error": null,
-   "note": "keyword search (board has no country filter)",
+   "note": "filtered by location (13 offices)",
    "last_ok": "2026-09-24"
   },
   "labcorp/workday": {
    "company": "Labcorp",
    "type": "workday",
    "ok": true,
-   "scanned": 369,
+   "scanned": 32,
    "matches": 0,
    "error": null,
-   "note": "keyword search (board has no country filter)",
+   "note": "filtered by location (12 offices)",
    "last_ok": "2026-09-24"
   },
   "mac-clinical-research/pagewatch": {
    "company": "MAC Clinical Research",
    "type": "pagewatch",
    "ok": true,
-   "scanned": 2,
-   "matches": 0,
-   "error": null,
-   "note": "",
-   "last_ok": "2026-09-24"
-  },
-  "medpace/jibe": {
-   "company": "Medpace",
-   "type": "jibe",
-   "ok": true,
-   "scanned": 0,
+   "scanned": 20,
    "matches": 0,
    "error": null,
    "note": "",
@@ -1433,10 +1619,10 @@
    "company": "MSD",
    "type": "workday",
    "ok": true,
-   "scanned": 469,
+   "scanned": 146,
    "matches": 2,
    "error": null,
-   "note": "keyword search (board has no country filter)",
+   "note": "filtered by location (9 offices)",
    "last_ok": "2026-09-24"
   },
   "novartis/workday": {
@@ -1446,7 +1632,7 @@
    "scanned": 30,
    "matches": 1,
    "error": null,
-   "note": "filtered by country (locationCountry)",
+   "note": "filtered by location (country)",
    "last_ok": "2026-09-24"
   },
   "parexel/workday": {
@@ -1456,7 +1642,7 @@
    "scanned": 35,
    "matches": 0,
    "error": null,
-   "note": "filtered by country (locationCountry)",
+   "note": "filtered by location (country)",
    "last_ok": "2026-09-24"
   },
   "pfizer/workday": {
@@ -1466,37 +1652,17 @@
    "scanned": 10,
    "matches": 0,
    "error": null,
-   "note": "filtered by country (Location_Country)",
+   "note": "filtered by location (country)",
    "last_ok": "2026-09-24"
-  },
-  "psi-cro/pagewatch": {
-   "company": "PSI CRO",
-   "type": "pagewatch",
-   "ok": true,
-   "scanned": 3,
-   "matches": 0,
-   "error": null,
-   "note": "",
-   "last_ok": "2026-09-24"
-  },
-  "quotient-sciences/greenhouse": {
-   "company": "Quotient Sciences",
-   "type": "greenhouse",
-   "ok": false,
-   "scanned": 0,
-   "matches": 0,
-   "error": "HTTPError: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/quotientsciences/jobs?content=true",
-   "note": "",
-   "last_ok": null
   },
   "regeneron/workday": {
    "company": "Regeneron",
    "type": "workday",
    "ok": true,
-   "scanned": 313,
-   "matches": 2,
+   "scanned": 27,
+   "matches": 0,
    "error": null,
-   "note": "keyword search (board has no country filter)",
+   "note": "filtered by location (3 offices)",
    "last_ok": "2026-09-24"
   },
   "richmond-pharmacology/pinpoint": {
@@ -1513,10 +1679,10 @@
    "company": "Roche",
    "type": "workday",
    "ok": true,
-   "scanned": 8,
-   "matches": 1,
+   "scanned": 36,
+   "matches": 3,
    "error": null,
-   "note": "filtered by country (locations)",
+   "note": "filtered by location (2 offices)",
    "last_ok": "2026-09-24"
   },
   "sanofi/workday": {
@@ -1526,7 +1692,7 @@
    "scanned": 3,
    "matches": 0,
    "error": null,
-   "note": "filtered by country (locationCountry)",
+   "note": "filtered by location (country)",
    "last_ok": "2026-09-24"
   },
   "syneos-health/workday": {
@@ -1536,27 +1702,17 @@
    "scanned": 55,
    "matches": 2,
    "error": null,
-   "note": "filtered by country (locationCountry)",
+   "note": "filtered by location (country)",
    "last_ok": "2026-09-24"
-  },
-  "takeda/workday": {
-   "company": "Takeda",
-   "type": "workday",
-   "ok": false,
-   "scanned": 0,
-   "matches": 0,
-   "error": "HTTPError: 422 Client Error: Unprocessable Entity for url: https://takeda.wd3.myworkdayjobs.com/wday/cxs/takeda/External/jobs",
-   "note": "",
-   "last_ok": null
   },
   "thermo-fisher-ppd/workday": {
    "company": "Thermo Fisher (PPD)",
    "type": "workday",
    "ok": true,
-   "scanned": 519,
-   "matches": 16,
+   "scanned": 164,
+   "matches": 2,
    "error": null,
-   "note": "keyword search (board has no country filter)",
+   "note": "filtered by location (27 offices)",
    "last_ok": "2026-09-24"
   },
   "ucb/phenom": {
@@ -1576,7 +1732,7 @@
    "scanned": 10,
    "matches": 0,
    "error": null,
-   "note": "filtered by country (locationCountry)",
+   "note": "filtered by location (country)",
    "last_ok": "2026-09-24"
   },
   "worldwide-clinical-trials/workday": {
@@ -1586,7 +1742,87 @@
    "scanned": 33,
    "matches": 2,
    "error": null,
-   "note": "filtered by country (locationCountry)",
+   "note": "filtered by location (country)",
+   "last_ok": "2026-09-24"
+  },
+  "abbvie/pagewatch": {
+   "company": "AbbVie",
+   "type": "pagewatch",
+   "ok": true,
+   "scanned": 10,
+   "matches": 0,
+   "error": null,
+   "note": "",
+   "last_ok": "2026-09-24"
+  },
+  "astellas/successfactors": {
+   "company": "Astellas",
+   "type": "successfactors",
+   "ok": true,
+   "scanned": 8,
+   "matches": 1,
+   "error": null,
+   "note": "country filter",
+   "last_ok": "2026-09-24"
+  },
+  "beone-medicines/workday": {
+   "company": "BeOne Medicines",
+   "type": "workday",
+   "ok": true,
+   "scanned": 4,
+   "matches": 0,
+   "error": null,
+   "note": "filtered by location (country)",
+   "last_ok": "2026-09-24"
+  },
+  "daiichi-sankyo/successfactors_csb": {
+   "company": "Daiichi Sankyo",
+   "type": "successfactors_csb",
+   "ok": true,
+   "scanned": 54,
+   "matches": 0,
+   "error": null,
+   "note": "",
+   "last_ok": "2026-09-24"
+  },
+  "medpace/icims": {
+   "company": "Medpace",
+   "type": "icims",
+   "ok": false,
+   "scanned": 0,
+   "matches": 0,
+   "error": "No jobs found on the iCIMS portal",
+   "note": "",
+   "last_ok": null
+  },
+  "novo-nordisk/successfactors": {
+   "company": "Novo Nordisk",
+   "type": "successfactors",
+   "ok": true,
+   "scanned": 3,
+   "matches": 0,
+   "error": null,
+   "note": "country filter",
+   "last_ok": "2026-09-24"
+  },
+  "psi-cro/smartrecruiters": {
+   "company": "PSI CRO",
+   "type": "smartrecruiters",
+   "ok": true,
+   "scanned": 217,
+   "matches": 1,
+   "error": null,
+   "note": "",
+   "last_ok": "2026-09-24"
+  },
+  "takeda/radancy": {
+   "company": "Takeda",
+   "type": "radancy",
+   "ok": true,
+   "scanned": 844,
+   "matches": 4,
+   "error": null,
+   "note": "",
    "last_ok": "2026-09-24"
   }
  }
