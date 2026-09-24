@@ -60,9 +60,9 @@
   "failures_in_a_row": 0,
   "last_ok": "2026-09-24",
   "matches": 0,
-  "note": "newest 400 of 639 jobs",
+  "note": "",
   "ok": true,
-  "scanned": 400,
+  "scanned": 1,
   "type": "eightfold"
  },
  "beone-medicines/workday": {
@@ -254,13 +254,13 @@
  },
  "medpace/jibe": {
   "company": "Medpace",
-  "error": "The Jibe jobs API returned no jobs",
-  "failures_in_a_row": 2,
-  "last_ok": null,
-  "matches": 0,
+  "error": null,
+  "failures_in_a_row": 0,
+  "last_ok": "2026-09-24",
+  "matches": 18,
   "note": "",
-  "ok": false,
-  "scanned": 0,
+  "ok": true,
+  "scanned": 124,
   "type": "jibe"
  },
  "moderna/workday": {
@@ -422,10 +422,10 @@
   "error": null,
   "failures_in_a_row": 0,
   "last_ok": "2026-09-24",
-  "matches": 0,
-  "note": "",
+  "matches": 1,
+  "note": "search API filtered by country",
   "ok": true,
-  "scanned": 50,
+  "scanned": 27,
   "type": "phenom"
  },
  "vertex-pharmaceuticals/workday": {
