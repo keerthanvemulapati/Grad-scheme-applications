@@ -12,6 +12,7 @@ STATE_PATH = ROOT / "data" / "jobs.json"
 HEALTH_PATH = ROOT / "data" / "sources.json"
 CLOSE_AFTER_MISSES = 2       # runs a role must be missing before it counts as closed
 KEEP_CLOSED_DAYS = 60        # how long closed roles stay in the data
+PARTIAL_EXPIRY_DAYS = 30     # boards that only show their newest jobs: close after this long unseen
 STICKY_FIELDS = ("posted", "location", "facts", "in_country")
 
 
@@ -42,6 +43,7 @@ def merge(state: dict, results: list[SourceResult], today: dt.date,
     meta = state["meta"]
     today_s = today.isoformat()
     ok_keys = {r.source_key for r in results if r.ok}
+    complete_keys = {r.source_key for r in results if r.ok and r.complete}
     known_ok = set(meta.get("sources_seen_ok", []))
     changes: dict[str, list] = {"new": [], "closed": [], "reopened": [], "silent": []}
     seen: set[str] = set()
@@ -77,9 +79,15 @@ def merge(state: dict, results: list[SourceResult], today: dt.date,
         if job.get("source_key") not in configured_keys:
             del jobs[jid]  # company or board removed from the config
             continue
-        if job.get("status") == "open" and jid not in seen and job.get("source_key") in ok_keys:
-            job["missed"] = int(job.get("missed", 0)) + 1
-            if job["missed"] >= CLOSE_AFTER_MISSES:
+        key = job.get("source_key")
+        if job.get("status") == "open" and jid not in seen and key in ok_keys:
+            if key in complete_keys:
+                job["missed"] = int(job.get("missed", 0)) + 1
+                gone = job["missed"] >= CLOSE_AFTER_MISSES
+            else:
+                last = dt.date.fromisoformat(job.get("last_seen") or today_s)
+                gone = (today - last).days > PARTIAL_EXPIRY_DAYS
+            if gone:
                 job["status"] = "closed"
                 job["closed_on"] = today_s
                 changes["closed"].append(job)

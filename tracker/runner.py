@@ -88,6 +88,7 @@ def run_source(company: Company, src_cfg, search: SearchConfig, known: dict) -> 
                 build_record(company, src_cfg.key, src_cfg.type, raw, cls, facts, in_country))
         result.ok = True
         result.note = source.note
+        result.complete = source.complete
     except SourceError as exc:
         result.error = str(exc)
     except Exception as exc:  # network errors, unexpected page layouts...

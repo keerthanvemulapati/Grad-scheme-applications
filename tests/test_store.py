@@ -89,3 +89,18 @@ def test_health_counts_failures():
     assert health["gsk/workday"]["failures_in_a_row"] == 2
     assert health["gsk/workday"]["matches"] == 1
     assert health["gsk/workday"]["last_ok"] == DAY1.isoformat()
+
+
+def test_partial_boards_expire_instead_of_closing():
+    import datetime as dt
+
+    state = store.empty_state()
+    store.merge(state, [result([rec("a"), rec("b")])], DAY1, KEYS)
+    partial = result([rec("a")])
+    partial.complete = False
+    for day in (DAY2, DAY3):
+        store.merge(state, [partial], day, KEYS)
+    assert state["jobs"]["b"]["status"] == "open"
+    later = DAY1 + dt.timedelta(days=store.PARTIAL_EXPIRY_DAYS + 1)
+    changes = store.merge(state, [partial], later, KEYS)
+    assert [j["id"] for j in changes["closed"]] == ["b"]

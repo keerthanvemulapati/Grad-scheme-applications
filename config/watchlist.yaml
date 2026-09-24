@@ -64,6 +64,11 @@ programmes:
     area: Clinical Operations
     url: https://jobs.parexel.com/en/APEX-CRA-Program
     notes: Six months of CRA training for recent life-science graduates, then a CRA I role. The UK intake needs the right to work in the UK without sponsorship. Parexel's early-careers page is https://jobs.parexel.com/en/emerging-talent.
+  - company: Eli Lilly
+    programme: UK early careers and graduate roles
+    area: Various
+    url: https://careers.lilly.com/
+    notes: Lilly's job board blocks automated checks, so search it by hand for UK roles (Bracknell and London).
   - company: Cencora PharmaLex
     programme: Trainee, Regulatory Affairs
     area: Regulatory Affairs

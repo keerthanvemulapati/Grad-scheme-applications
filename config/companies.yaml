@@ -113,12 +113,8 @@ companies:
       - type: radancy
         url: https://jobs.takeda.com
 
-  - name: Eli Lilly
-    type: pharma
-    careers_url: https://careers.lilly.com/
-    sources:
-      - type: workday
-        url: https://lilly.wd5.myworkdayjobs.com/LLY
+  # Eli Lilly isn't checked automatically: its job board refuses automated
+  # requests. It's listed under "Programmes to watch" instead.
 
   - name: Amgen
     type: pharma

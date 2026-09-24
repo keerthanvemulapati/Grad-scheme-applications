@@ -43,3 +43,6 @@ class SourceResult:
     error: str | None = None
     duration: float = 0.0
     note: str = ""
+    # False when the board only showed part of its jobs (e.g. the newest few hundred),
+    # so a role missing from this run hasn't necessarily closed.
+    complete: bool = True

@@ -29,6 +29,7 @@ class Source:
         self.http = session or PoliteSession()
         self.scanned = 0
         self.note = ""
+        self.complete = True
         self.uk_only = bool(self.options.get("uk_only"))
 
     def fetch(self) -> list[RawJob]:  # pragma: no cover - interface

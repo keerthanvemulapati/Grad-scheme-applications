@@ -50,6 +50,9 @@ class EightfoldSource(Source):
             start += len(positions)
             if not positions or start >= int(data.get("count") or 0):
                 break
+        self.complete = start >= int(data.get("count") or 0)
+        if not self.complete:
+            self.note = f"newest {len(jobs)} of {data.get('count')} jobs"
         self.scanned = len(jobs)
         return [j for j in jobs.values() if j.in_country is not False]
 
@@ -130,6 +133,7 @@ class PhenomSource(Source):
         base = self.require("url")
         jobs: dict[str, RawJob] = {}
         queries = self.options.get("keywords") or self.search.fallback_queries
+        self.complete = False
         for query in queries:
             for page in range(self.PAGES_PER_QUERY):
                 html = self.http.get(
@@ -393,7 +397,9 @@ class AttraxSource(Source):
                 country = tile.select_one(".attrax-vacancy-tile__option-location .attrax-vacancy-tile__item-value")
                 loc = ", ".join(" ".join(el.get_text(" ").split()) for el in (free, country) if el)
                 classes = " ".join(tile.get("class", []))
-                in_country = True if "--united-kingdom" in classes else self.where(loc)
+                # Tiles carry a class per location (e.g. attrax-vacancy-tile--united-kingdom),
+                # which is more reliable than the free-text location.
+                in_country = "--united-kingdom" in classes
                 jobs[jid] = RawJob(source_id=str(jid), title=" ".join(link.get_text(" ").split()),
                                    url=href, location=loc, in_country=in_country)
                 added += 1
@@ -401,6 +407,9 @@ class AttraxSource(Source):
                 break
         if not jobs:
             raise SourceError("No vacancy tiles found on the page")
+        # These sites only page through their newest few hundred roles.
+        self.complete = False
+        self.note = f"newest {len(jobs)} roles"
         self.scanned = len(jobs)
         return [j for j in jobs.values() if j.in_country is not False]
 

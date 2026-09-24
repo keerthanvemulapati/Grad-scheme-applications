@@ -199,4 +199,5 @@ def test_attrax_tiles(search):
     src = make(search, "attrax", {"url": "https://careers.acme.com/en/jobs"}, FakeHTTP({"/en/jobs": page}))
     jobs = src.fetch()
     assert [(j.source_id, j.location) for j in jobs] == [("1", "Maidenhead, United Kingdom")]
+    assert not src.complete
     assert jobs[0].url == "https://careers.acme.com/en/job/ra-jid-1"

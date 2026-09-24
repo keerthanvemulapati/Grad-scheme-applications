@@ -113,7 +113,8 @@ class WorkdaySource(Source):
         else:
             for query in self.search.fallback_queries:
                 self._collect(query, {}, jobs, in_country=None, max_pages=FALLBACK_PAGES)
-            self.note = "keyword search (board has no country filter)"
+            self.note = "keyword search (board has no location filter)"
+            self.complete = False
         self.scanned = len(jobs)
         return list(jobs.values())
 

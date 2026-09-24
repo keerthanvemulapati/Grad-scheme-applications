@@ -15,4 +15,4 @@ jobs:
           python-version: "3.12"
       - run: pip install -r requirements.txt
       - run: python tools/debug_boards.py
-      - run: python -m tracker diagnose --limit 3 --only medpace,abbvie,ucb,eli-lilly,takeda,bayer,astrazeneca,msd,daiichi-sankyo,mac-clinical-research,psi-cro
+      - run: python -m tracker diagnose --limit 2 --only abbvie,msd,astrazeneca
