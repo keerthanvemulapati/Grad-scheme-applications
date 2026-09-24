@@ -1,0 +1,314 @@
+# Companies the tracker checks, and where their job boards live.
+#
+# Each company needs a `name`, a `type` (pharma | cro | consultancy) and at
+# least one `source`. Supported source types:
+#
+#   workday         url: https://<tenant>.wdN.myworkdayjobs.com/<Site>
+#   eightfold       url: https://talent.<company>.com   domain: <company>.com
+#   jibe            url: https://careers.<company>.com
+#   phenom          url: https://careers.<company>.com/<region>/<lang>
+#   successfactors  url: https://jobs.<company>.com
+#   greenhouse      board: <board token>
+#   lever           company: <lever slug>
+#   smartrecruiters company: <smartrecruiters id>
+#   pinpoint        url: https://<company>.pinpointhq.com
+#   pagewatch       url: <careers page>   (reads job links straight off a page)
+#
+# `uk_only: true` means every job on that board is assumed to be in the UK
+# (used for small UK-only companies whose listings don't always say where).
+#
+# To add a company: find its job board (open any job advert and look at the
+# address bar), add an entry below, and push. The next run picks it up and
+# the "Source health" table in the README shows whether it worked.
+
+companies:
+  # ---------------------------------------------------------------- Big pharma
+  - name: GSK
+    type: pharma
+    careers_url: https://www.gsk.com/en-gb/careers/early-careers/
+    sources:
+      - type: workday
+        url: https://gsk.wd5.myworkdayjobs.com/GSKCareers
+
+  - name: AstraZeneca
+    type: pharma
+    careers_url: https://careers.astrazeneca.com/
+    sources:
+      - type: workday
+        url: https://astrazeneca.wd3.myworkdayjobs.com/Careers
+      - type: workday            # graduate programmes are posted here
+        url: https://astrazeneca.wd3.myworkdayjobs.com/Emerging-Talent
+
+  - name: Johnson & Johnson
+    type: pharma
+    careers_url: https://www.careers.jnj.com/en/
+    sources:
+      - type: workday
+        url: https://jj.wd5.myworkdayjobs.com/JJ
+
+  - name: AbbVie
+    type: pharma
+    careers_url: https://careers.abbvie.com/en/jobs
+    sources:
+      - type: phenom
+        url: https://careers.abbvie.com/en
+
+  - name: Vertex Pharmaceuticals
+    type: pharma
+    careers_url: https://www.vrtx.com/careers/
+    sources:
+      - type: workday
+        url: https://vrtx.wd501.myworkdayjobs.com/Vertex_Careers
+
+  - name: Pfizer
+    type: pharma
+    careers_url: https://www.pfizer.co.uk/careers
+    sources:
+      - type: workday
+        url: https://pfizer.wd1.myworkdayjobs.com/PfizerCareers
+
+  - name: Novartis
+    type: pharma
+    careers_url: https://www.novartis.com/careers
+    sources:
+      - type: workday
+        url: https://novartis.wd3.myworkdayjobs.com/Novartis_Careers
+
+  - name: Roche
+    type: pharma
+    careers_url: https://careers.roche.com/
+    sources:
+      - type: workday
+        url: https://roche.wd3.myworkdayjobs.com/roche-ext
+
+  - name: Sanofi
+    type: pharma
+    careers_url: https://www.sanofi.com/en/careers
+    sources:
+      - type: workday
+        url: https://sanofi.wd3.myworkdayjobs.com/SanofiCareers
+
+  - name: MSD
+    type: pharma
+    careers_url: https://www.msd-uk.com/careers/
+    sources:
+      - type: workday
+        url: https://msd.wd5.myworkdayjobs.com/SearchJobs
+
+  - name: Bristol Myers Squibb
+    type: pharma
+    careers_url: https://careers.bms.com/
+    sources:
+      - type: workday
+        url: https://bristolmyerssquibb.wd5.myworkdayjobs.com/BMS
+
+  - name: Takeda
+    type: pharma
+    careers_url: https://www.takeda.com/en-gb/careers/graduate-internship-programmes/
+    sources:
+      - type: workday
+        url: https://takeda.wd3.myworkdayjobs.com/External
+
+  - name: Eli Lilly
+    type: pharma
+    careers_url: https://careers.lilly.com/
+    sources:
+      - type: workday
+        url: https://lilly.wd5.myworkdayjobs.com/LLY
+
+  - name: Amgen
+    type: pharma
+    careers_url: https://careers.amgen.com/
+    sources:
+      - type: workday
+        url: https://amgen.wd1.myworkdayjobs.com/Careers
+
+  - name: Gilead
+    type: pharma
+    careers_url: https://www.gilead.com/careers
+    sources:
+      - type: workday
+        url: https://gilead.wd1.myworkdayjobs.com/gileadcareers
+
+  - name: Biogen
+    type: pharma
+    careers_url: https://www.biogen.com/careers.html
+    sources:
+      - type: workday
+        url: https://biibhr.wd3.myworkdayjobs.com/external
+
+  - name: Moderna
+    type: pharma
+    careers_url: https://www.modernatx.com/careers
+    sources:
+      - type: workday
+        url: https://modernatx.wd1.myworkdayjobs.com/M_tx
+
+  - name: CSL (incl. CSL Seqirus)
+    type: pharma
+    careers_url: https://www.csl.com/careers
+    sources:
+      - type: workday
+        url: https://csl.wd1.myworkdayjobs.com/CSL_External
+
+  - name: Ipsen
+    type: pharma
+    careers_url: https://www.ipsen.com/careers/
+    sources:
+      - type: workday
+        url: https://ipsen.wd103.myworkdayjobs.com/Ipsen_Careers
+
+  - name: Daiichi Sankyo
+    type: pharma
+    careers_url: https://www.daiichi-sankyo.co.uk/about-us/who-we-are/career/working-for-daiichi-sankyo/
+    sources:
+      - type: workday
+        url: https://daiichisankyo.wd1.myworkdayjobs.com/DSI
+
+  - name: Regeneron
+    type: pharma
+    careers_url: https://careers.regeneron.com/
+    sources:
+      - type: workday
+        url: https://regeneron.wd1.myworkdayjobs.com/Careers
+
+  - name: Bayer
+    type: pharma
+    careers_url: https://talent.bayer.com/careers
+    sources:
+      - type: eightfold
+        url: https://talent.bayer.com
+        domain: bayer.com
+
+  - name: Boehringer Ingelheim
+    type: pharma
+    careers_url: https://jobs.boehringer-ingelheim.com/
+    sources:
+      - type: successfactors
+        url: https://jobs.boehringer-ingelheim.com
+
+  - name: UCB
+    type: pharma
+    careers_url: https://careers.ucb.com/global/en
+    sources:
+      - type: phenom
+        url: https://careers.ucb.com/global/en
+
+  - name: Haleon
+    type: pharma
+    careers_url: https://www.haleon.com/careers
+    sources:
+      - type: workday
+        url: https://gsknch.wd3.myworkdayjobs.com/GSKCareers
+
+  # ------------------------------------------------ CROs and clinical research
+  - name: Medpace
+    type: cro
+    careers_url: https://www.medpace.com/careers/
+    sources:
+      - type: jibe
+        url: https://careers.medpace.com
+
+  - name: Hammersmith Medicines Research
+    type: cro
+    careers_url: https://www.hmrlondon.com/careers
+    sources:
+      - type: pagewatch
+        url: https://www.hmrlondon.com/careers
+        uk_only: true
+        default_location: London, UK
+
+  - name: IQVIA
+    type: cro
+    careers_url: https://jobs.iqvia.com/en
+    sources:
+      - type: workday
+        url: https://iqvia.wd1.myworkdayjobs.com/IQVIA
+
+  - name: ICON
+    type: cro
+    careers_url: https://careers.iconplc.com/
+    sources:
+      - type: workday
+        url: https://icon.wd3.myworkdayjobs.com/broadbean_external
+
+  - name: Parexel
+    type: cro
+    careers_url: https://jobs.parexel.com/
+    sources:
+      - type: workday
+        url: https://parexel.wd1.myworkdayjobs.com/Parexel_External_Careers
+
+  - name: Syneos Health
+    type: cro
+    careers_url: https://www.syneoshealth.com/careers
+    sources:
+      - type: workday
+        url: https://syneoshealth.wd12.myworkdayjobs.com/Syneos_Health_External_Site
+
+  - name: Thermo Fisher (PPD)
+    type: cro
+    careers_url: https://jobs.thermofisher.com/
+    sources:
+      - type: workday
+        url: https://thermofisher.wd5.myworkdayjobs.com/ThermoFisherCareers
+
+  - name: Fortrea
+    type: cro
+    careers_url: https://careers.fortrea.com/us/en/early-careers-and-internships
+    sources:
+      - type: workday
+        url: https://fortrea.wd1.myworkdayjobs.com/Fortrea
+
+  - name: Labcorp
+    type: cro
+    careers_url: https://careers.labcorp.com/
+    sources:
+      - type: workday
+        url: https://labcorp.wd1.myworkdayjobs.com/External
+
+  - name: Worldwide Clinical Trials
+    type: cro
+    careers_url: https://www.worldwide.com/careers/
+    sources:
+      - type: workday
+        url: https://worldwide.wd1.myworkdayjobs.com/External
+
+  - name: Richmond Pharmacology
+    type: cro
+    careers_url: https://richmondpharmacology.pinpointhq.com/
+    sources:
+      - type: pinpoint
+        url: https://richmondpharmacology.pinpointhq.com
+        uk_only: true
+
+  - name: PSI CRO
+    type: cro
+    careers_url: https://psi-cro.com/careers/
+    sources:
+      - type: pagewatch
+        url: https://psi-cro.com/careers-filter/
+
+  - name: MAC Clinical Research
+    type: cro
+    careers_url: https://www.clinicalresearchjobs.co/
+    sources:
+      - type: pagewatch
+        url: https://www.clinicalresearchjobs.co/
+        uk_only: true
+        default_location: UK
+
+  - name: Quotient Sciences
+    type: cro
+    careers_url: https://www.quotientsciences.com/careers
+    sources:
+      - type: greenhouse
+        board: quotientsciences
+
+  # ------------------------------------------------ Regulatory consultancies
+  - name: Cencora PharmaLex
+    type: consultancy
+    careers_url: https://careers.cencora.com/us/en/united-kingdom-jobs
+    sources:
+      - type: workday
+        url: https://myhrabc.wd5.myworkdayjobs.com/Global

@@ -1,0 +1,78 @@
+name: Check for new roles
+
+on:
+  schedule:
+    - cron: "23 */3 * * *"   # every 3 hours
+  workflow_dispatch:
+    inputs:
+      only:
+        description: "Only check these companies (comma-separated). Leave blank for all."
+        required: false
+        default: ""
+      notify:
+        description: "Open an issue / send alerts for new roles"
+        type: boolean
+        default: true
+  push:
+    paths:
+      - "tracker/**"
+      - "config/**"
+      - "requirements.txt"
+      - ".github/workflows/track.yml"
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: tracker-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  track:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install
+        run: pip install -r requirements.txt
+
+      - name: Check job boards
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ONLY: ${{ inputs.only }}
+          # Code pushes and manual runs with alerts switched off don't send alerts.
+          TRACKER_NOTIFY: ${{ (github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.notify == false)) && '0' || '1' }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+          EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
+        run: python -m tracker run ${ONLY:+--only "$ONLY"}
+
+      - name: Save changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data docs README.md
+          if git diff --cached --quiet; then
+            echo "Nothing new to save."
+            exit 0
+          fi
+          git commit -m "Update openings $(date -u +'%Y-%m-%d %H:%M') UTC"
+          for attempt in 1 2 3; do
+            if git pull --rebase origin "$GITHUB_REF_NAME" && git push origin "HEAD:$GITHUB_REF_NAME"; then
+              exit 0
+            fi
+            sleep $((attempt * 5))
+          done
+          echo "Could not push the update." >&2
+          exit 1

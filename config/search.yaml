@@ -1,0 +1,225 @@
+# What counts as a relevant role. All patterns are Python regular expressions,
+# matched case-insensitively against the job title unless wrapped in (?-i:...).
+
+# The intake year you are applying for. Titles that mention an earlier year
+# only (e.g. "Graduate Programme 2026") are hidden by default as old intakes.
+target_intake_year: 2027
+
+locations:
+  # Country names used for the job boards' own country filters.
+  countries: ["United Kingdom"]
+  # Text that means a job is in one of those countries.
+  match:
+    - 'united kingdom'
+    - '(?-i:\bUK\b)'
+    - '(?-i:\bGBR?\b)'
+    - 'great britain'
+    - '\bengland\b'
+    - '\bscotland\b'
+    - '\bwales\b'
+    - 'northern ireland'
+    - '\blondon\b(?!,?\s*(?:ontario|on\b|canada|ky\b|kentucky))'
+    - '\bcambridge\b(?!,?\s*(?:ma\b|mass|massachusetts|us\b|usa|united states))'
+    - '\b(?:stevenage|macclesfield|maidenhead|uxbridge|slough|high wycombe|welwyn|hatfield|harlow|oxford(?:shire)?|abingdon|milton park|didcot|harwell)\b'
+    - '\b(?:manchester|edinburgh|glasgow|nottingham|leeds|liverpool|speke|sandwich|hertfordshire|surrey|berkshire|buckinghamshire|weybridge|brentford|hammersmith|elstree|bracknell|marlow|woking|crawley|guildford|basingstoke|luton|livingston|dundee|cardiff|belfast|leatherhead|sunbury|chertsey|camberley|cheshire|alderley|stockley park|hayes|feltham|hounslow|egham|staines|watford|hemel hempstead|chester|loughborough|barnard castle|ulverston|irvine|montrose|wrexham|deeside|bristol|southampton|sheffield|norwich|exeter|coventry|leicester|reading|ware|uk remote)\b'
+  # Text that doesn't tell us either way (checked against the full advert).
+  ambiguous:
+    - '\d+\s+locations'
+    - 'multiple locations'
+    - '\bremote\b'
+    - '\beurope\b'
+    - '\bemea\b'
+    - '\bhome[- ]based\b'
+    - '^\s*$'
+
+# Job areas. Priority areas are shown first and trigger alerts.
+categories:
+  - key: regulatory_affairs
+    label: Regulatory Affairs
+    priority: true
+    patterns:
+      - 'regulatory'
+      - '\breg\.?\s*affairs'
+      - '\blabell?ing\b'
+      - '\bsubmissions?\s+(?:associate|specialist|coordinator|assistant|publisher)'
+      - '\bregulatory\s+(?:cmc|operations|submissions?|strategy|intelligence|publishing|writ)'
+  - key: medical_affairs
+    label: Medical Affairs
+    priority: true
+    patterns:
+      - 'medical\s+affairs'
+      - 'medical\s+information'
+      - 'medical\s+science\s+liaison'
+      - '(?-i:\bMSL\b)'
+      - 'medical\s+(?:excellence|evidence|education|insights?|operations|governance|graduate|associate|executive|specialist)'
+      - 'field\s+medical'
+      - 'scientific\s+(?:advis[oe]r|liaison)'
+      - '\bmedical\s+programme'
+  - key: clinical_operations
+    label: Clinical Operations
+    priority: true
+    patterns:
+      - 'clinical\s+operations?'
+      - 'clinical\s+trials?'
+      - 'clinical\s+research'
+      - 'clinical\s+study'
+      - 'clinical\s+project'
+      - 'clinical\s+site'
+      - '(?-i:\bCRAs?\b)'
+      - '(?-i:\bCTAs?\b)'
+      - 'study\s+start[- ]?up'
+      - 'site\s+(?:activation|start[- ]?up|management|monitor|ready|contracts?|engagement)'
+      - '\btrials?\s+(?:coordinator|administrator|assistant|associate|specialist)'
+      - '\bstart[- ]?up\s+(?:specialist|associate|coordinator)'
+      - 'clinical\s+development'
+      - '\bmonitoring\s+associate'
+      - 'patient\s+recruitment'
+  - key: drug_safety
+    label: Drug Safety / PV
+    priority: false
+    patterns:
+      - 'pharmacovigilance'
+      - 'drug\s+safety'
+      - 'patient\s+safety'
+      - '(?-i:\bPV\b)'
+      - 'safety\s+(?:associate|specialist|scientist|case|officer|surveillance)'
+      - 'case\s+processing'
+  - key: medical_writing
+    label: Medical Writing / Comms
+    priority: false
+    patterns:
+      - 'medical\s+writ'
+      - 'scientific\s+writ'
+      - 'medical\s+communications?'
+      - 'med\s*comms'
+  - key: clinical_data
+    label: Clinical Data
+    priority: false
+    patterns:
+      - 'clinical\s+data'
+      - '\bdata\s+(?:management|coordinator)\b'
+      - 'clinical\s+(?:trial\s+)?supplies'
+
+# Label used for graduate programmes that don't fit an area above.
+other_graduate_label: Other Graduate Scheme
+
+# Title words that mean a structured graduate / early-talent scheme.
+scheme_patterns:
+  - '\bgraduates?\b'
+  - '\bgrad\b'
+  - 'future\s+leaders?'
+  - 'early\s+(?:talent|careers?)'
+  - 'emerging\s+talent'
+  - 'leadership\s+(?:development\s+)?program'
+  - 'rotational'
+  - 'development\s+program'
+  - 'trainee\s+program'
+  - 'postgraduate\s+program'
+
+# Title words that suggest an entry-level role.
+entry_patterns:
+  - 'entry[- ]level'
+  - '\btrainee\b'
+  - '\bjunior\b'
+  - '\bapprentice(?:ship)?\b'
+  - '\bassistant\b'
+  - '\bcoordinator\b'
+  - '\badministrator\b'
+  - '\bassociate\b'
+  - '\bofficer\b'
+  - '\btechnician\b'
+  - '(?-i:(?<![A-Za-z])I(?![A-Za-z]))'
+  - '\blevel\s*1\b'
+
+# Title words that mean a role is too senior or needs a professional
+# qualification. These roles are skipped (unless the title is a scheme).
+senior_patterns:
+  - '\bsenior\b'
+  - '\bsr\b\.?'
+  - '\blead\b'
+  - '\bprincipal\b'
+  - '\bmanager\b'
+  - '\bdirector\b'
+  - '\bhead\b'
+  - '(?-i:\bVP\b)'
+  - 'vice\s+president'
+  - '\bchief\b'
+  - '\bexpert\b'
+  - '\bconsultant\b'
+  - '\bpartner\b'
+  - '\bphysician\b'
+  - '\bnurse\b'
+  - '\bpharmacist\b'
+  - '\bdoctor\b'
+  - '(?-i:\bMD\b)'
+  - 'post[- ]?doc'
+  - '\bfellow(?:ship)?\b'
+  - '\bstatistician\b'
+  - '(?-i:\b(?:II|III|IV|V)\b)'
+  - '\blevel\s*[2-9]\b'
+
+# Titles that are never relevant for a final-year student looking for a
+# graduate job (internships, placements, PhD studentships...).
+exclude_patterns:
+  - '\bintern(?:ship)?s?\b'
+  - '\bplacement'
+  - '\bsummer\b'
+  - '\bco[- ]?op\b'
+  - 'year\s+in\s+industry'
+  - '\bundergraduate\b'
+  - '\bstudent\b'
+  - '\bwork\s+experience\b'
+  - '\binsight\s+(?:week|day|programme|program)'
+  - '\bph\.?\s?d\b'
+  - '\bsandwich\s+year\b'
+
+# Graduate schemes in these functions are ignored because they don't suit a
+# pharmacology degree. Delete a line to start tracking that function.
+exclude_functions:
+  - 'engineer'
+  - '\btechnology\b'
+  - '\btech\b'
+  - '\bdigital\b'
+  - '\bsoftware\b'
+  - '(?-i:\bIT\b)'
+  - '\bcyber'
+  - '\bdata\s+scien'
+  - '\bai\b'
+  - '\bfinanc'
+  - '\baccount'
+  - '\bprocurement\b'
+  - '(?-i:\bHR\b)'
+  - 'human\s+resources'
+  - '\bpeople\b'
+  - '\blegal\b'
+  - '\btax\b'
+  - '\baudit\b'
+  - 'supply\s+chain'
+  - '\bmanufacturing\b'
+  - '\bmaintenance\b'
+  - '\belectrical\b'
+  - '\bmechanical\b'
+  - '\bfacilities\b'
+  - '\bprocess\b'
+  - '\bsales\b'
+  - '\blogistics\b'
+
+# Words in a title meaning "register interest now, applications open later".
+register_interest_patterns:
+  - 'register\s+(?:your\s+)?interest'
+  - 'expression\s+of\s+interest'
+  - 'pre[- ]?regist'
+  - 'talent\s+(?:pool|community|network)'
+
+# Search terms used only for job boards that can't be filtered by country.
+fallback_queries:
+  - graduate
+  - regulatory
+  - medical affairs
+  - medical information
+  - clinical operations
+  - clinical trial
+  - clinical research
+  - pharmacovigilance
+  - early talent
+  - entry level

@@ -1,0 +1,76 @@
+# Programmes worth checking by hand. Some open for a short window each year or
+# are advertised on graduate job sites rather than the company job board.
+# Notes come from the listings found while setting this tracker up (Sept 2026);
+# always confirm dates and eligibility on the official page.
+
+programmes:
+  - company: GSK
+    programme: Regulatory Affairs Graduate Programme (UK)
+    area: Regulatory Affairs
+    url: https://www.gsk.com/en-gb/careers/early-careers/graduate-programme/research-development/
+    notes: A "Regulatory Affairs Graduate Programme, UK, 2027" advert (London, New Oxford Street) has been listed. Rotations across areas such as CMC, labelling and the UK & Ireland business.
+  - company: MSD
+    programme: Regulatory Affairs Graduate Programme 2027 (register interest)
+    area: Regulatory Affairs
+    url: https://higherin.com/jobs/43279/msd/register-your-interest-regulatory-affairs-graduate-programme-2027
+    notes: 24 months, two 12-month rotations (International Regulatory CMC and Regulatory Affairs UK), Moorgate, London. For students finishing their degree 2025–2027.
+  - company: MSD
+    programme: Medical Affairs Graduate Programme 2027 (register interest)
+    area: Medical Affairs
+    url: https://higherin.com/jobs/43280/msd/register-your-interest-medical-affairs-graduate-programme-2027
+    notes: 24-month rotational programme in the UK Medical Affairs team.
+  - company: AstraZeneca
+    programme: Medical Graduate Programme
+    area: Medical Affairs
+    url: https://careers.astrazeneca.com/medical-graduate-programme
+    notes: Medical affairs work in specific therapy areas. AstraZeneca posts graduate adverts on its separate "Emerging Talent" job board, which this tracker checks.
+  - company: AstraZeneca
+    programme: R&D Graduate Programme
+    area: Other (R&D)
+    url: https://careers.astrazeneca.com/r-and-d-graduate-programme
+    notes: Two years, three eight-month placements across R&D.
+  - company: Takeda UK
+    programme: Graduate Leadership Development Programme
+    area: Medical Affairs / commercial
+    url: https://www.takeda.com/en-gb/careers/graduate-internship-programmes/
+    notes: Rotations can include Medical Affairs and Market Access.
+  - company: Novartis
+    programme: Regulatory Affairs Postgraduate Program UK
+    area: Regulatory Affairs
+    url: https://www.novartis.com/careers/career-search/job/details/req-10078714-regulatory-affairs-postgraduate-program-uk
+    notes: Two years from January 2027, London. Asks for an MSc, PhD or PharmD, so check eligibility.
+  - company: Bristol Myers Squibb
+    programme: Graduate Regulatory Affairs Programme
+    area: Regulatory Affairs
+    url: https://www.grb.uk.com/graduate-jobs/bristol-myers-squibb-graduate-regulatory-affairs-programme-uxbridge-34553
+    notes: Uxbridge, hybrid. The listing found was for an earlier intake; watch for the 2027 advert.
+  - company: Novo Nordisk
+    programme: Global Graduate Programme
+    area: Various
+    url: https://www.novonordisk.com/careers/early-career-programmes/graduate.html
+    notes: Novo Nordisk's site says applications open 6 December 2026 and close 5 January 2027. Its job board isn't checked automatically.
+  - company: Medpace
+    programme: Entry Level Clinical Research Associate (PACE training)
+    area: Clinical Operations
+    url: https://www.medpace.com/careers/
+    notes: London office-based at first, with Medpace's CRA training programme. Also checked automatically.
+  - company: Hammersmith Medicines Research
+    programme: Careers and apprenticeships
+    area: Clinical Operations
+    url: https://www.hmrlondon.com/careers
+    notes: Early-phase unit in London. Offers a Clinical Trials Specialist apprenticeship with the University of Kent. Page checked automatically.
+  - company: Cencora PharmaLex
+    programme: Trainee, Regulatory Affairs
+    area: Regulatory Affairs
+    url: https://careers.cencora.com/us/en/united-kingdom-jobs
+    notes: Regulatory consultancy that hires trainees; its job board is checked automatically.
+
+links:
+  - name: Bright Network pharma deadlines
+    url: https://www.brightnetwork.co.uk/application-deadlines/jobs/graduate-schemes/pharmaceuticals-science/
+  - name: TARGETjobs medical & healthcare
+    url: https://targetjobs.co.uk/graduate-jobs/medical-healthcare
+  - name: Prospects science graduate schemes
+    url: https://www.prospects.ac.uk/jobs-and-work-experience/job-sectors/science-and-pharmaceuticals/science-graduate-schemes/
+  - name: TOPRA regulatory apprenticeships
+    url: https://www.topra.org/TOPRA/TOPRA_Member/Apprenticeships_in_Regulatory_Affairs.aspx

@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pharma Grad Tracker</title>
+<meta name="description" content="Graduate and entry-level roles in regulatory affairs, medical affairs and clinical operations at pharma companies and CROs.">
+<link rel="alternate" type="application/rss+xml" title="New roles" href="feed.xml">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230b6e4f'/%3E%3Cpath d='M9 17l5 5 9-11' stroke='white' stroke-width='3.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<style>
+:root {
+  --bg: #f6f6f3;
+  --surface: #ffffff;
+  --surface-2: #f0efea;
+  --text: #1c1c1a;
+  --muted: #5e5d58;
+  --border: #e2e0da;
+  --accent: #0b6e4f;
+  --accent-ink: #ffffff;
+  --accent-soft: #e1f0e9;
+  --ra: #2f55c4; --ra-soft: #e6ecfb;
+  --ma: #8b3aa8; --ma-soft: #f3e8f7;
+  --co: #0a7470; --co-soft: #e0f2f1;
+  --ot: #5c5c5c; --ot-soft: #ececec;
+  --warn: #8a5a00; --warn-soft: #fbf0d9;
+  --new: #b7410e; --new-soft: #fde9df;
+  --radius: 12px;
+  --shadow: 0 1px 2px rgba(0,0,0,.05), 0 1px 1px rgba(0,0,0,.03);
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #121311; --surface: #1b1c1a; --surface-2: #242522; --text: #ecece8; --muted: #a4a39c;
+    --border: #30312d; --accent: #3cc493; --accent-ink: #0b1a14; --accent-soft: #173327;
+    --ra: #8fa9ff; --ra-soft: #1f2a4a; --ma: #d69cf0; --ma-soft: #362441;
+    --co: #5fd3cc; --co-soft: #173634; --ot: #bdbdbd; --ot-soft: #2c2c2c;
+    --warn: #f2c35b; --warn-soft: #3a2f14; --new: #ff9a6b; --new-soft: #40241a;
+    --shadow: none; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #121311; --surface: #1b1c1a; --surface-2: #242522; --text: #ecece8; --muted: #a4a39c;
+  --border: #30312d; --accent: #3cc493; --accent-ink: #0b1a14; --accent-soft: #173327;
+  --ra: #8fa9ff; --ra-soft: #1f2a4a; --ma: #d69cf0; --ma-soft: #362441;
+  --co: #5fd3cc; --co-soft: #173634; --ot: #bdbdbd; --ot-soft: #2c2c2c;
+  --warn: #f2c35b; --warn-soft: #3a2f14; --new: #ff9a6b; --new-soft: #40241a;
+  --shadow: none; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--bg); color: var(--text);
+  font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+a { color: inherit; }
+.wrap { max-width: 1040px; margin: 0 auto; padding: 24px 16px 64px; }
+header h1 { font-size: 1.6rem; line-height: 1.2; margin: 0 0 4px; letter-spacing: -.01em; }
+header p { margin: 0; color: var(--muted); }
+.meta-links { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 8px; font-size: .9rem; }
+.meta-links a { color: var(--accent); text-decoration: none; }
+.meta-links a:hover { text-decoration: underline; }
+
+.stats { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 10px; margin: 20px 0; }
+.stat { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 12px 14px; box-shadow: var(--shadow); }
+.stat b { display: block; font-size: 1.5rem; line-height: 1.1; font-variant-numeric: tabular-nums; }
+.stat span { color: var(--muted); font-size: .85rem; }
+
+nav.tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--border); margin-bottom: 16px; overflow-x: auto; }
+nav.tabs button { background: none; border: 0; border-bottom: 2px solid transparent; padding: 10px 12px; font: inherit; color: var(--muted); cursor: pointer; white-space: nowrap; }
+nav.tabs button[aria-selected="true"] { color: var(--text); border-color: var(--accent); font-weight: 600; }
+
+.filters { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 12px; display: grid; gap: 10px; box-shadow: var(--shadow); }
+.row { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.row > .label { font-size: .8rem; color: var(--muted); margin-right: 4px; min-width: 52px; }
+input[type="search"], select, textarea {
+  font: inherit; color: var(--text); background: var(--surface-2); border: 1px solid var(--border);
+  border-radius: 8px; padding: 8px 10px;
+}
+input[type="search"] { flex: 1 1 220px; min-width: 0; }
+.chip { font: inherit; font-size: .85rem; border: 1px solid var(--border); background: var(--surface); color: var(--text); border-radius: 999px; padding: 4px 11px; cursor: pointer; }
+.chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.toggle { display: inline-flex; gap: 6px; align-items: center; font-size: .85rem; color: var(--muted); margin-right: 10px; cursor: pointer; }
+.toolbar { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin: 14px 2px 8px; flex-wrap: wrap; color: var(--muted); font-size: .9rem; }
+
+.list { display: grid; gap: 10px; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px; box-shadow: var(--shadow); display: grid; grid-template-columns: 1fr auto; gap: 8px 14px; }
+.card.closed { opacity: .62; }
+.card h3 { margin: 0; font-size: 1rem; line-height: 1.35; }
+.card h3 a { text-decoration: none; }
+.card h3 a:hover { text-decoration: underline; }
+.company { font-weight: 600; font-size: .9rem; }
+.sub { color: var(--muted); font-size: .85rem; }
+.badges { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 6px; }
+.badge { font-size: .74rem; padding: 2px 8px; border-radius: 999px; background: var(--ot-soft); color: var(--ot); white-space: nowrap; }
+.badge.regulatory_affairs { background: var(--ra-soft); color: var(--ra); }
+.badge.medical_affairs { background: var(--ma-soft); color: var(--ma); }
+.badge.clinical_operations { background: var(--co-soft); color: var(--co); }
+.badge.new { background: var(--new-soft); color: var(--new); font-weight: 600; }
+.badge.good { background: var(--accent-soft); color: var(--accent); }
+.badge.warn { background: var(--warn-soft); color: var(--warn); }
+.mine { display: grid; gap: 6px; align-content: start; justify-items: end; }
+.mine select { padding: 6px 8px; font-size: .85rem; }
+.mine button, .btn { font: inherit; font-size: .8rem; background: none; border: 1px solid var(--border); color: var(--muted); border-radius: 8px; padding: 4px 9px; cursor: pointer; }
+.note { grid-column: 1 / -1; }
+.note textarea { width: 100%; min-height: 64px; resize: vertical; }
+.empty { text-align: center; color: var(--muted); padding: 40px 12px; background: var(--surface); border: 1px dashed var(--border); border-radius: var(--radius); }
+
+table { width: 100%; border-collapse: collapse; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; font-size: .9rem; }
+th, td { text-align: left; padding: 9px 10px; border-bottom: 1px solid var(--border); vertical-align: top; }
+th { font-size: .78rem; color: var(--muted); font-weight: 600; background: var(--surface-2); }
+tr:last-child td { border-bottom: 0; }
+.table-scroll { overflow-x: auto; }
+.ok { color: var(--accent); font-weight: 600; }
+.bad { color: var(--new); font-weight: 600; }
+footer { margin-top: 32px; color: var(--muted); font-size: .82rem; }
+[hidden] { display: none !important; }
+
+@media (max-width: 640px) {
+  .stats { grid-template-columns: repeat(2, minmax(0,1fr)); }
+  .card { grid-template-columns: 1fr; }
+  .mine { justify-items: start; grid-auto-flow: column; justify-content: start; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Pharma Grad Tracker</h1>
+    <p id="subtitle">Graduate and entry-level roles in regulatory affairs, medical affairs and clinical operations.</p>
+    <div class="meta-links">
+      <span id="updated">Loading…</span>
+      <a id="repo-link" href="#">GitHub repo</a>
+      <a href="feed.xml">RSS feed</a>
+    </div>
+  </header>
+
+  <section class="stats" aria-label="Summary">
+    <div class="stat"><b id="s-open">–</b><span>open roles</span></div>
+    <div class="stat"><b id="s-new">–</b><span>new this week</span></div>
+    <div class="stat"><b id="s-schemes">–</b><span>graduate schemes</span></div>
+    <div class="stat"><b id="s-applied">0</b><span>you've applied to</span></div>
+  </section>
+
+  <nav class="tabs" role="tablist">
+    <button role="tab" data-tab="roles" aria-selected="true">Open roles</button>
+    <button role="tab" data-tab="mine" aria-selected="false">My applications</button>
+    <button role="tab" data-tab="watch" aria-selected="false">Programmes to watch</button>
+    <button role="tab" data-tab="status" aria-selected="false">Job board status</button>
+  </nav>
+
+  <section id="tab-roles">
+    <div class="filters">
+      <div class="row">
+        <input type="search" id="q" placeholder="Search company, role or location" aria-label="Search">
+        <select id="sort" aria-label="Sort">
+          <option value="score">Best match</option>
+          <option value="new">Newest first</option>
+          <option value="company">Company A–Z</option>
+        </select>
+      </div>
+      <div class="row" id="area-chips"><span class="label">Area</span></div>
+      <div class="row" id="level-chips"><span class="label">Level</span></div>
+      <div class="row" id="type-chips"><span class="label">Employer</span></div>
+      <div class="row">
+        <label class="toggle"><input type="checkbox" id="only-new"> New this week only</label>
+        <label class="toggle"><input type="checkbox" id="hide-exp"> Hide roles asking for experience</label>
+        <label class="toggle"><input type="checkbox" id="show-old"> Show earlier intakes</label>
+        <label class="toggle"><input type="checkbox" id="show-closed"> Show closed</label>
+      </div>
+    </div>
+    <div class="toolbar"><span id="count"></span></div>
+    <div class="list" id="list"></div>
+  </section>
+
+  <section id="tab-mine" hidden>
+    <p class="sub">Your statuses and notes are saved in this browser only. Export a backup to move them to another device.</p>
+    <div class="row" style="margin: 10px 0 14px">
+      <button class="btn" id="export">Export backup</button>
+      <label class="btn" for="import-file" style="cursor:pointer">Import backup</label>
+      <input type="file" id="import-file" accept="application/json" hidden>
+    </div>
+    <div class="list" id="mine-list"></div>
+  </section>
+
+  <section id="tab-watch" hidden>
+    <p class="sub">Schemes that open at set times of year or are advertised away from company job boards. Check these by hand.</p>
+    <div class="table-scroll"><table id="watch-table"><thead><tr><th>Company</th><th>Programme</th><th>Area</th><th>Notes</th></tr></thead><tbody></tbody></table></div>
+    <p class="sub" id="watch-links" style="margin-top:12px"></p>
+  </section>
+
+  <section id="tab-status" hidden>
+    <p class="sub">Each job board the tracker reads, and whether the last check worked.</p>
+    <div class="table-scroll"><table id="status-table"><thead><tr><th>Company</th><th>Board</th><th>Status</th><th>Jobs read</th><th>Matches</th><th>Notes</th></tr></thead><tbody></tbody></table></div>
+  </section>
+
+  <footer>Checks run every three hours on GitHub Actions. Always confirm details and deadlines on the employer's site.</footer>
+</div>
+
+<script>
+(function () {
+  "use strict";
+  var AREAS = [
+    ["all", "All"], ["regulatory_affairs", "Regulatory"], ["medical_affairs", "Medical"],
+    ["clinical_operations", "Clinical ops"], ["other", "Other"]
+  ];
+  var LEVELS = [["graduate_scheme", "Graduate scheme"], ["entry_level", "Entry level"], ["check", "Check seniority"]];
+  var TYPES = [["all", "All"], ["pharma", "Pharma"], ["cro", "CROs & consultancies"]];
+  var STATUSES = ["", "Interested", "Applying", "Applied", "Online tests", "Interview", "Assessment centre", "Offer", "Rejected", "Not for me"];
+  var TAG_LABELS = {
+    register_interest: ["Register interest", "good"], experience_required: ["Asks for experience", "warn"],
+    graduate_friendly: ["Graduate-friendly", "good"], location_unclear: ["Location unclear", "warn"],
+    old_intake: ["Earlier intake", "warn"]
+  };
+  var PRIORITY = ["regulatory_affairs", "medical_affairs", "clinical_operations"];
+  var STORE_KEY = "grad-tracker.mine.v1";
+  var PREFS_KEY = "grad-tracker.prefs.v1";
+
+  var data = { jobs: [], watchlist: { programmes: [], links: [] }, health: {} };
+  var mine = load(STORE_KEY, {});
+  var prefs = Object.assign({ area: "all", levels: ["graduate_scheme", "entry_level", "check"], type: "all", sort: "score" }, load(PREFS_KEY, {}));
+
+  function load(key, fallback) {
+    try { var v = localStorage.getItem(key); return v ? JSON.parse(v) : fallback; } catch (e) { return fallback; }
+  }
+  function save(key, value) {
+    try { localStorage.setItem(key, JSON.stringify(value)); } catch (e) { /* storage unavailable */ }
+  }
+  function $(id) { return document.getElementById(id); }
+  function el(tag, attrs, children) {
+    var node = document.createElement(tag);
+    Object.keys(attrs || {}).forEach(function (k) {
+      if (k === "text") node.textContent = attrs[k];
+      else if (k === "class") node.className = attrs[k];
+      else node.setAttribute(k, attrs[k]);
+    });
+    (children || []).forEach(function (c) { if (c) node.appendChild(typeof c === "string" ? document.createTextNode(c) : c); });
+    return node;
+  }
+  function daysAgo(iso) {
+    if (!iso) return Infinity;
+    return Math.floor((Date.now() - new Date(iso + "T00:00:00Z").getTime()) / 86400000);
+  }
+  function fmtDate(iso) {
+    if (!iso) return "";
+    var d = new Date(iso.length > 10 ? iso : iso + "T00:00:00Z");
+    return d.toLocaleDateString("en-GB", { day: "numeric", month: "short" });
+  }
+  function areaOf(job) { return PRIORITY.indexOf(job.category) >= 0 ? job.category : "other"; }
+  function isNew(job) { return daysAgo(job.first_seen) < 7; }
+
+  function chips(containerId, options, isOn, onClick) {
+    var box = $(containerId);
+    options.forEach(function (o) {
+      var b = el("button", { class: "chip", type: "button", "aria-pressed": String(isOn(o[0])), text: o[1] });
+      b.addEventListener("click", function () { onClick(o[0]); refreshChips(); render(); });
+      b.dataset.value = o[0];
+      box.appendChild(b);
+    });
+  }
+  function refreshChips() {
+    document.querySelectorAll("#area-chips .chip").forEach(function (b) { b.setAttribute("aria-pressed", String(prefs.area === b.dataset.value)); });
+    document.querySelectorAll("#level-chips .chip").forEach(function (b) { b.setAttribute("aria-pressed", String(prefs.levels.indexOf(b.dataset.value) >= 0)); });
+    document.querySelectorAll("#type-chips .chip").forEach(function (b) { b.setAttribute("aria-pressed", String(prefs.type === b.dataset.value)); });
+    save(PREFS_KEY, prefs);
+  }
+
+  function badge(text, cls) { return el("span", { class: "badge " + (cls || ""), text: text }); }
+
+  function card(job) {
+    var entry = mine[job.id] || {};
+    var badges = [badge(job.category_label, job.category)];
+    var lvl = LEVELS.filter(function (l) { return l[0] === job.level; })[0];
+    if (lvl) badges.push(badge(lvl[1], job.level === "check" ? "warn" : ""));
+    if (isNew(job) && job.status === "open") badges.push(badge("New", "new"));
+    (job.tags || []).forEach(function (t) {
+      if (/^20\d\d$/.test(t)) badges.push(badge(t + " intake", "good"));
+      else if (TAG_LABELS[t]) badges.push(badge(TAG_LABELS[t][0], TAG_LABELS[t][1]));
+    });
+    if (job.status === "closed") badges.push(badge("Closed " + fmtDate(job.closed_on), "warn"));
+
+    var sub = [job.location || "", "found " + fmtDate(job.first_seen)];
+    if (job.posted) sub.push("posted " + fmtDate(job.posted));
+
+    var select = el("select", { "aria-label": "My status for " + job.title });
+    STATUSES.forEach(function (s) {
+      var o = el("option", { value: s, text: s || "My status…" });
+      if ((entry.status || "") === s) o.selected = true;
+      select.appendChild(o);
+    });
+    var noteWrap = el("div", { class: "note" });
+    noteWrap.hidden = !entry.note;
+    var ta = el("textarea", { placeholder: "Notes: deadline, contacts, test dates…", "aria-label": "Notes" });
+    ta.value = entry.note || "";
+    noteWrap.appendChild(ta);
+    var noteBtn = el("button", { type: "button", text: entry.note ? "Hide note" : "Add note" });
+
+    select.addEventListener("change", function () { update(job, { status: select.value }); });
+    ta.addEventListener("input", function () { update(job, { note: ta.value }, true); });
+    noteBtn.addEventListener("click", function () {
+      noteWrap.hidden = !noteWrap.hidden;
+      noteBtn.textContent = noteWrap.hidden ? (ta.value ? "Show note" : "Add note") : "Hide note";
+      if (!noteWrap.hidden) ta.focus();
+    });
+
+    return el("article", { class: "card" + (job.status === "closed" ? " closed" : "") }, [
+      el("div", {}, [
+        el("div", { class: "company", text: job.company }),
+        el("h3", {}, [el("a", { href: job.url, target: "_blank", rel: "noopener", text: job.title })]),
+        el("div", { class: "sub", text: sub.filter(Boolean).join(" · ") }),
+        el("div", { class: "badges" }, badges)
+      ]),
+      el("div", { class: "mine" }, [select, noteBtn]),
+      noteWrap
+    ]);
+  }
+
+  function update(job, patch, quiet) {
+    var entry = Object.assign({}, mine[job.id] || {}, patch, {
+      updated: new Date().toISOString(), title: job.title, company: job.company, url: job.url
+    });
+    if (!entry.status && !entry.note) delete mine[job.id]; else mine[job.id] = entry;
+    save(STORE_KEY, mine);
+    updateStats();
+    if (!quiet) renderMine();
+  }
+
+  function filtered() {
+    var q = $("q").value.trim().toLowerCase();
+    var onlyNew = $("only-new").checked, hideExp = $("hide-exp").checked;
+    var showOld = $("show-old").checked, showClosed = $("show-closed").checked;
+    var out = data.jobs.filter(function (j) {
+      var tags = j.tags || [];
+      if (j.status === "closed" && !showClosed) return false;
+      if (tags.indexOf("old_intake") >= 0 && !showOld) return false;
+      if (hideExp && tags.indexOf("experience_required") >= 0) return false;
+      if (onlyNew && !isNew(j)) return false;
+      if (prefs.area !== "all" && areaOf(j) !== prefs.area) return false;
+      if (prefs.levels.indexOf(j.level) < 0) return false;
+      if (prefs.type === "pharma" && j.company_type !== "pharma") return false;
+      if (prefs.type === "cro" && j.company_type === "pharma") return false;
+      if (q && (j.company + " " + j.title + " " + (j.location || "")).toLowerCase().indexOf(q) < 0) return false;
+      return true;
+    });
+    var s = prefs.sort;
+    out.sort(function (a, b) {
+      if (s === "new") return (b.first_seen || "").localeCompare(a.first_seen || "") || b.score - a.score;
+      if (s === "company") return a.company.localeCompare(b.company) || a.title.localeCompare(b.title);
+      return (b.score - a.score) || (b.first_seen || "").localeCompare(a.first_seen || "");
+    });
+    return out;
+  }
+
+  function render() {
+    var list = $("list");
+    list.textContent = "";
+    var jobs = filtered();
+    $("count").textContent = jobs.length + (jobs.length === 1 ? " role" : " roles") + " match your filters";
+    if (!jobs.length) {
+      list.appendChild(el("div", { class: "empty", text: data.jobs.length ? "No roles match these filters." : "No data yet. The first check runs shortly after setup." }));
+      return;
+    }
+    var frag = document.createDocumentFragment();
+    jobs.forEach(function (j) { frag.appendChild(card(j)); });
+    list.appendChild(frag);
+  }
+
+  function renderMine() {
+    var box = $("mine-list");
+    box.textContent = "";
+    var byId = {};
+    data.jobs.forEach(function (j) { byId[j.id] = j; });
+    var ids = Object.keys(mine).sort(function (a, b) { return (mine[b].updated || "").localeCompare(mine[a].updated || ""); });
+    if (!ids.length) {
+      box.appendChild(el("div", { class: "empty", text: "Set a status on any role and it will appear here." }));
+      return;
+    }
+    ids.forEach(function (id) {
+      var job = byId[id] || {
+        id: id, company: mine[id].company || "", title: mine[id].title || id, url: mine[id].url || "#",
+        category: "", category_label: "No longer listed", level: "", tags: [], status: "closed"
+      };
+      box.appendChild(card(job));
+    });
+  }
+
+  function updateStats() {
+    var open = data.jobs.filter(function (j) { return j.status === "open" && (j.tags || []).indexOf("old_intake") < 0; });
+    $("s-open").textContent = open.length;
+    $("s-new").textContent = open.filter(isNew).length;
+    $("s-schemes").textContent = open.filter(function (j) { return j.level === "graduate_scheme"; }).length;
+    var applied = Object.keys(mine).filter(function (id) {
+      return ["Applied", "Online tests", "Interview", "Assessment centre", "Offer"].indexOf(mine[id].status) >= 0;
+    });
+    $("s-applied").textContent = applied.length;
+  }
+
+  function renderWatch() {
+    var tbody = $("watch-table").querySelector("tbody");
+    (data.watchlist.programmes || []).forEach(function (p) {
+      tbody.appendChild(el("tr", {}, [
+        el("td", { text: p.company || "" }),
+        el("td", {}, [el("a", { href: p.url, target: "_blank", rel: "noopener", text: p.programme || "" })]),
+        el("td", { text: p.area || "" }),
+        el("td", { text: p.notes || "" })
+      ]));
+    });
+    var links = $("watch-links");
+    (data.watchlist.links || []).forEach(function (l, i) {
+      if (i) links.appendChild(document.createTextNode(" · "));
+      links.appendChild(el("a", { href: l.url, target: "_blank", rel: "noopener", text: l.name }));
+    });
+  }
+
+  function renderStatus() {
+    var tbody = $("status-table").querySelector("tbody");
+    Object.keys(data.health || {}).sort().forEach(function (k) {
+      var h = data.health[k];
+      tbody.appendChild(el("tr", {}, [
+        el("td", { text: h.company }), el("td", { text: h.type }),
+        el("td", {}, [el("span", { class: h.ok ? "ok" : "bad", text: h.ok ? "OK" : "Failing" })]),
+        el("td", { text: String(h.scanned || 0) }), el("td", { text: String(h.matches || 0) }),
+        el("td", { class: "sub", text: h.error || h.note || "" })
+      ]));
+    });
+  }
+
+  function setupTabs() {
+    document.querySelectorAll("nav.tabs button").forEach(function (b) {
+      b.addEventListener("click", function () {
+        document.querySelectorAll("nav.tabs button").forEach(function (x) { x.setAttribute("aria-selected", String(x === b)); });
+        ["roles", "mine", "watch", "status"].forEach(function (t) { $("tab-" + t).hidden = t !== b.dataset.tab; });
+        if (b.dataset.tab === "mine") renderMine();
+      });
+    });
+  }
+
+  function setupBackup() {
+    $("export").addEventListener("click", function () {
+      var blob = new Blob([JSON.stringify(mine, null, 1)], { type: "application/json" });
+      var a = el("a", { href: URL.createObjectURL(blob), download: "grad-tracker-backup.json" });
+      document.body.appendChild(a); a.click(); a.remove();
+    });
+    $("import-file").addEventListener("change", function (e) {
+      var file = e.target.files[0];
+      if (!file) return;
+      file.text().then(function (txt) {
+        try {
+          var incoming = JSON.parse(txt);
+          Object.keys(incoming).forEach(function (k) { mine[k] = incoming[k]; });
+          save(STORE_KEY, mine); updateStats(); renderMine(); render();
+        } catch (err) { alert("That file isn't a tracker backup."); }
+      });
+    });
+  }
+
+  function init() {
+    chips("area-chips", AREAS, function (v) { return prefs.area === v; }, function (v) { prefs.area = v; });
+    chips("level-chips", LEVELS, function (v) { return prefs.levels.indexOf(v) >= 0; }, function (v) {
+      var i = prefs.levels.indexOf(v);
+      if (i >= 0) prefs.levels.splice(i, 1); else prefs.levels.push(v);
+    });
+    chips("type-chips", TYPES, function (v) { return prefs.type === v; }, function (v) { prefs.type = v; });
+    $("sort").value = prefs.sort;
+    $("sort").addEventListener("change", function () { prefs.sort = $("sort").value; save(PREFS_KEY, prefs); render(); });
+    ["q", "only-new", "hide-exp", "show-old", "show-closed"].forEach(function (id) {
+      $(id).addEventListener(id === "q" ? "input" : "change", render);
+    });
+    setupTabs();
+    setupBackup();
+
+    fetch("data/jobs.json", { cache: "no-store" }).then(function (r) {
+      if (!r.ok) throw new Error(r.status);
+      return r.json();
+    }).then(function (d) {
+      data = d;
+      if (d.generated) $("updated").textContent = "Refreshed " + new Date(d.generated).toLocaleString("en-GB", { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" });
+      if (d.repo) $("repo-link").href = "https://github.com/" + d.repo;
+      updateStats(); render(); renderWatch(); renderStatus();
+    }).catch(function () {
+      $("updated").textContent = "Couldn't load the data file.";
+      render();
+    });
+  }
+  init();
+})();
+</script>
+</body>
+</html>
