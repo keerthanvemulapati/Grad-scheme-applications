@@ -68,77 +68,25 @@ This section is rewritten automatically on every run.
 
 <!-- TRACKER:START -->
 
-**Last refreshed:** 24 Sep 2026, 09:44 UTC · **49 open roles** at 15 companies · [Open the dashboard](https://keerthanvemulapati.github.io/Grad-scheme-applications/)
+**Last refreshed:** 24 Sep 2026, 09:49 UTC · **33 open roles** at 14 companies · [Open the dashboard](https://keerthanvemulapati.github.io/Grad-scheme-applications/)
 
 | | Regulatory Affairs | Medical Affairs | Clinical Operations | Other areas |
 |---|---|---|---|---|
 | Graduate scheme | 1 | 0 | 0 | 4 |
-| Entry level | 2 | 0 | 24 | 3 |
-| Check seniority | 2 | 1 | 11 | 1 |
+| Entry level | 1 | 0 | 17 | 3 |
+| Check seniority | 1 | 1 | 5 | 0 |
 
-### New in the last 7 days (49)
+### New in the last 7 days (0)
 
-| Company | Role | Area | Level | Location | Found |
-|---|---|---|---|---|---|
-| GSK | [Regulatory Affairs Graduate Programme, UK, 2027](https://gsk.wd5.myworkdayjobs.com/en-US/GSKCareers/job/UK--London--New-Oxford-Street/Regulatory-Affairs-Graduate-Programme--UK--2027_448376) <sub>2027</sub> | Regulatory Affairs | Graduate scheme | UK – London – New Oxford Street | 24 Sep |
-| Medpace | [Clinical Trial Assistant - (Hungarian Speaking)](https://careers.medpace.com/jobs/12948?lang=en-us) <sub>graduate-friendly</sub> | Clinical Operations | Entry level | London, United Kingdom | 24 Sep |
-| Medpace | [Life Sciences - Clinical Research - Virtual Information Session](https://careers.medpace.com/jobs/12992?lang=en-us) <sub>graduate-friendly</sub> | Clinical Operations | Entry level | London, United Kingdom | 24 Sep |
-| AstraZeneca | [Clinical Research Associate](https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/Field-UK/Clinical-Research-Associate_R-260336) | Clinical Operations | Entry level | Field-UK | 24 Sep |
-| Fortrea | [Clinical Research Associate I](https://fortrea.wd1.myworkdayjobs.com/en-US/Fortrea/job/Maidenhead/Clinical-Research-Associate-I_251342) | Clinical Operations | Entry level | Maidenhead | 24 Sep |
-| Fortrea | [Unblinded CRA I](https://fortrea.wd1.myworkdayjobs.com/en-US/Fortrea/job/Maidenhead/Unblinded-CRA-I_264861-1) | Clinical Operations | Entry level | Maidenhead | 24 Sep |
-| ICON | [Patient Recruitment Associate I](https://icon.wd3.myworkdayjobs.com/en-US/broadbean_external/job/UK-Warwickshire/Patient-Recruitment-Associate-I_JR156686-1) | Clinical Operations | Entry level | UK, Warwickshire | 24 Sep |
-| ICON | [Clinical Site Associate](https://icon.wd3.myworkdayjobs.com/en-US/broadbean_external/job/UK-Reading/Clinical-Site-Associate_JR156896) | Clinical Operations | Entry level | UK, Reading | 24 Sep |
-| ICON | [Clinical Site Contracting Coordinator](https://icon.wd3.myworkdayjobs.com/en-US/broadbean_external/job/Regional-Great-Britain-Northern-Ireland/Clinical-Site-Contracting-Coordinator_JR157722) | Clinical Operations | Entry level | Regional Great Britain (Northern Irelan… | 24 Sep |
-| IQVIA | [Clinical Research Associate](https://iqvia.wd1.myworkdayjobs.com/en-US/IQVIA/job/Reading-Berkshire-United-Kingdom/Clinical-Research-Associate---Ireland_R1514135) | Clinical Operations | Entry level | Reading, Berkshire, United Kingdom; Oxf… | 24 Sep |
-| MSD | [Clinical Research Associate - North West England](https://msd.wd5.myworkdayjobs.com/en-US/SearchJobs/job/GBR---London---London-Moorgate-WeWork/Clinical-Research-Associate---North-West-England_R416129) | Clinical Operations | Entry level | GBR - London - London (Moorgate WeWork) | 24 Sep |
-| Novartis | [Project Coordinator - Global Clinical Operations](https://novartis.wd3.myworkdayjobs.com/en-US/Novartis_Careers/job/London-The-Westworks/Project-Coordinator---Global-Clinical-Operations_REQ-10087071-1) | Clinical Operations | Entry level | London (The Westworks) | 24 Sep |
-| Thermo Fisher (PPD) | [Assistant CRA](https://thermofisher.wd5.myworkdayjobs.com/en-US/ThermoFisherCareers/job/Remote-United-Kingdom/Assistant-CRA_R-01339167) | Clinical Operations | Entry level | Remote, United Kingdom | 24 Sep |
-| Thermo Fisher (PPD) | [Clinical Trial Coordinator - Glasgow](https://thermofisher.wd5.myworkdayjobs.com/en-US/ThermoFisherCareers/job/Bellshill-United-Kingdom/Clinical-Trial-Coordinator---Glasgow_R-01348797) | Clinical Operations | Entry level | Bellshill, United Kingdom | 24 Sep |
-| Worldwide Clinical Trials | [Clinical Trials Associate - UK or Serbia - Remote](https://worldwide.wd1.myworkdayjobs.com/en-US/External/job/Belgrade-Serbia/Clinical-Trials-Associate---UK-or-Serbia---Remote_JR102731-1) | Clinical Operations | Entry level | Belgrade, Serbia; England, United Kingd… | 24 Sep |
-| Medpace | [Clinical Project Coordinator](https://careers.medpace.com/jobs/11800?lang=en-us) | Clinical Operations | Entry level | London, United Kingdom | 24 Sep |
-| Medpace | [Clinical Trial Site Relationship Coordinator (Finnish Speaking)](https://careers.medpace.com/jobs/12724?lang=en-us) | Clinical Operations | Entry level | London, United Kingdom | 24 Sep |
-| Medpace | [Experienced Patient Recruitment Coordinator](https://careers.medpace.com/jobs/11817?lang=en-us) | Clinical Operations | Entry level | London, United Kingdom | 24 Sep |
-| Medpace | [Regulatory Submissions Coordinator (Study Start Up)](https://careers.medpace.com/jobs/12653?lang=en-us) | Regulatory Affairs | Entry level | London, United Kingdom | 24 Sep |
-| Medpace | [Clinical Trial Site Relationship Coordinator (Polish Speaking)](https://careers.medpace.com/jobs/12727?lang=en-us) | Clinical Operations | Entry level | London, United Kingdom | 24 Sep |
-| Medpace | [Clinical Trial Site Relationship Coordinator (German Speaking)](https://careers.medpace.com/jobs/12725?lang=en-us) | Clinical Operations | Entry level | London, United Kingdom | 24 Sep |
-| Medpace | [Entry Level - Clinical Research Associate](https://careers.medpace.com/jobs/11844?lang=en-us) | Clinical Operations | Entry level | London, United Kingdom | 24 Sep |
-| Medpace | [Clinical Trial Site Relationship Coordinator (Hungarian Speaking)](https://careers.medpace.com/jobs/12718?lang=en-us) | Clinical Operations | Entry level | London, United Kingdom | 24 Sep |
-| Medpace | [Clinical Trial Site Relationship Coordinator (Italian Speaking)](https://careers.medpace.com/jobs/12807?lang=en-us) | Clinical Operations | Entry level | London, United Kingdom | 24 Sep |
-| Amgen | [Product Owner - Clinical Trial Supplier Enablement](https://amgen.wd1.myworkdayjobs.com/en-US/Careers/job/United-Kingdom---Cambridge/Product-Owner---Clinical-Trial-Supplier-Enablement_R-251395-1) | Clinical Operations | Check seniority | United Kingdom - Cambridge; United King… | 24 Sep |
-| ICON | [CRA](https://icon.wd3.myworkdayjobs.com/en-US/broadbean_external/job/UK-Reading/CRA_JR146722) | Clinical Operations | Check seniority | UK, Reading; UK, Livingston; UK, Swansea | 24 Sep |
-| ICON | [Site Contract and Budget Specialist 4](https://icon.wd3.myworkdayjobs.com/en-US/broadbean_external/job/Regional-Great-Britain-Northern-Ireland/Site-Contract-and-Budget-Specialist-4_JR159465) | Clinical Operations | Check seniority | Regional Great Britain (Northern Irelan… | 24 Sep |
-| IQVIA | [Experienced CRA - Single Sponsor Dedicated](https://iqvia.wd1.myworkdayjobs.com/en-US/IQVIA/job/Reading-Berkshire-United-Kingdom/Experienced-CRA---Single-Sponsor-Dedicated_R1524544) | Clinical Operations | Check seniority | Reading, Berkshire, United Kingdom | 24 Sep |
-| Johnson & Johnson | [Medical Affairs Specialist](https://jj.wd5.myworkdayjobs.com/en-US/JJ/job/Brussels-Brussels-Capital-Region-Belgium/Medical-Affairs-Specialist_R-018387) | Medical Affairs | Check seniority | Brussels, Brussels-Capital Region, Belg… | 24 Sep |
-| Syneos Health | [CRA - Future Roles (UK)](https://syneoshealth.wd12.myworkdayjobs.com/en-US/Syneos_Health_External_Site/job/GBR-London-Hybrid/CRA---Future-Roles--UK-_25106983) | Clinical Operations | Check seniority | GBR-London-Hybrid | 24 Sep |
-| Syneos Health | [CRA UK](https://syneoshealth.wd12.myworkdayjobs.com/en-US/Syneos_Health_External_Site/job/GBR-Remote/CRA-UK_25112022) | Clinical Operations | Check seniority | GBR-Remote | 24 Sep |
-| Medpace | [Experienced CRA (multi-sponsor, multi-therapeutic, home-based and office-based positions…](https://careers.medpace.com/jobs/11828?lang=en-us) | Clinical Operations | Check seniority | United Kingdom | 24 Sep |
-| Medpace | [Clinical Research Psychiatrist](https://careers.medpace.com/jobs/12220?lang=en-us) | Clinical Operations | Check seniority | London, United Kingdom | 24 Sep |
-| Medpace | [NHS and University Clinical Trial Professionals - Career Event: Clinical Trial Management…](https://careers.medpace.com/jobs/12960?lang=en-us) | Clinical Operations | Check seniority | London, United Kingdom | 24 Sep |
-| UCB | [EU Labeling, Advertising and Promotion Scientist (UK)](https://careers.ucb.com/global/en/job/93534) | Regulatory Affairs | Check seniority | Slough, Berkshire, United Kingdom | 24 Sep |
-| ICON | [Clinical Research Associate](https://icon.wd3.myworkdayjobs.com/en-US/broadbean_external/job/UK-Reading/CRA2---sponsor-dedicated_JR157317) <sub>asks for experience</sub> | Clinical Operations | Entry level | UK, Reading | 24 Sep |
-| ICON | [Clinical Research Associate](https://icon.wd3.myworkdayjobs.com/en-US/broadbean_external/job/UK-Livingston/Clinical-Research-Associate_JR157570) <sub>asks for experience</sub> | Clinical Operations | Entry level | UK, Livingston | 24 Sep |
-| Medpace | [Experienced Regulatory Submissions Coordinator](https://careers.medpace.com/jobs/12852?lang=en-us) <sub>asks for experience</sub> | Regulatory Affairs | Entry level | Stirling, United Kingdom | 24 Sep |
-| Haleon | [REGISTER YOUR INTEREST: Early Talent UK Opportunities, 2027](https://gsknch.wd3.myworkdayjobs.com/en-US/GSKCareers/job/UK---London/REGISTER-YOUR-INTEREST--Early-Talent-UK-Opportunities--2027_540127) <sub>2027, register interest</sub> | Other Graduate Scheme | Graduate scheme | UK - London | 24 Sep |
-| GSK | [Communications and Government Affairs Graduate Programme, UK, 2027](https://gsk.wd5.myworkdayjobs.com/en-US/GSKCareers/job/UK--London--New-Oxford-Street/Communications-and-Government-Affairs-Graduate-Programme--UK--2027_448163) <sub>2027</sub> | Other Graduate Scheme | Graduate scheme | UK – London – New Oxford Street | 24 Sep |
-| GSK | [Quality Science Graduate Programme – Barnard Castle, UK, 2027](https://gsk.wd5.myworkdayjobs.com/en-US/GSKCareers/job/UK---County-Durham---Barnard-Castle/Quality-Science-Graduate-Programme---Barnard-Castle--UK--2027_448225) <sub>2027</sub> | Other Graduate Scheme | Graduate scheme | UK - County Durham - Barnard Castle | 24 Sep |
-| GSK | [Quality Science Graduate Programme – Ware, UK, 2027](https://gsk.wd5.myworkdayjobs.com/en-US/GSKCareers/job/UK---Hertfordshire---Ware/Quality-Science-Graduate-Programme---Ware--UK--2027_448227) <sub>2027</sub> | Other Graduate Scheme | Graduate scheme | UK - Hertfordshire - Ware | 24 Sep |
-| Fortrea | [Site Start-Up Specialist](https://fortrea.wd1.myworkdayjobs.com/en-US/Fortrea/job/Maidenhead/Site-Start-Up-Specialist_251030) <sub>asks for experience</sub> | Clinical Operations | Check seniority | Maidenhead; Warsaw; Dublin | 24 Sep |
-| IQVIA | [Clinical Independent Rater for Clinical Trial - Polish Speaking](https://iqvia.wd1.myworkdayjobs.com/en-US/IQVIA/job/Warsaw-Poland/Clinical-Independent-Rater---Polish-Speaking_R1565158) <sub>asks for experience</sub> | Clinical Operations | Check seniority | Warsaw, Poland; Noumea, France; Taucha,… | 24 Sep |
-| IQVIA | [Freelance Site Activation Specialist (Study Start-Up / Regulatory Submissions) – UK Remote](https://iqvia.wd1.myworkdayjobs.com/en-US/IQVIA/job/London-United-Kingdom/Freelance-Site-Activation-Specialist--Study-Start-Up---Regulatory-Submissions----UK-Remote_R1565336) <sub>asks for experience</sub> | Regulatory Affairs | Check seniority | London, United Kingdom; Edinburgh, Scot… | 24 Sep |
-| Medpace | [Clinical Safety Coordinator - Pharmacovigilance / Drug Safety](https://careers.medpace.com/jobs/12176?lang=en-us) | Drug Safety / PV | Entry level | Stirling, United Kingdom | 24 Sep |
-| Medpace | [Project Assistant - Clinical Safety & Pharmacovigilance (office based in Stirling)](https://careers.medpace.com/jobs/12183?lang=en-us) | Drug Safety / PV | Entry level | Stirling, United Kingdom | 24 Sep |
-| Medpace | [Clinical Safety Coordinator - Pharmacovigilance / Drug Safety](https://careers.medpace.com/jobs/12866?lang=en-us) | Drug Safety / PV | Entry level | London, United Kingdom | 24 Sep |
-| Worldwide Clinical Trials | [Pharmacovigilance Specialist - US - Remote](https://worldwide.wd1.myworkdayjobs.com/en-US/External/job/Durham-North-Carolina/Pharmacovigilance-Specialist---US---Remote_JR102334) | Drug Safety / PV | Check seniority | Durham, North Carolina; Brasilia, Brazi… | 24 Sep |
+_Nothing yet. Everything below was already open when the tracker started; new postings will appear here._
 
-### Regulatory Affairs (5)
+### Regulatory Affairs (3)
 
 | Company | Role | Level | Location | Found |
 |---|---|---|---|---|
 | GSK | [Regulatory Affairs Graduate Programme, UK, 2027](https://gsk.wd5.myworkdayjobs.com/en-US/GSKCareers/job/UK--London--New-Oxford-Street/Regulatory-Affairs-Graduate-Programme--UK--2027_448376) <sub>2027</sub> | Graduate scheme | UK – London – New Oxford Street | 24 Sep |
 | Medpace | [Regulatory Submissions Coordinator (Study Start Up)](https://careers.medpace.com/jobs/12653?lang=en-us) | Entry level | London, United Kingdom | 24 Sep |
 | UCB | [EU Labeling, Advertising and Promotion Scientist (UK)](https://careers.ucb.com/global/en/job/93534) | Check seniority | Slough, Berkshire, United Kingdom | 24 Sep |
-| Medpace | [Experienced Regulatory Submissions Coordinator](https://careers.medpace.com/jobs/12852?lang=en-us) <sub>asks for experience</sub> | Entry level | Stirling, United Kingdom | 24 Sep |
-| IQVIA | [Freelance Site Activation Specialist (Study Start-Up / Regulatory Submissions) – UK Remote](https://iqvia.wd1.myworkdayjobs.com/en-US/IQVIA/job/London-United-Kingdom/Freelance-Site-Activation-Specialist--Study-Start-Up---Regulatory-Submissions----UK-Remote_R1565336) <sub>asks for experience</sub> | Check seniority | London, United Kingdom; Edinburgh, Scot… | 24 Sep |
 
 ### Medical Affairs (1)
 
@@ -146,11 +94,10 @@ This section is rewritten automatically on every run.
 |---|---|---|---|---|
 | Johnson & Johnson | [Medical Affairs Specialist](https://jj.wd5.myworkdayjobs.com/en-US/JJ/job/Brussels-Brussels-Capital-Region-Belgium/Medical-Affairs-Specialist_R-018387) | Check seniority | Brussels, Brussels-Capital Region, Belg… | 24 Sep |
 
-### Clinical Operations (35)
+### Clinical Operations (22)
 
 | Company | Role | Level | Location | Found |
 |---|---|---|---|---|
-| Medpace | [Clinical Trial Assistant - (Hungarian Speaking)](https://careers.medpace.com/jobs/12948?lang=en-us) <sub>graduate-friendly</sub> | Entry level | London, United Kingdom | 24 Sep |
 | Medpace | [Life Sciences - Clinical Research - Virtual Information Session](https://careers.medpace.com/jobs/12992?lang=en-us) <sub>graduate-friendly</sub> | Entry level | London, United Kingdom | 24 Sep |
 | AstraZeneca | [Clinical Research Associate](https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/Field-UK/Clinical-Research-Associate_R-260336) | Entry level | Field-UK | 24 Sep |
 | Fortrea | [Clinical Research Associate I](https://fortrea.wd1.myworkdayjobs.com/en-US/Fortrea/job/Maidenhead/Clinical-Research-Associate-I_251342) | Entry level | Maidenhead | 24 Sep |
@@ -161,32 +108,20 @@ This section is rewritten automatically on every run.
 | IQVIA | [Clinical Research Associate](https://iqvia.wd1.myworkdayjobs.com/en-US/IQVIA/job/Reading-Berkshire-United-Kingdom/Clinical-Research-Associate---Ireland_R1514135) | Entry level | Reading, Berkshire, United Kingdom; Oxf… | 24 Sep |
 | MSD | [Clinical Research Associate - North West England](https://msd.wd5.myworkdayjobs.com/en-US/SearchJobs/job/GBR---London---London-Moorgate-WeWork/Clinical-Research-Associate---North-West-England_R416129) | Entry level | GBR - London - London (Moorgate WeWork) | 24 Sep |
 | Medpace | [Clinical Project Coordinator](https://careers.medpace.com/jobs/11800?lang=en-us) | Entry level | London, United Kingdom | 24 Sep |
-| Medpace | [Clinical Trial Site Relationship Coordinator (Finnish Speaking)](https://careers.medpace.com/jobs/12724?lang=en-us) | Entry level | London, United Kingdom | 24 Sep |
-| Medpace | [Clinical Trial Site Relationship Coordinator (German Speaking)](https://careers.medpace.com/jobs/12725?lang=en-us) | Entry level | London, United Kingdom | 24 Sep |
-| Medpace | [Clinical Trial Site Relationship Coordinator (Hungarian Speaking)](https://careers.medpace.com/jobs/12718?lang=en-us) | Entry level | London, United Kingdom | 24 Sep |
-| Medpace | [Clinical Trial Site Relationship Coordinator (Italian Speaking)](https://careers.medpace.com/jobs/12807?lang=en-us) | Entry level | London, United Kingdom | 24 Sep |
-| Medpace | [Clinical Trial Site Relationship Coordinator (Polish Speaking)](https://careers.medpace.com/jobs/12727?lang=en-us) | Entry level | London, United Kingdom | 24 Sep |
 | Medpace | [Entry Level - Clinical Research Associate](https://careers.medpace.com/jobs/11844?lang=en-us) | Entry level | London, United Kingdom | 24 Sep |
-| Medpace | [Experienced Patient Recruitment Coordinator](https://careers.medpace.com/jobs/11817?lang=en-us) | Entry level | London, United Kingdom | 24 Sep |
 | Novartis | [Project Coordinator - Global Clinical Operations](https://novartis.wd3.myworkdayjobs.com/en-US/Novartis_Careers/job/London-The-Westworks/Project-Coordinator---Global-Clinical-Operations_REQ-10087071-1) | Entry level | London (The Westworks) | 24 Sep |
 | Thermo Fisher (PPD) | [Assistant CRA](https://thermofisher.wd5.myworkdayjobs.com/en-US/ThermoFisherCareers/job/Remote-United-Kingdom/Assistant-CRA_R-01339167) | Entry level | Remote, United Kingdom | 24 Sep |
 | Thermo Fisher (PPD) | [Clinical Trial Coordinator - Glasgow](https://thermofisher.wd5.myworkdayjobs.com/en-US/ThermoFisherCareers/job/Bellshill-United-Kingdom/Clinical-Trial-Coordinator---Glasgow_R-01348797) | Entry level | Bellshill, United Kingdom | 24 Sep |
 | Worldwide Clinical Trials | [Clinical Trials Associate - UK or Serbia - Remote](https://worldwide.wd1.myworkdayjobs.com/en-US/External/job/Belgrade-Serbia/Clinical-Trials-Associate---UK-or-Serbia---Remote_JR102731-1) | Entry level | Belgrade, Serbia; England, United Kingd… | 24 Sep |
-| Amgen | [Product Owner - Clinical Trial Supplier Enablement](https://amgen.wd1.myworkdayjobs.com/en-US/Careers/job/United-Kingdom---Cambridge/Product-Owner---Clinical-Trial-Supplier-Enablement_R-251395-1) | Check seniority | United Kingdom - Cambridge; United King… | 24 Sep |
 | ICON | [CRA](https://icon.wd3.myworkdayjobs.com/en-US/broadbean_external/job/UK-Reading/CRA_JR146722) | Check seniority | UK, Reading; UK, Livingston; UK, Swansea | 24 Sep |
-| ICON | [Site Contract and Budget Specialist 4](https://icon.wd3.myworkdayjobs.com/en-US/broadbean_external/job/Regional-Great-Britain-Northern-Ireland/Site-Contract-and-Budget-Specialist-4_JR159465) | Check seniority | Regional Great Britain (Northern Irelan… | 24 Sep |
-| IQVIA | [Experienced CRA - Single Sponsor Dedicated](https://iqvia.wd1.myworkdayjobs.com/en-US/IQVIA/job/Reading-Berkshire-United-Kingdom/Experienced-CRA---Single-Sponsor-Dedicated_R1524544) | Check seniority | Reading, Berkshire, United Kingdom | 24 Sep |
-| Medpace | [Clinical Research Psychiatrist](https://careers.medpace.com/jobs/12220?lang=en-us) | Check seniority | London, United Kingdom | 24 Sep |
-| Medpace | [Experienced CRA (multi-sponsor, multi-therapeutic, home-based and office-based positions…](https://careers.medpace.com/jobs/11828?lang=en-us) | Check seniority | United Kingdom | 24 Sep |
 | Medpace | [NHS and University Clinical Trial Professionals - Career Event: Clinical Trial Management…](https://careers.medpace.com/jobs/12960?lang=en-us) | Check seniority | London, United Kingdom | 24 Sep |
 | Syneos Health | [CRA - Future Roles (UK)](https://syneoshealth.wd12.myworkdayjobs.com/en-US/Syneos_Health_External_Site/job/GBR-London-Hybrid/CRA---Future-Roles--UK-_25106983) | Check seniority | GBR-London-Hybrid | 24 Sep |
 | Syneos Health | [CRA UK](https://syneoshealth.wd12.myworkdayjobs.com/en-US/Syneos_Health_External_Site/job/GBR-Remote/CRA-UK_25112022) | Check seniority | GBR-Remote | 24 Sep |
 | ICON | [Clinical Research Associate](https://icon.wd3.myworkdayjobs.com/en-US/broadbean_external/job/UK-Reading/CRA2---sponsor-dedicated_JR157317) <sub>asks for experience</sub> | Entry level | UK, Reading | 24 Sep |
 | ICON | [Clinical Research Associate](https://icon.wd3.myworkdayjobs.com/en-US/broadbean_external/job/UK-Livingston/Clinical-Research-Associate_JR157570) <sub>asks for experience</sub> | Entry level | UK, Livingston | 24 Sep |
 | Fortrea | [Site Start-Up Specialist](https://fortrea.wd1.myworkdayjobs.com/en-US/Fortrea/job/Maidenhead/Site-Start-Up-Specialist_251030) <sub>asks for experience</sub> | Check seniority | Maidenhead; Warsaw; Dublin | 24 Sep |
-| IQVIA | [Clinical Independent Rater for Clinical Trial - Polish Speaking](https://iqvia.wd1.myworkdayjobs.com/en-US/IQVIA/job/Warsaw-Poland/Clinical-Independent-Rater---Polish-Speaking_R1565158) <sub>asks for experience</sub> | Check seniority | Warsaw, Poland; Noumea, France; Taucha,… | 24 Sep |
 
-### Other roles worth a look (8)
+### Other roles worth a look (7)
 
 <details><summary>Drug safety, clinical data, medical writing and other graduate schemes</summary>
 
@@ -199,13 +134,12 @@ This section is rewritten automatically on every run.
 | Medpace | [Clinical Safety Coordinator - Pharmacovigilance / Drug Safety](https://careers.medpace.com/jobs/12176?lang=en-us) | Drug Safety / PV | Entry level | Stirling, United Kingdom | 24 Sep |
 | Medpace | [Clinical Safety Coordinator - Pharmacovigilance / Drug Safety](https://careers.medpace.com/jobs/12866?lang=en-us) | Drug Safety / PV | Entry level | London, United Kingdom | 24 Sep |
 | Medpace | [Project Assistant - Clinical Safety & Pharmacovigilance (office based in Stirling)](https://careers.medpace.com/jobs/12183?lang=en-us) | Drug Safety / PV | Entry level | Stirling, United Kingdom | 24 Sep |
-| Worldwide Clinical Trials | [Pharmacovigilance Specialist - US - Remote](https://worldwide.wd1.myworkdayjobs.com/en-US/External/job/Durham-North-Carolina/Pharmacovigilance-Specialist---US---Remote_JR102334) | Drug Safety / PV | Check seniority | Durham, North Carolina; Brasilia, Brazi… | 24 Sep |
 
 </details>
 
 ### Earlier intakes and closed roles
 
-<details><summary>0 earlier-intake adverts still up, 21 closed recently</summary>
+<details><summary>0 earlier-intake adverts still up, 20 closed recently</summary>
 
 **Closed recently**
 
@@ -216,7 +150,6 @@ This section is rewritten automatically on every run.
 | MSD | [Clinical Research Associate (CRA)](https://msd.wd5.myworkdayjobs.com/en-US/SearchJobs/job/AUS---New-South-Wales---Macquarie-Park/Clinical-Research-Associate--CRA-_R417178-1) | 24 Sep |
 | PSI CRO | [Clinical Trial Liaison (Oncology)](https://jobs.smartrecruiters.com/PSICRO/744000149413559) <sub>location unclear</sub> | 24 Sep |
 | Regeneron | [Clinical Study Specialist](https://regeneron.wd1.myworkdayjobs.com/en-US/Careers/job/Uxbridge1/Clinical-Study-Specialist_R50053) | 24 Sep |
-| Regeneron | [Medical Specialist I-Allergy/ENT-Seattle, Tacoma, WA & Anchorage, AK](https://regeneron.wd1.myworkdayjobs.com/en-US/Careers/job/Remote---United-States/Medical-Specialist-I-Allergy-ENT-Seattle--Tacoma--WA---Anchorage--AK_R50509) <sub>location unclear</sub> | 24 Sep |
 | Thermo Fisher (PPD) | [Trial Delivery Specialist/ Clinical Trial Coordination, FSP](https://thermofisher.wd5.myworkdayjobs.com/en-US/ThermoFisherCareers/job/Remote-Poland/Clinical-Trial-Coordinator--FSP_R-01326868) <sub>location unclear</sub> | 24 Sep |
 | Thermo Fisher (PPD) | [Clinical Research Associate (CRA) - All Levels](https://thermofisher.wd5.myworkdayjobs.com/en-US/ThermoFisherCareers/job/Remote-Turkey/Clinical-Research-Associate--CRA----All-Levels_R-01340398) <sub>location unclear</sub> | 24 Sep |
 | Thermo Fisher (PPD) | [Drug Safety Specialist (FSP) - Day Shift](https://thermofisher.wd5.myworkdayjobs.com/en-US/ThermoFisherCareers/job/Remote-Philippines/Drug-Safety-Specialist--FSP----Day-Shift_R-01361157) <sub>location unclear</sub> | 24 Sep |
@@ -265,7 +198,7 @@ Schemes that open at set times of year or are advertised outside the job boards 
 | Company | Board | Status | Jobs read | Matches | Notes |
 |---|---|---|---|---|---|
 | AbbVie | attrax | OK | 250 | 0 | newest 250 roles |
-| Amgen | workday | OK | 13 | 1 | filtered by location (country) |
+| Amgen | workday | OK | 13 | 0 | filtered by location (country) |
 | Astellas | successfactors | OK | 8 | 0 | country filter |
 | AstraZeneca | workday | OK | 53 | 1 | filtered by location (9 offices) |
 | AstraZeneca | workday | OK | 18 | 0 | filtered by location (4 offices) |
@@ -273,7 +206,7 @@ Schemes that open at set times of year or are advertised outside the job boards 
 | BeOne Medicines | workday | OK | 4 | 0 | filtered by location (country) |
 | Biogen | workday | OK | 1 | 0 | filtered by location (country) |
 | Boehringer Ingelheim | successfactors | OK | 188 | 0 | location search |
-| Bristol Myers Squibb | workday | OK | 29 | 0 | filtered by location (region) |
+| Bristol Myers Squibb | workday | OK | 31 | 0 | filtered by location (region) |
 | Cencora PharmaLex | workday | OK | 109 | 0 | filtered by location (country) |
 | CSL (incl. CSL Seqirus) | workday | OK | 27 | 0 | filtered by location (country) |
 | Daiichi Sankyo | successfactors_csb | OK | 54 | 0 |  |
@@ -281,13 +214,13 @@ Schemes that open at set times of year or are advertised outside the job boards 
 | Gilead | workday | OK | 21 | 0 | filtered by location (4 offices) |
 | GSK | workday | OK | 101 | 4 | filtered by location (country) |
 | Haleon | workday | OK | 33 | 1 | filtered by location (country) |
-| ICON | workday | OK | 106 | 7 | filtered by location (country) |
+| ICON | workday | OK | 106 | 6 | filtered by location (country) |
 | Ipsen | workday | OK | 70 | 0 | filtered by location (country) |
-| IQVIA | workday | OK | 249 | 4 | filtered by location (country) |
-| Johnson & Johnson | workday | OK | 47 | 1 | filtered by location (9 offices) |
+| IQVIA | workday | OK | 249 | 1 | filtered by location (country) |
+| Johnson & Johnson | workday | OK | 48 | 1 | filtered by location (9 offices) |
 | Labcorp | workday | OK | 16 | 0 | filtered by location (5 offices) |
 | MAC Clinical Research | pagewatch | OK | 6 | 0 |  |
-| Medpace | jibe | OK | 124 | 18 |  |
+| Medpace | jibe | OK | 124 | 8 |  |
 | Moderna | workday | OK | 157 | 0 | keyword search (board has no location filter) |
 | MSD | workday | OK | 14 | 1 | filtered by location (3 offices) |
 | Novartis | workday | OK | 30 | 1 | filtered by location (country) |
@@ -304,7 +237,7 @@ Schemes that open at set times of year or are advertised outside the job boards 
 | Thermo Fisher (PPD) | workday | OK | 160 | 2 | filtered by location (25 offices) |
 | UCB | phenom | OK | 27 | 1 | search API filtered by country |
 | Vertex Pharmaceuticals | workday | OK | 10 | 0 | filtered by location (country) |
-| Worldwide Clinical Trials | workday | OK | 33 | 2 | filtered by location (country) |
+| Worldwide Clinical Trials | workday | OK | 33 | 1 | filtered by location (country) |
 
 </details>
 

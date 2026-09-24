@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-24T09:44:36Z",
+ "generated": "2026-09-24T09:49:48Z",
  "repo": "keerthanvemulapati/Grad-scheme-applications",
  "jobs": [
   {
@@ -21,28 +21,8 @@
    "first_seen": "2026-09-24",
    "last_seen": "2026-09-24",
    "status": "open",
-   "closed_on": null
-  },
-  {
-   "id": "medpace:12948",
-   "company": "Medpace",
-   "company_type": "cro",
-   "title": "Clinical Trial Assistant - (Hungarian Speaking)",
-   "url": "https://careers.medpace.com/jobs/12948?lang=en-us",
-   "location": "London, United Kingdom",
-   "posted": "2026-08-20",
-   "category": "clinical_operations",
-   "category_label": "Clinical Operations",
-   "priority": true,
-   "level": "entry_level",
-   "tags": [
-    "graduate_friendly"
-   ],
-   "score": 125,
-   "first_seen": "2026-09-24",
-   "last_seen": "2026-09-24",
-   "status": "open",
-   "closed_on": null
+   "closed_on": null,
+   "baseline": true
   },
   {
    "id": "medpace:12992",
@@ -63,7 +43,8 @@
    "first_seen": "2026-09-24",
    "last_seen": "2026-09-24",
    "status": "open",
-   "closed_on": null
+   "closed_on": null,
+   "baseline": true
   },
   {
    "id": "astrazeneca:R-260336",
@@ -82,7 +63,8 @@
    "first_seen": "2026-09-24",
    "last_seen": "2026-09-24",
    "status": "open",
-   "closed_on": null
+   "closed_on": null,
+   "baseline": true
   },
   {
    "id": "fortrea:251342",
@@ -101,7 +83,8 @@
    "first_seen": "2026-09-24",
    "last_seen": "2026-09-24",
    "status": "open",
-   "closed_on": null
+   "closed_on": null,
+   "baseline": true
   },
   {
    "id": "fortrea:264861-1",
@@ -120,7 +103,8 @@
    "first_seen": "2026-09-24",
    "last_seen": "2026-09-24",
    "status": "open",
-   "closed_on": null
+   "closed_on": null,
+   "baseline": true
   },
   {
    "id": "icon:JR156686-1",
@@ -139,7 +123,8 @@
    "first_seen": "2026-09-24",
    "last_seen": "2026-09-24",
    "status": "open",
-   "closed_on": null
+   "closed_on": null,
+   "baseline": true
   },
   {
    "id": "icon:JR156896",
@@ -158,7 +143,8 @@
    "first_seen": "2026-09-24",
    "last_seen": "2026-09-24",
    "status": "open",
-   "closed_on": null
+   "closed_on": null,
+   "baseline": true
   },
   {
    "id": "icon:JR157722",
@@ -177,7 +163,8 @@
    "first_seen": "2026-09-24",
    "last_seen": "2026-09-24",
    "status": "open",
-   "closed_on": null
+   "closed_on": null,
+   "baseline": true
   },
   {
    "id": "iqvia:R1514135",
@@ -196,7 +183,68 @@
    "first_seen": "2026-09-24",
    "last_seen": "2026-09-24",
    "status": "open",
-   "closed_on": null
+   "closed_on": null,
+   "baseline": true
+  },
+  {
+   "id": "medpace:11800",
+   "company": "Medpace",
+   "company_type": "cro",
+   "title": "Clinical Project Coordinator",
+   "url": "https://careers.medpace.com/jobs/11800?lang=en-us",
+   "location": "London, United Kingdom",
+   "posted": "2026-09-03",
+   "category": "clinical_operations",
+   "category_label": "Clinical Operations",
+   "priority": true,
+   "level": "entry_level",
+   "tags": [],
+   "score": 120,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24",
+   "status": "open",
+   "closed_on": null,
+   "baseline": true
+  },
+  {
+   "id": "medpace:11844",
+   "company": "Medpace",
+   "company_type": "cro",
+   "title": "Entry Level - Clinical Research Associate",
+   "url": "https://careers.medpace.com/jobs/11844?lang=en-us",
+   "location": "London, United Kingdom",
+   "posted": "2026-09-14",
+   "category": "clinical_operations",
+   "category_label": "Clinical Operations",
+   "priority": true,
+   "level": "entry_level",
+   "tags": [],
+   "score": 120,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24",
+   "status": "open",
+   "closed_on": null,
+   "baseline": true
+  },
+  {
+   "id": "medpace:12653",
+   "company": "Medpace",
+   "company_type": "cro",
+   "title": "Regulatory Submissions Coordinator (Study Start Up)",
+   "url": "https://careers.medpace.com/jobs/12653?lang=en-us",
+   "location": "London, United Kingdom",
+   "posted": "2026-08-31",
+   "category": "regulatory_affairs",
+   "category_label": "Regulatory Affairs",
+   "priority": true,
+   "level": "entry_level",
+   "tags": [],
+   "score": 120,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24",
+   "status": "open",
+   "closed_on": null,
+   "baseline": true
   },
   {
    "id": "msd:R416129",
@@ -215,7 +263,8 @@
    "first_seen": "2026-09-24",
    "last_seen": "2026-09-24",
    "status": "open",
-   "closed_on": null
+   "closed_on": null,
+   "baseline": true
   },
   {
    "id": "msd:R417178-1",
@@ -234,7 +283,8 @@
    "first_seen": "2026-09-24",
    "last_seen": "2026-09-24",
    "status": "closed",
-   "closed_on": "2026-09-24"
+   "closed_on": "2026-09-24",
+   "baseline": true
   },
   {
    "id": "novartis:REQ-10087071-1",
@@ -253,28 +303,8 @@
    "first_seen": "2026-09-24",
    "last_seen": "2026-09-24",
    "status": "open",
-   "closed_on": null
-  },
-  {
-   "id": "regeneron:R50509",
-   "company": "Regeneron",
-   "company_type": "pharma",
-   "title": "Medical Specialist I-Allergy/ENT-Seattle, Tacoma, WA & Anchorage, AK",
-   "url": "https://regeneron.wd1.myworkdayjobs.com/en-US/Careers/job/Remote---United-States/Medical-Specialist-I-Allergy-ENT-Seattle--Tacoma--WA---Anchorage--AK_R50509",
-   "location": "Remote - United States; Seattle, WA; Anchorage, AK; Remote - Washington; Tacoma, WA",
-   "posted": "2026-09-21",
-   "category": "medical_affairs",
-   "category_label": "Medical Affairs",
-   "priority": true,
-   "level": "entry_level",
-   "tags": [
-    "location_unclear"
-   ],
-   "score": 120,
-   "first_seen": "2026-09-24",
-   "last_seen": "2026-09-24",
-   "status": "closed",
-   "closed_on": "2026-09-24"
+   "closed_on": null,
+   "baseline": true
   },
   {
    "id": "thermo-fisher-ppd:R-01339167",
@@ -293,7 +323,8 @@
    "first_seen": "2026-09-24",
    "last_seen": "2026-09-24",
    "status": "open",
-   "closed_on": null
+   "closed_on": null,
+   "baseline": true
   },
   {
    "id": "thermo-fisher-ppd:R-01340398",
@@ -314,7 +345,8 @@
    "first_seen": "2026-09-24",
    "last_seen": "2026-09-24",
    "status": "closed",
-   "closed_on": "2026-09-24"
+   "closed_on": "2026-09-24",
+   "baseline": true
   },
   {
    "id": "thermo-fisher-ppd:R-01348797",
@@ -333,7 +365,8 @@
    "first_seen": "2026-09-24",
    "last_seen": "2026-09-24",
    "status": "open",
-   "closed_on": null
+   "closed_on": null,
+   "baseline": true
   },
   {
    "id": "thermo-fisher-ppd:R-01362164",
@@ -354,7 +387,8 @@
    "first_seen": "2026-09-24",
    "last_seen": "2026-09-24",
    "status": "closed",
-   "closed_on": "2026-09-24"
+   "closed_on": "2026-09-24",
+   "baseline": true
   },
   {
    "id": "thermo-fisher-ppd:R-01364066",
@@ -375,7 +409,8 @@
    "first_seen": "2026-09-24",
    "last_seen": "2026-09-24",
    "status": "closed",
-   "closed_on": "2026-09-24"
+   "closed_on": "2026-09-24",
+   "baseline": true
   },
   {
    "id": "thermo-fisher-ppd:R-01364928-1",
@@ -396,7 +431,8 @@
    "first_seen": "2026-09-24",
    "last_seen": "2026-09-24",
    "status": "closed",
-   "closed_on": "2026-09-24"
+   "closed_on": "2026-09-24",
+   "baseline": true
   },
   {
    "id": "thermo-fisher-ppd:R-01366912",
@@ -417,7 +453,8 @@
    "first_seen": "2026-09-24",
    "last_seen": "2026-09-24",
    "status": "closed",
-   "closed_on": "2026-09-24"
+   "closed_on": "2026-09-24",
+   "baseline": true
   },
   {
    "id": "thermo-fisher-ppd:R-01368834",
@@ -438,7 +475,8 @@
    "first_seen": "2026-09-24",
    "last_seen": "2026-09-24",
    "status": "closed",
-   "closed_on": "2026-09-24"
+   "closed_on": "2026-09-24",
+   "baseline": true
   },
   {
    "id": "worldwide-clinical-trials:JR102731-1",
@@ -457,197 +495,8 @@
    "first_seen": "2026-09-24",
    "last_seen": "2026-09-24",
    "status": "open",
-   "closed_on": null
-  },
-  {
-   "id": "medpace:11800",
-   "company": "Medpace",
-   "company_type": "cro",
-   "title": "Clinical Project Coordinator",
-   "url": "https://careers.medpace.com/jobs/11800?lang=en-us",
-   "location": "London, United Kingdom",
-   "posted": "2026-09-03",
-   "category": "clinical_operations",
-   "category_label": "Clinical Operations",
-   "priority": true,
-   "level": "entry_level",
-   "tags": [],
-   "score": 120,
-   "first_seen": "2026-09-24",
-   "last_seen": "2026-09-24",
-   "status": "open",
-   "closed_on": null
-  },
-  {
-   "id": "medpace:12724",
-   "company": "Medpace",
-   "company_type": "cro",
-   "title": "Clinical Trial Site Relationship Coordinator (Finnish Speaking)",
-   "url": "https://careers.medpace.com/jobs/12724?lang=en-us",
-   "location": "London, United Kingdom",
-   "posted": "2026-04-28",
-   "category": "clinical_operations",
-   "category_label": "Clinical Operations",
-   "priority": true,
-   "level": "entry_level",
-   "tags": [],
-   "score": 120,
-   "first_seen": "2026-09-24",
-   "last_seen": "2026-09-24",
-   "status": "open",
-   "closed_on": null
-  },
-  {
-   "id": "medpace:11817",
-   "company": "Medpace",
-   "company_type": "cro",
-   "title": "Experienced Patient Recruitment Coordinator",
-   "url": "https://careers.medpace.com/jobs/11817?lang=en-us",
-   "location": "London, United Kingdom",
-   "posted": "2026-03-02",
-   "category": "clinical_operations",
-   "category_label": "Clinical Operations",
-   "priority": true,
-   "level": "entry_level",
-   "tags": [],
-   "score": 120,
-   "first_seen": "2026-09-24",
-   "last_seen": "2026-09-24",
-   "status": "open",
-   "closed_on": null
-  },
-  {
-   "id": "medpace:12653",
-   "company": "Medpace",
-   "company_type": "cro",
-   "title": "Regulatory Submissions Coordinator (Study Start Up)",
-   "url": "https://careers.medpace.com/jobs/12653?lang=en-us",
-   "location": "London, United Kingdom",
-   "posted": "2026-08-31",
-   "category": "regulatory_affairs",
-   "category_label": "Regulatory Affairs",
-   "priority": true,
-   "level": "entry_level",
-   "tags": [],
-   "score": 120,
-   "first_seen": "2026-09-24",
-   "last_seen": "2026-09-24",
-   "status": "open",
-   "closed_on": null
-  },
-  {
-   "id": "medpace:12727",
-   "company": "Medpace",
-   "company_type": "cro",
-   "title": "Clinical Trial Site Relationship Coordinator (Polish Speaking)",
-   "url": "https://careers.medpace.com/jobs/12727?lang=en-us",
-   "location": "London, United Kingdom",
-   "posted": "2026-04-28",
-   "category": "clinical_operations",
-   "category_label": "Clinical Operations",
-   "priority": true,
-   "level": "entry_level",
-   "tags": [],
-   "score": 120,
-   "first_seen": "2026-09-24",
-   "last_seen": "2026-09-24",
-   "status": "open",
-   "closed_on": null
-  },
-  {
-   "id": "medpace:12725",
-   "company": "Medpace",
-   "company_type": "cro",
-   "title": "Clinical Trial Site Relationship Coordinator (German Speaking)",
-   "url": "https://careers.medpace.com/jobs/12725?lang=en-us",
-   "location": "London, United Kingdom",
-   "posted": "2026-08-27",
-   "category": "clinical_operations",
-   "category_label": "Clinical Operations",
-   "priority": true,
-   "level": "entry_level",
-   "tags": [],
-   "score": 120,
-   "first_seen": "2026-09-24",
-   "last_seen": "2026-09-24",
-   "status": "open",
-   "closed_on": null
-  },
-  {
-   "id": "medpace:11844",
-   "company": "Medpace",
-   "company_type": "cro",
-   "title": "Entry Level - Clinical Research Associate",
-   "url": "https://careers.medpace.com/jobs/11844?lang=en-us",
-   "location": "London, United Kingdom",
-   "posted": "2026-09-14",
-   "category": "clinical_operations",
-   "category_label": "Clinical Operations",
-   "priority": true,
-   "level": "entry_level",
-   "tags": [],
-   "score": 120,
-   "first_seen": "2026-09-24",
-   "last_seen": "2026-09-24",
-   "status": "open",
-   "closed_on": null
-  },
-  {
-   "id": "medpace:12718",
-   "company": "Medpace",
-   "company_type": "cro",
-   "title": "Clinical Trial Site Relationship Coordinator (Hungarian Speaking)",
-   "url": "https://careers.medpace.com/jobs/12718?lang=en-us",
-   "location": "London, United Kingdom",
-   "posted": "2026-04-23",
-   "category": "clinical_operations",
-   "category_label": "Clinical Operations",
-   "priority": true,
-   "level": "entry_level",
-   "tags": [],
-   "score": 120,
-   "first_seen": "2026-09-24",
-   "last_seen": "2026-09-24",
-   "status": "open",
-   "closed_on": null
-  },
-  {
-   "id": "medpace:12807",
-   "company": "Medpace",
-   "company_type": "cro",
-   "title": "Clinical Trial Site Relationship Coordinator (Italian Speaking)",
-   "url": "https://careers.medpace.com/jobs/12807?lang=en-us",
-   "location": "London, United Kingdom",
-   "posted": "2026-08-27",
-   "category": "clinical_operations",
-   "category_label": "Clinical Operations",
-   "priority": true,
-   "level": "entry_level",
-   "tags": [],
-   "score": 120,
-   "first_seen": "2026-09-24",
-   "last_seen": "2026-09-24",
-   "status": "open",
-   "closed_on": null
-  },
-  {
-   "id": "amgen:R-251395-1",
-   "company": "Amgen",
-   "company_type": "pharma",
-   "title": "Product Owner - Clinical Trial Supplier Enablement",
-   "url": "https://amgen.wd1.myworkdayjobs.com/en-US/Careers/job/United-Kingdom---Cambridge/Product-Owner---Clinical-Trial-Supplier-Enablement_R-251395-1",
-   "location": "United Kingdom - Cambridge; United Kingdom - London; United Kingdom - Manchester; United Kingdom - Edinburgh; United Kingdom - Remote; United Kingdom - Uxbridge",
-   "posted": "2026-08-11",
-   "category": "clinical_operations",
-   "category_label": "Clinical Operations",
-   "priority": true,
-   "level": "check",
-   "tags": [],
-   "score": 100,
-   "first_seen": "2026-09-24",
-   "last_seen": "2026-09-24",
-   "status": "open",
-   "closed_on": null
+   "closed_on": null,
+   "baseline": true
   },
   {
    "id": "icon:JR146722",
@@ -666,45 +515,8 @@
    "first_seen": "2026-09-24",
    "last_seen": "2026-09-24",
    "status": "open",
-   "closed_on": null
-  },
-  {
-   "id": "icon:JR159465",
-   "company": "ICON",
-   "company_type": "cro",
-   "title": "Site Contract and Budget Specialist 4",
-   "url": "https://icon.wd3.myworkdayjobs.com/en-US/broadbean_external/job/Regional-Great-Britain-Northern-Ireland/Site-Contract-and-Budget-Specialist-4_JR159465",
-   "location": "Regional Great Britain (Northern Ireland)",
-   "posted": "2026-09-08",
-   "category": "clinical_operations",
-   "category_label": "Clinical Operations",
-   "priority": true,
-   "level": "check",
-   "tags": [],
-   "score": 100,
-   "first_seen": "2026-09-24",
-   "last_seen": "2026-09-24",
-   "status": "open",
-   "closed_on": null
-  },
-  {
-   "id": "iqvia:R1524544",
-   "company": "IQVIA",
-   "company_type": "cro",
-   "title": "Experienced CRA - Single Sponsor Dedicated",
-   "url": "https://iqvia.wd1.myworkdayjobs.com/en-US/IQVIA/job/Reading-Berkshire-United-Kingdom/Experienced-CRA---Single-Sponsor-Dedicated_R1524544",
-   "location": "Reading, Berkshire, United Kingdom",
-   "posted": "2026-09-02",
-   "category": "clinical_operations",
-   "category_label": "Clinical Operations",
-   "priority": true,
-   "level": "check",
-   "tags": [],
-   "score": 100,
-   "first_seen": "2026-09-24",
-   "last_seen": "2026-09-24",
-   "status": "open",
-   "closed_on": null
+   "closed_on": null,
+   "baseline": true
   },
   {
    "id": "johnson-johnson:R-018387",
@@ -723,7 +535,28 @@
    "first_seen": "2026-09-24",
    "last_seen": "2026-09-24",
    "status": "open",
-   "closed_on": null
+   "closed_on": null,
+   "baseline": true
+  },
+  {
+   "id": "medpace:12960",
+   "company": "Medpace",
+   "company_type": "cro",
+   "title": "NHS and University Clinical Trial Professionals - Career Event: Clinical Trial Management – Medpace, London",
+   "url": "https://careers.medpace.com/jobs/12960?lang=en-us",
+   "location": "London, United Kingdom",
+   "posted": "2026-08-28",
+   "category": "clinical_operations",
+   "category_label": "Clinical Operations",
+   "priority": true,
+   "level": "check",
+   "tags": [],
+   "score": 100,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24",
+   "status": "open",
+   "closed_on": null,
+   "baseline": true
   },
   {
    "id": "psi-cro:744000149413559",
@@ -744,7 +577,8 @@
    "first_seen": "2026-09-24",
    "last_seen": "2026-09-24",
    "status": "closed",
-   "closed_on": "2026-09-24"
+   "closed_on": "2026-09-24",
+   "baseline": true
   },
   {
    "id": "regeneron:R50053",
@@ -763,7 +597,8 @@
    "first_seen": "2026-09-24",
    "last_seen": "2026-09-24",
    "status": "closed",
-   "closed_on": "2026-09-24"
+   "closed_on": "2026-09-24",
+   "baseline": true
   },
   {
    "id": "syneos-health:25106983",
@@ -782,7 +617,8 @@
    "first_seen": "2026-09-24",
    "last_seen": "2026-09-24",
    "status": "open",
-   "closed_on": null
+   "closed_on": null,
+   "baseline": true
   },
   {
    "id": "syneos-health:25112022",
@@ -801,7 +637,8 @@
    "first_seen": "2026-09-24",
    "last_seen": "2026-09-24",
    "status": "open",
-   "closed_on": null
+   "closed_on": null,
+   "baseline": true
   },
   {
    "id": "thermo-fisher-ppd:R-01326868",
@@ -822,7 +659,8 @@
    "first_seen": "2026-09-24",
    "last_seen": "2026-09-24",
    "status": "closed",
-   "closed_on": "2026-09-24"
+   "closed_on": "2026-09-24",
+   "baseline": true
   },
   {
    "id": "thermo-fisher-ppd:R-01366921",
@@ -843,64 +681,8 @@
    "first_seen": "2026-09-24",
    "last_seen": "2026-09-24",
    "status": "closed",
-   "closed_on": "2026-09-24"
-  },
-  {
-   "id": "medpace:11828",
-   "company": "Medpace",
-   "company_type": "cro",
-   "title": "Experienced CRA (multi-sponsor, multi-therapeutic, home-based and office-based positions available)",
-   "url": "https://careers.medpace.com/jobs/11828?lang=en-us",
-   "location": "United Kingdom",
-   "posted": "2026-09-14",
-   "category": "clinical_operations",
-   "category_label": "Clinical Operations",
-   "priority": true,
-   "level": "check",
-   "tags": [],
-   "score": 100,
-   "first_seen": "2026-09-24",
-   "last_seen": "2026-09-24",
-   "status": "open",
-   "closed_on": null
-  },
-  {
-   "id": "medpace:12220",
-   "company": "Medpace",
-   "company_type": "cro",
-   "title": "Clinical Research Psychiatrist",
-   "url": "https://careers.medpace.com/jobs/12220?lang=en-us",
-   "location": "London, United Kingdom",
-   "posted": "2026-06-26",
-   "category": "clinical_operations",
-   "category_label": "Clinical Operations",
-   "priority": true,
-   "level": "check",
-   "tags": [],
-   "score": 100,
-   "first_seen": "2026-09-24",
-   "last_seen": "2026-09-24",
-   "status": "open",
-   "closed_on": null
-  },
-  {
-   "id": "medpace:12960",
-   "company": "Medpace",
-   "company_type": "cro",
-   "title": "NHS and University Clinical Trial Professionals - Career Event: Clinical Trial Management – Medpace, London",
-   "url": "https://careers.medpace.com/jobs/12960?lang=en-us",
-   "location": "London, United Kingdom",
-   "posted": "2026-08-28",
-   "category": "clinical_operations",
-   "category_label": "Clinical Operations",
-   "priority": true,
-   "level": "check",
-   "tags": [],
-   "score": 100,
-   "first_seen": "2026-09-24",
-   "last_seen": "2026-09-24",
-   "status": "open",
-   "closed_on": null
+   "closed_on": "2026-09-24",
+   "baseline": true
   },
   {
    "id": "ucb:93534",
@@ -919,7 +701,8 @@
    "first_seen": "2026-09-24",
    "last_seen": "2026-09-24",
    "status": "open",
-   "closed_on": null
+   "closed_on": null,
+   "baseline": true
   },
   {
    "id": "icon:JR157317",
@@ -940,7 +723,8 @@
    "first_seen": "2026-09-24",
    "last_seen": "2026-09-24",
    "status": "open",
-   "closed_on": null
+   "closed_on": null,
+   "baseline": true
   },
   {
    "id": "icon:JR157570",
@@ -961,28 +745,8 @@
    "first_seen": "2026-09-24",
    "last_seen": "2026-09-24",
    "status": "open",
-   "closed_on": null
-  },
-  {
-   "id": "medpace:12852",
-   "company": "Medpace",
-   "company_type": "cro",
-   "title": "Experienced Regulatory Submissions Coordinator",
-   "url": "https://careers.medpace.com/jobs/12852?lang=en-us",
-   "location": "Stirling, United Kingdom",
-   "posted": "2026-08-31",
-   "category": "regulatory_affairs",
-   "category_label": "Regulatory Affairs",
-   "priority": true,
-   "level": "entry_level",
-   "tags": [
-    "experience_required"
-   ],
-   "score": 95,
-   "first_seen": "2026-09-24",
-   "last_seen": "2026-09-24",
-   "status": "open",
-   "closed_on": null
+   "closed_on": null,
+   "baseline": true
   },
   {
    "id": "haleon:540127",
@@ -1004,7 +768,8 @@
    "first_seen": "2026-09-24",
    "last_seen": "2026-09-24",
    "status": "open",
-   "closed_on": null
+   "closed_on": null,
+   "baseline": true
   },
   {
    "id": "gsk:448163",
@@ -1025,7 +790,8 @@
    "first_seen": "2026-09-24",
    "last_seen": "2026-09-24",
    "status": "open",
-   "closed_on": null
+   "closed_on": null,
+   "baseline": true
   },
   {
    "id": "gsk:448225",
@@ -1046,7 +812,8 @@
    "first_seen": "2026-09-24",
    "last_seen": "2026-09-24",
    "status": "open",
-   "closed_on": null
+   "closed_on": null,
+   "baseline": true
   },
   {
    "id": "gsk:448227",
@@ -1067,7 +834,8 @@
    "first_seen": "2026-09-24",
    "last_seen": "2026-09-24",
    "status": "open",
-   "closed_on": null
+   "closed_on": null,
+   "baseline": true
   },
   {
    "id": "johnson-johnson:R-096443",
@@ -1088,7 +856,8 @@
    "first_seen": "2026-09-24",
    "last_seen": "2026-09-24",
    "status": "closed",
-   "closed_on": "2026-09-24"
+   "closed_on": "2026-09-24",
+   "baseline": true
   },
   {
    "id": "johnson-johnson:R-100842",
@@ -1109,7 +878,8 @@
    "first_seen": "2026-09-24",
    "last_seen": "2026-09-24",
    "status": "closed",
-   "closed_on": "2026-09-24"
+   "closed_on": "2026-09-24",
+   "baseline": true
   },
   {
    "id": "fortrea:251030",
@@ -1130,49 +900,8 @@
    "first_seen": "2026-09-24",
    "last_seen": "2026-09-24",
    "status": "open",
-   "closed_on": null
-  },
-  {
-   "id": "iqvia:R1565158",
-   "company": "IQVIA",
-   "company_type": "cro",
-   "title": "Clinical Independent Rater for Clinical Trial - Polish Speaking",
-   "url": "https://iqvia.wd1.myworkdayjobs.com/en-US/IQVIA/job/Warsaw-Poland/Clinical-Independent-Rater---Polish-Speaking_R1565158",
-   "location": "Warsaw, Poland; Noumea, France; Taucha, Germany; Paris, France; Manchester, United Kingdom; Papeete, France; Chicago, Illinois, United States of America; Nottingham, United Kingdom; Stafford, United Kingdom; Reading, Berkshire, United Kingdom; London, United Kingdom; Saint Cloud, France; Pewsham, United Kingdom; Dortmund, Germany; Portishead, United Kingdom; Leipzig, Germany; Salford, United Kingdom; Saint-Leu, France; Kaunas, Lithuania; Vairao, France",
-   "posted": "2026-08-24",
-   "category": "clinical_operations",
-   "category_label": "Clinical Operations",
-   "priority": true,
-   "level": "check",
-   "tags": [
-    "experience_required"
-   ],
-   "score": 75,
-   "first_seen": "2026-09-24",
-   "last_seen": "2026-09-24",
-   "status": "open",
-   "closed_on": null
-  },
-  {
-   "id": "iqvia:R1565336",
-   "company": "IQVIA",
-   "company_type": "cro",
-   "title": "Freelance Site Activation Specialist (Study Start-Up / Regulatory Submissions) – UK Remote",
-   "url": "https://iqvia.wd1.myworkdayjobs.com/en-US/IQVIA/job/London-United-Kingdom/Freelance-Site-Activation-Specialist--Study-Start-Up---Regulatory-Submissions----UK-Remote_R1565336",
-   "location": "London, United Kingdom; Edinburgh, Scotland, United Kingdom; Manchester, United Kingdom; Cambridge, United Kingdom; Oxford, England, United Kingdom",
-   "posted": "2026-08-25",
-   "category": "regulatory_affairs",
-   "category_label": "Regulatory Affairs",
-   "priority": true,
-   "level": "check",
-   "tags": [
-    "experience_required"
-   ],
-   "score": 75,
-   "first_seen": "2026-09-24",
-   "last_seen": "2026-09-24",
-   "status": "open",
-   "closed_on": null
+   "closed_on": null,
+   "baseline": true
   },
   {
    "id": "thermo-fisher-ppd:R-01361506",
@@ -1194,7 +923,68 @@
    "first_seen": "2026-09-24",
    "last_seen": "2026-09-24",
    "status": "closed",
-   "closed_on": "2026-09-24"
+   "closed_on": "2026-09-24",
+   "baseline": true
+  },
+  {
+   "id": "medpace:12176",
+   "company": "Medpace",
+   "company_type": "cro",
+   "title": "Clinical Safety Coordinator - Pharmacovigilance / Drug Safety",
+   "url": "https://careers.medpace.com/jobs/12176?lang=en-us",
+   "location": "Stirling, United Kingdom",
+   "posted": "2026-09-17",
+   "category": "drug_safety",
+   "category_label": "Drug Safety / PV",
+   "priority": false,
+   "level": "entry_level",
+   "tags": [],
+   "score": 60,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24",
+   "status": "open",
+   "closed_on": null,
+   "baseline": true
+  },
+  {
+   "id": "medpace:12183",
+   "company": "Medpace",
+   "company_type": "cro",
+   "title": "Project Assistant - Clinical Safety & Pharmacovigilance (office based in Stirling)",
+   "url": "https://careers.medpace.com/jobs/12183?lang=en-us",
+   "location": "Stirling, United Kingdom",
+   "posted": "2026-07-08",
+   "category": "drug_safety",
+   "category_label": "Drug Safety / PV",
+   "priority": false,
+   "level": "entry_level",
+   "tags": [],
+   "score": 60,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24",
+   "status": "open",
+   "closed_on": null,
+   "baseline": true
+  },
+  {
+   "id": "medpace:12866",
+   "company": "Medpace",
+   "company_type": "cro",
+   "title": "Clinical Safety Coordinator - Pharmacovigilance / Drug Safety",
+   "url": "https://careers.medpace.com/jobs/12866?lang=en-us",
+   "location": "London, United Kingdom",
+   "posted": "2026-09-17",
+   "category": "drug_safety",
+   "category_label": "Drug Safety / PV",
+   "priority": false,
+   "level": "entry_level",
+   "tags": [],
+   "score": 60,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24",
+   "status": "open",
+   "closed_on": null,
+   "baseline": true
   },
   {
    "id": "thermo-fisher-ppd:R-01362190",
@@ -1215,7 +1005,8 @@
    "first_seen": "2026-09-24",
    "last_seen": "2026-09-24",
    "status": "closed",
-   "closed_on": "2026-09-24"
+   "closed_on": "2026-09-24",
+   "baseline": true
   },
   {
    "id": "thermo-fisher-ppd:R-01364421",
@@ -1236,7 +1027,8 @@
    "first_seen": "2026-09-24",
    "last_seen": "2026-09-24",
    "status": "closed",
-   "closed_on": "2026-09-24"
+   "closed_on": "2026-09-24",
+   "baseline": true
   },
   {
    "id": "thermo-fisher-ppd:R-01369299",
@@ -1257,64 +1049,8 @@
    "first_seen": "2026-09-24",
    "last_seen": "2026-09-24",
    "status": "closed",
-   "closed_on": "2026-09-24"
-  },
-  {
-   "id": "medpace:12176",
-   "company": "Medpace",
-   "company_type": "cro",
-   "title": "Clinical Safety Coordinator - Pharmacovigilance / Drug Safety",
-   "url": "https://careers.medpace.com/jobs/12176?lang=en-us",
-   "location": "Stirling, United Kingdom",
-   "posted": "2026-09-17",
-   "category": "drug_safety",
-   "category_label": "Drug Safety / PV",
-   "priority": false,
-   "level": "entry_level",
-   "tags": [],
-   "score": 60,
-   "first_seen": "2026-09-24",
-   "last_seen": "2026-09-24",
-   "status": "open",
-   "closed_on": null
-  },
-  {
-   "id": "medpace:12183",
-   "company": "Medpace",
-   "company_type": "cro",
-   "title": "Project Assistant - Clinical Safety & Pharmacovigilance (office based in Stirling)",
-   "url": "https://careers.medpace.com/jobs/12183?lang=en-us",
-   "location": "Stirling, United Kingdom",
-   "posted": "2026-07-08",
-   "category": "drug_safety",
-   "category_label": "Drug Safety / PV",
-   "priority": false,
-   "level": "entry_level",
-   "tags": [],
-   "score": 60,
-   "first_seen": "2026-09-24",
-   "last_seen": "2026-09-24",
-   "status": "open",
-   "closed_on": null
-  },
-  {
-   "id": "medpace:12866",
-   "company": "Medpace",
-   "company_type": "cro",
-   "title": "Clinical Safety Coordinator - Pharmacovigilance / Drug Safety",
-   "url": "https://careers.medpace.com/jobs/12866?lang=en-us",
-   "location": "London, United Kingdom",
-   "posted": "2026-09-17",
-   "category": "drug_safety",
-   "category_label": "Drug Safety / PV",
-   "priority": false,
-   "level": "entry_level",
-   "tags": [],
-   "score": 60,
-   "first_seen": "2026-09-24",
-   "last_seen": "2026-09-24",
-   "status": "open",
-   "closed_on": null
+   "closed_on": "2026-09-24",
+   "baseline": true
   },
   {
    "id": "thermo-fisher-ppd:R-01361157",
@@ -1335,7 +1071,8 @@
    "first_seen": "2026-09-24",
    "last_seen": "2026-09-24",
    "status": "closed",
-   "closed_on": "2026-09-24"
+   "closed_on": "2026-09-24",
+   "baseline": true
   },
   {
    "id": "thermo-fisher-ppd:R-01366361",
@@ -1356,7 +1093,8 @@
    "first_seen": "2026-09-24",
    "last_seen": "2026-09-24",
    "status": "closed",
-   "closed_on": "2026-09-24"
+   "closed_on": "2026-09-24",
+   "baseline": true
   },
   {
    "id": "thermo-fisher-ppd:R-01366514",
@@ -1377,26 +1115,8 @@
    "first_seen": "2026-09-24",
    "last_seen": "2026-09-24",
    "status": "closed",
-   "closed_on": "2026-09-24"
-  },
-  {
-   "id": "worldwide-clinical-trials:JR102334",
-   "company": "Worldwide Clinical Trials",
-   "company_type": "cro",
-   "title": "Pharmacovigilance Specialist - US - Remote",
-   "url": "https://worldwide.wd1.myworkdayjobs.com/en-US/External/job/Durham-North-Carolina/Pharmacovigilance-Specialist---US---Remote_JR102334",
-   "location": "Durham, North Carolina; Brasilia, Brazil; England, United Kingdom; Mexico City, Mexico; Belgrade, Serbia",
-   "posted": "2026-07-14",
-   "category": "drug_safety",
-   "category_label": "Drug Safety / PV",
-   "priority": false,
-   "level": "check",
-   "tags": [],
-   "score": 40,
-   "first_seen": "2026-09-24",
-   "last_seen": "2026-09-24",
-   "status": "open",
-   "closed_on": null
+   "closed_on": "2026-09-24",
+   "baseline": true
   }
  ],
  "watchlist": {
@@ -1535,7 +1255,7 @@
    "type": "workday",
    "ok": true,
    "scanned": 13,
-   "matches": 1,
+   "matches": 0,
    "error": null,
    "note": "filtered by location (country)",
    "last_ok": "2026-09-24"
@@ -1614,7 +1334,7 @@
    "company": "Bristol Myers Squibb",
    "type": "workday",
    "ok": true,
-   "scanned": 29,
+   "scanned": 31,
    "matches": 0,
    "error": null,
    "note": "filtered by location (region)",
@@ -1695,7 +1415,7 @@
    "type": "workday",
    "ok": true,
    "scanned": 106,
-   "matches": 7,
+   "matches": 6,
    "error": null,
    "note": "filtered by location (country)",
    "last_ok": "2026-09-24"
@@ -1715,7 +1435,7 @@
    "type": "workday",
    "ok": true,
    "scanned": 249,
-   "matches": 4,
+   "matches": 1,
    "error": null,
    "note": "filtered by location (country)",
    "last_ok": "2026-09-24"
@@ -1724,7 +1444,7 @@
    "company": "Johnson & Johnson",
    "type": "workday",
    "ok": true,
-   "scanned": 47,
+   "scanned": 48,
    "matches": 1,
    "error": null,
    "note": "filtered by location (9 offices)",
@@ -1755,7 +1475,7 @@
    "type": "jibe",
    "ok": true,
    "scanned": 124,
-   "matches": 18,
+   "matches": 8,
    "error": null,
    "note": "",
    "last_ok": "2026-09-24"
@@ -1925,7 +1645,7 @@
    "type": "workday",
    "ok": true,
    "scanned": 33,
-   "matches": 2,
+   "matches": 1,
    "error": null,
    "note": "filtered by location (country)",
    "last_ok": "2026-09-24"
