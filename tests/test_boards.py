@@ -21,8 +21,9 @@ def test_phenom_reads_embedded_data(search):
     ]}}}
     html = f"<html><script>var phApp = phApp || {{}}; phApp.ddo = {json.dumps(ddo)}; phApp.x = 1;</script></html>"
     src = make(search, "phenom", {"url": "https://careers.acme.com/global/en"},
-               FakeHTTP({"search-results": html}))
+               FakeHTTP({"/widgets": {}, "search-results": html}))  # search API unusable -> page data
     jobs = {j.source_id: j for j in src.fetch()}
+    assert src.note.startswith("page data") and not src.complete
     assert jobs["R1"].in_country is True and jobs["R1"].posted == "2026-09-10"
     assert jobs["R1"].url == "https://careers.acme.com/global/en/job/R1"
     assert jobs["R2"].in_country is False
@@ -201,3 +202,23 @@ def test_attrax_tiles(search):
     assert [(j.source_id, j.location) for j in jobs] == [("1", "Maidenhead, United Kingdom")]
     assert not src.complete
     assert jobs[0].url == "https://careers.acme.com/en/job/ra-jid-1"
+
+
+def test_phenom_search_api(search):
+    page = '<script>phApp.ddo = {}; var x = {"csrfToken":"abc"};</script>'
+    sent = []
+
+    def widgets(method, url, kwargs):
+        sent.append((kwargs["json"], kwargs["headers"].get("x-csrf-token")))
+        return {"refineSearch": {"totalHits": 1, "data": {"jobs": [
+            {"jobId": "93001", "title": "Regulatory Affairs Associate", "city": "Slough",
+             "country": "United Kingdom", "postedDate": "2026-09-01T00:00:00.000+0000"}]}}}
+
+    src = make(search, "phenom", {"url": "https://careers.acme.com/global/en"},
+               FakeHTTP({"/widgets": widgets, "search-results": page}))
+    jobs = src.fetch()
+    assert [(j.source_id, j.in_country) for j in jobs] == [("93001", True)]
+    payload, token = sent[0]
+    assert token == "abc" and payload["lang"] == "en_global" and payload["country"] == "global"
+    assert payload["selected_fields"] == {"country": ["United Kingdom"]}
+    assert src.note == "search API filtered by country"

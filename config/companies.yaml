@@ -179,6 +179,7 @@ companies:
       - type: eightfold
         url: https://talent.bayer.com
         domain: bayer.com
+        locations: [Reading, London, Cambridge, Manchester]   # Bayer's search works by city
 
   - name: Boehringer Ingelheim
     type: pharma
@@ -193,7 +194,6 @@ companies:
     sources:
       - type: phenom
         url: https://careers.ucb.com/global/en
-        keywords: [United Kingdom, Slough, graduate, regulatory, medical, clinical]
 
   - name: Novo Nordisk
     type: pharma

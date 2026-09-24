@@ -6,6 +6,7 @@ import json
 import re
 from urllib.parse import quote, urljoin, urlparse
 
+import requests
 from bs4 import BeautifulSoup
 
 from ..models import RawJob
@@ -24,12 +25,25 @@ class EightfoldSource(Source):
         base = self.require("url")
         domain = self.require("domain")
         jobs: dict[str, RawJob] = {}
+        locations = self.options.get("locations")
+        if locations:  # searching by city is complete for those cities
+            for loc in locations:
+                self._scan(base, domain, jobs, loc)
+            self.complete = True
+        else:
+            self._scan(base, domain, jobs, None)
+        self.scanned = len(jobs)
+        return [j for j in jobs.values() if j.in_country is not False]
+
+    def _scan(self, base: str, domain: str, jobs: dict, location: str | None) -> None:
         start = 0
+        data: dict = {}
         for _ in range(MAX_PAGES):
+            params = {"domain": domain, "start": start, "num": 100, "sort_by": "timestamp"}
+            if location:
+                params["location"] = location
             data = self.http.get(
-                f"{base}/api/apply/v2/jobs",
-                params={"domain": domain, "start": start, "num": 100, "sort_by": "timestamp"},
-                headers={"Accept": "application/json"},
+                f"{base}/api/apply/v2/jobs", params=params, headers={"Accept": "application/json"},
             ).json()
             positions = data.get("positions")
             if positions is None:
@@ -50,11 +64,10 @@ class EightfoldSource(Source):
             start += len(positions)
             if not positions or start >= int(data.get("count") or 0):
                 break
-        self.complete = start >= int(data.get("count") or 0)
-        if not self.complete:
-            self.note = f"newest {len(jobs)} of {data.get('count')} jobs"
-        self.scanned = len(jobs)
-        return [j for j in jobs.values() if j.in_country is not False]
+        if not location:
+            self.complete = start >= int(data.get("count") or 0)
+            if not self.complete:
+                self.note = f"newest {len(jobs)} of {data.get('count')} jobs"
 
     def enrich(self, job: RawJob) -> RawJob:
         base, domain = self.require("url"), self.require("domain")
@@ -80,8 +93,10 @@ class JibeSource(Source):
             data = self.http.get(
                 f"{base}/api/jobs",
                 params={"page": page, "limit": 100, "lang": "en-us", "sortBy": "relevance",
-                        "descending": "false", "internal": "false"},
-                headers={"Accept": "application/json"},
+                        "descending": "false", "internal": "false",
+                        "location": self.options.get("location", self.search.countries[0])},
+                # Jibe only returns jobs in the language it's asked for, so ask in US English.
+                headers={"Accept": "application/json", "Accept-Language": "en-US,en;q=0.9"},
             ).json()
             if "jobs" not in data:
                 raise SourceError("Unexpected Jibe response (no jobs)")
@@ -94,7 +109,11 @@ class JibeSource(Source):
                 loc = d.get("full_location") or ", ".join(
                     x for x in (d.get("city"), d.get("state"), d.get("country")) if x)
                 code = (d.get("country_code") or "").upper()
-                in_country = True if code in {"GB", "UK"} else self.where(f"{loc}; {d.get('country') or ''}")
+                country = d.get("country") or ""
+                if code in {"GB", "UK"} or country in self.search.countries:
+                    in_country = True
+                else:
+                    in_country = self.where(f"{loc}; {country}")
                 jobs.setdefault(slug, RawJob(
                     source_id=slug,
                     title=(d.get("title") or "").strip(),
@@ -130,6 +149,70 @@ class PhenomSource(Source):
         return obj
 
     def fetch(self) -> list[RawJob]:
+        try:
+            jobs = self._fetch_api()
+            self.note = "search API filtered by country"
+            return jobs
+        except (SourceError, ValueError, KeyError, requests.RequestException) as exc:
+            self.note = f"page data (search API unavailable: {type(exc).__name__})"
+        return self._fetch_pages()
+
+    def _job(self, base: str, j: dict) -> RawJob | None:
+        jid = str(j.get("jobId") or j.get("reqId") or j.get("jobSeqNo") or "")
+        if not jid:
+            return None
+        locs = j.get("multi_location") or [j.get("location") or ""]
+        loc = "; ".join(l for l in locs if l) or ", ".join(
+            x for x in (j.get("city"), j.get("country")) if x)
+        country = j.get("country") or ""
+        return RawJob(
+            source_id=jid,
+            title=(j.get("title") or "").strip(),
+            url=f"{base}/job/{quote(jid)}",
+            location=loc,
+            in_country=True if country in self.search.countries else self.where(f"{loc}; {country}"),
+            posted=iso_date(j.get("postedDate") or j.get("dateCreated")),
+            description=j.get("descriptionTeaser") or "",
+        )
+
+    def _fetch_api(self) -> list[RawJob]:
+        base = self.require("url")
+        parsed = urlparse(base)
+        parts = [p for p in parsed.path.split("/") if p]
+        if len(parts) < 2:
+            raise SourceError("URL should end in /<region>/<language>")
+        region, lang = parts[-2], parts[-1]
+        page = self.http.get(f"{base}/search-results", headers={"Accept": "text/html"}).text
+        token = re.search(r'"csrfToken"\s*:\s*"([^"]+)"', page)
+        headers = {"Accept": "application/json", "Content-Type": "application/json"}
+        if token:
+            headers["x-csrf-token"] = token.group(1)
+        jobs: dict[str, RawJob] = {}
+        size, offset, total = 50, 0, None
+        for _ in range(MAX_PAGES):
+            payload = {"lang": f"{lang}_{region}", "deviceType": "desktop", "country": region,
+                       "pageName": "search-results", "ddoKey": "refineSearch", "sortBy": "",
+                       "subsearch": "", "from": offset, "jobs": True, "counts": True,
+                       "all_fields": ["category", "country", "state", "city"], "size": size,
+                       "clearAll": False, "jdsource": "facets", "isSliderEnable": False,
+                       "keywords": "", "global": True, "siteType": "external",
+                       "selected_fields": {"country": list(self.search.countries)}}
+            data = self.http.post(f"{parsed.scheme}://{parsed.netloc}/widgets", json=payload,
+                                  headers=headers).json()
+            search = data["refineSearch"]
+            found = (search.get("data") or {}).get("jobs") or []
+            total = int(search.get("totalHits") or 0) if total is None else total
+            for j in found:
+                job = self._job(base, j)
+                if job:
+                    jobs.setdefault(job.source_id, job)
+            offset += len(found)
+            if not found or offset >= total:
+                break
+        self.scanned = len(jobs)
+        return [j for j in jobs.values() if j.in_country is not False]
+
+    def _fetch_pages(self) -> list[RawJob]:
         base = self.require("url")
         jobs: dict[str, RawJob] = {}
         queries = self.options.get("keywords") or self.search.fallback_queries
@@ -143,21 +226,9 @@ class PhenomSource(Source):
                 search = self._ddo(html).get("eagerLoadRefineSearch") or {}
                 found = ((search.get("data") or {}).get("jobs")) or []
                 for j in found:
-                    jid = str(j.get("jobId") or j.get("reqId") or j.get("jobSeqNo") or "")
-                    if not jid:
-                        continue
-                    locs = j.get("multi_location") or [j.get("location") or ""]
-                    loc = "; ".join(l for l in locs if l) or ", ".join(
-                        x for x in (j.get("city"), j.get("country")) if x)
-                    jobs.setdefault(jid, RawJob(
-                        source_id=jid,
-                        title=(j.get("title") or "").strip(),
-                        url=f"{base}/job/{quote(jid)}",
-                        location=loc,
-                        in_country=self.where(f"{loc}; {j.get('country') or ''}"),
-                        posted=iso_date(j.get("postedDate") or j.get("dateCreated")),
-                        description=j.get("descriptionTeaser") or "",
-                    ))
+                    job = self._job(base, j)
+                    if job:
+                        jobs.setdefault(job.source_id, job)
                 total = int(search.get("totalHits") or 0)
                 if len(found) < self.PAGE or (page + 1) * self.PAGE >= total:
                     break
