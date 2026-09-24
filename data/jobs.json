@@ -640,7 +640,7 @@
   "johnson-johnson:R-096443": {
    "category": "other_graduate",
    "category_label": "Other Graduate Scheme",
-   "closed_on": null,
+   "closed_on": "2026-09-24",
    "company": "Johnson & Johnson",
    "company_type": "pharma",
    "facts": {
@@ -654,13 +654,13 @@
    "last_seen": "2026-09-24",
    "level": "graduate_scheme",
    "location": "Santa Clara, California, United States of America; Jacksonville, Florida, United States of America; Raritan, New Jersey, United States of America; Cincinnati, Ohio, United States of America; Redwood City, California, United States of America; Irvine, California, United States of America",
-   "missed": 1,
+   "missed": 2,
    "posted": "2026-08-28",
    "priority": false,
    "score": 85,
    "source_key": "johnson-johnson/workday",
    "source_type": "workday",
-   "status": "open",
+   "status": "closed",
    "tags": [
     "2027"
    ],
@@ -670,7 +670,7 @@
   "johnson-johnson:R-100842": {
    "category": "other_graduate",
    "category_label": "Other Graduate Scheme",
-   "closed_on": null,
+   "closed_on": "2026-09-24",
    "company": "Johnson & Johnson",
    "company_type": "pharma",
    "facts": {
@@ -684,13 +684,13 @@
    "last_seen": "2026-09-24",
    "level": "graduate_scheme",
    "location": "Raritan, New Jersey, United States of America; Jacksonville, Florida, United States of America; Santa Clara, California, United States of America; Cincinnati, Ohio, United States of America; Irvine, California, United States of America; Danvers, Massachusetts, United States of America",
-   "missed": 1,
+   "missed": 2,
    "posted": "2026-09-21",
    "priority": false,
    "score": 85,
    "source_key": "johnson-johnson/workday",
    "source_type": "workday",
-   "status": "open",
+   "status": "closed",
    "tags": [
     "2027"
    ],
@@ -728,7 +728,7 @@
   "msd:R417178-1": {
    "category": "clinical_operations",
    "category_label": "Clinical Operations",
-   "closed_on": null,
+   "closed_on": "2026-09-24",
    "company": "MSD",
    "company_type": "pharma",
    "facts": {
@@ -742,13 +742,13 @@
    "last_seen": "2026-09-24",
    "level": "entry_level",
    "location": "AUS - New South Wales - Macquarie Park",
-   "missed": 1,
+   "missed": 2,
    "posted": "2026-09-14",
    "priority": true,
    "score": 120,
    "source_key": "msd/workday",
    "source_type": "workday",
-   "status": "open",
+   "status": "closed",
    "tags": [],
    "title": "Clinical Research Associate (CRA)",
    "url": "https://msd.wd5.myworkdayjobs.com/en-US/SearchJobs/job/AUS---New-South-Wales---Macquarie-Park/Clinical-Research-Associate--CRA-_R417178-1"
@@ -784,7 +784,7 @@
   "psi-cro:744000149413559": {
    "category": "clinical_operations",
    "category_label": "Clinical Operations",
-   "closed_on": null,
+   "closed_on": "2026-09-24",
    "company": "PSI CRO",
    "company_type": "cro",
    "facts": null,
@@ -794,13 +794,13 @@
    "last_seen": "2026-09-24",
    "level": "check",
    "location": "Remote, REMOTE, United States",
-   "missed": 1,
+   "missed": 2,
    "posted": "2026-09-14",
    "priority": true,
    "score": 100,
    "source_key": "psi-cro/smartrecruiters",
    "source_type": "smartrecruiters",
-   "status": "open",
+   "status": "closed",
    "tags": [
     "location_unclear"
    ],
@@ -1486,7 +1486,7 @@
   }
  },
  "meta": {
-  "last_run": "2026-09-24T09:38:03Z",
+  "last_run": "2026-09-24T09:42:09Z",
   "snapshot_issue": null,
   "sources_seen_ok": [
    "abbvie/attrax",

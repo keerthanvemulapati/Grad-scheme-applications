@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-24T09:38:03Z",
+ "generated": "2026-09-24T09:42:09Z",
  "repo": "keerthanvemulapati/Grad-scheme-applications",
  "jobs": [
   {
@@ -191,8 +191,8 @@
    "score": 120,
    "first_seen": "2026-09-24",
    "last_seen": "2026-09-24",
-   "status": "open",
-   "closed_on": null
+   "status": "closed",
+   "closed_on": "2026-09-24"
   },
   {
    "id": "novartis:REQ-10087071-1",
@@ -530,8 +530,8 @@
    "score": 100,
    "first_seen": "2026-09-24",
    "last_seen": "2026-09-24",
-   "status": "open",
-   "closed_on": null
+   "status": "closed",
+   "closed_on": "2026-09-24"
   },
   {
    "id": "regeneron:R50053",
@@ -777,8 +777,8 @@
    "score": 85,
    "first_seen": "2026-09-24",
    "last_seen": "2026-09-24",
-   "status": "open",
-   "closed_on": null
+   "status": "closed",
+   "closed_on": "2026-09-24"
   },
   {
    "id": "johnson-johnson:R-100842",
@@ -798,8 +798,8 @@
    "score": 85,
    "first_seen": "2026-09-24",
    "last_seen": "2026-09-24",
-   "status": "open",
-   "closed_on": null
+   "status": "closed",
+   "closed_on": "2026-09-24"
   },
   {
    "id": "fortrea:251030",
@@ -1119,6 +1119,13 @@
     "notes": "Six months of CRA training for recent life-science graduates, then a CRA I role. The UK intake needs the right to work in the UK without sponsorship. Parexel's early-careers page is https://jobs.parexel.com/en/emerging-talent."
    },
    {
+    "company": "Eli Lilly",
+    "programme": "UK early careers and graduate roles",
+    "area": "Various",
+    "url": "https://careers.lilly.com/",
+    "notes": "Lilly's job board blocks automated checks, so search it by hand for UK roles (Bracknell and London)."
+   },
+   {
     "company": "Cencora PharmaLex",
     "programme": "Trainee, Regulatory Affairs",
     "area": "Regulatory Affairs",
@@ -1146,6 +1153,16 @@
   ]
  },
  "health": {
+  "abbvie/attrax": {
+   "company": "AbbVie",
+   "type": "attrax",
+   "ok": true,
+   "scanned": 250,
+   "matches": 0,
+   "error": null,
+   "note": "newest 250 roles",
+   "last_ok": "2026-09-24"
+  },
   "amgen/workday": {
    "company": "Amgen",
    "type": "workday",
@@ -1170,7 +1187,7 @@
    "company": "AstraZeneca",
    "type": "workday",
    "ok": true,
-   "scanned": 52,
+   "scanned": 53,
    "matches": 1,
    "error": null,
    "note": "filtered by location (9 offices)",
@@ -1193,7 +1210,7 @@
    "scanned": 400,
    "matches": 0,
    "error": null,
-   "note": "",
+   "note": "newest 400 of 639 jobs",
    "last_ok": "2026-09-24"
   },
   "beone-medicines/workday": {
@@ -1265,16 +1282,6 @@
    "error": null,
    "note": "",
    "last_ok": "2026-09-24"
-  },
-  "eli-lilly/workday": {
-   "company": "Eli Lilly",
-   "type": "workday",
-   "ok": false,
-   "scanned": 0,
-   "matches": 0,
-   "error": "RetryError: HTTPSConnectionPool(host='lilly.wd5.myworkdayjobs.com', port=443): Max retries exceeded with url: /en-US/LLY (Caused by ResponseError('too many 500 error responses'))",
-   "note": "",
-   "last_ok": null
   },
   "fortrea/workday": {
    "company": "Fortrea",
@@ -1376,6 +1383,16 @@
    "note": "",
    "last_ok": "2026-09-24"
   },
+  "medpace/jibe": {
+   "company": "Medpace",
+   "type": "jibe",
+   "ok": false,
+   "scanned": 0,
+   "matches": 0,
+   "error": "The Jibe jobs API returned no jobs",
+   "note": "",
+   "last_ok": null
+  },
   "moderna/workday": {
    "company": "Moderna",
    "type": "workday",
@@ -1383,17 +1400,17 @@
    "scanned": 157,
    "matches": 0,
    "error": null,
-   "note": "keyword search (board has no country filter)",
+   "note": "keyword search (board has no location filter)",
    "last_ok": "2026-09-24"
   },
   "msd/workday": {
    "company": "MSD",
    "type": "workday",
    "ok": true,
-   "scanned": 120,
+   "scanned": 14,
    "matches": 1,
    "error": null,
-   "note": "filtered by location (4 offices)",
+   "note": "filtered by location (3 offices)",
    "last_ok": "2026-09-24"
   },
   "novartis/workday": {
@@ -1545,26 +1562,6 @@
    "error": null,
    "note": "filtered by location (country)",
    "last_ok": "2026-09-24"
-  },
-  "abbvie/attrax": {
-   "company": "AbbVie",
-   "type": "attrax",
-   "ok": true,
-   "scanned": 250,
-   "matches": 0,
-   "error": null,
-   "note": "",
-   "last_ok": "2026-09-24"
-  },
-  "medpace/jibe": {
-   "company": "Medpace",
-   "type": "jibe",
-   "ok": false,
-   "scanned": 0,
-   "matches": 0,
-   "error": "The Jibe jobs API returned no jobs",
-   "note": "",
-   "last_ok": null
   }
  }
 }

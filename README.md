@@ -60,15 +60,15 @@ This section is rewritten automatically on every run.
 
 <!-- TRACKER:START -->
 
-**Last refreshed:** 24 Sep 2026, 09:38 UTC · **34 open roles** at 14 companies · [Open the dashboard](https://keerthanvemulapati.github.io/Grad-scheme-applications/)
+**Last refreshed:** 24 Sep 2026, 09:42 UTC · **30 open roles** at 13 companies · [Open the dashboard](https://keerthanvemulapati.github.io/Grad-scheme-applications/)
 
 | | Regulatory Affairs | Medical Affairs | Clinical Operations | Other areas |
 |---|---|---|---|---|
-| Graduate scheme | 1 | 0 | 0 | 6 |
-| Entry level | 0 | 0 | 15 | 0 |
-| Check seniority | 1 | 1 | 9 | 1 |
+| Graduate scheme | 1 | 0 | 0 | 4 |
+| Entry level | 0 | 0 | 14 | 0 |
+| Check seniority | 1 | 1 | 8 | 1 |
 
-### New in the last 7 days (34)
+### New in the last 7 days (30)
 
 | Company | Role | Area | Level | Location | Found |
 |---|---|---|---|---|---|
@@ -81,7 +81,6 @@ This section is rewritten automatically on every run.
 | ICON | [Clinical Site Contracting Coordinator](https://icon.wd3.myworkdayjobs.com/en-US/broadbean_external/job/Regional-Great-Britain-Northern-Ireland/Clinical-Site-Contracting-Coordinator_JR157722) | Clinical Operations | Entry level | Regional Great Britain (Northern Irelan… | 24 Sep |
 | IQVIA | [Clinical Research Associate](https://iqvia.wd1.myworkdayjobs.com/en-US/IQVIA/job/Reading-Berkshire-United-Kingdom/Clinical-Research-Associate---Ireland_R1514135) | Clinical Operations | Entry level | Reading, Berkshire, United Kingdom; Oxf… | 24 Sep |
 | MSD | [Clinical Research Associate - North West England](https://msd.wd5.myworkdayjobs.com/en-US/SearchJobs/job/GBR---London---London-Moorgate-WeWork/Clinical-Research-Associate---North-West-England_R416129) | Clinical Operations | Entry level | GBR - London - London (Moorgate WeWork) | 24 Sep |
-| MSD | [Clinical Research Associate (CRA)](https://msd.wd5.myworkdayjobs.com/en-US/SearchJobs/job/AUS---New-South-Wales---Macquarie-Park/Clinical-Research-Associate--CRA-_R417178-1) | Clinical Operations | Entry level | AUS - New South Wales - Macquarie Park | 24 Sep |
 | Novartis | [Project Coordinator - Global Clinical Operations](https://novartis.wd3.myworkdayjobs.com/en-US/Novartis_Careers/job/London-The-Westworks/Project-Coordinator---Global-Clinical-Operations_REQ-10087071-1) | Clinical Operations | Entry level | London (The Westworks) | 24 Sep |
 | Thermo Fisher (PPD) | [Assistant CRA](https://thermofisher.wd5.myworkdayjobs.com/en-US/ThermoFisherCareers/job/Remote-United-Kingdom/Assistant-CRA_R-01339167) | Clinical Operations | Entry level | Remote, United Kingdom | 24 Sep |
 | Thermo Fisher (PPD) | [Clinical Trial Coordinator - Glasgow](https://thermofisher.wd5.myworkdayjobs.com/en-US/ThermoFisherCareers/job/Bellshill-United-Kingdom/Clinical-Trial-Coordinator---Glasgow_R-01348797) | Clinical Operations | Entry level | Bellshill, United Kingdom | 24 Sep |
@@ -91,7 +90,6 @@ This section is rewritten automatically on every run.
 | ICON | [Site Contract and Budget Specialist 4](https://icon.wd3.myworkdayjobs.com/en-US/broadbean_external/job/Regional-Great-Britain-Northern-Ireland/Site-Contract-and-Budget-Specialist-4_JR159465) | Clinical Operations | Check seniority | Regional Great Britain (Northern Irelan… | 24 Sep |
 | IQVIA | [Experienced CRA - Single Sponsor Dedicated](https://iqvia.wd1.myworkdayjobs.com/en-US/IQVIA/job/Reading-Berkshire-United-Kingdom/Experienced-CRA---Single-Sponsor-Dedicated_R1524544) | Clinical Operations | Check seniority | Reading, Berkshire, United Kingdom | 24 Sep |
 | Johnson & Johnson | [Medical Affairs Specialist](https://jj.wd5.myworkdayjobs.com/en-US/JJ/job/Brussels-Brussels-Capital-Region-Belgium/Medical-Affairs-Specialist_R-018387) | Medical Affairs | Check seniority | Brussels, Brussels-Capital Region, Belg… | 24 Sep |
-| PSI CRO | [Clinical Trial Liaison (Oncology)](https://jobs.smartrecruiters.com/PSICRO/744000149413559) <sub>location unclear</sub> | Clinical Operations | Check seniority | Remote, REMOTE, United States | 24 Sep |
 | Syneos Health | [CRA - Future Roles (UK)](https://syneoshealth.wd12.myworkdayjobs.com/en-US/Syneos_Health_External_Site/job/GBR-London-Hybrid/CRA---Future-Roles--UK-_25106983) | Clinical Operations | Check seniority | GBR-London-Hybrid | 24 Sep |
 | Syneos Health | [CRA UK](https://syneoshealth.wd12.myworkdayjobs.com/en-US/Syneos_Health_External_Site/job/GBR-Remote/CRA-UK_25112022) | Clinical Operations | Check seniority | GBR-Remote | 24 Sep |
 | ICON | [Clinical Research Associate](https://icon.wd3.myworkdayjobs.com/en-US/broadbean_external/job/UK-Reading/CRA2---sponsor-dedicated_JR157317) <sub>asks for experience</sub> | Clinical Operations | Entry level | UK, Reading | 24 Sep |
@@ -100,8 +98,6 @@ This section is rewritten automatically on every run.
 | GSK | [Communications and Government Affairs Graduate Programme, UK, 2027](https://gsk.wd5.myworkdayjobs.com/en-US/GSKCareers/job/UK--London--New-Oxford-Street/Communications-and-Government-Affairs-Graduate-Programme--UK--2027_448163) <sub>2027</sub> | Other Graduate Scheme | Graduate scheme | UK – London – New Oxford Street | 24 Sep |
 | GSK | [Quality Science Graduate Programme – Barnard Castle, UK, 2027](https://gsk.wd5.myworkdayjobs.com/en-US/GSKCareers/job/UK---County-Durham---Barnard-Castle/Quality-Science-Graduate-Programme---Barnard-Castle--UK--2027_448225) <sub>2027</sub> | Other Graduate Scheme | Graduate scheme | UK - County Durham - Barnard Castle | 24 Sep |
 | GSK | [Quality Science Graduate Programme – Ware, UK, 2027](https://gsk.wd5.myworkdayjobs.com/en-US/GSKCareers/job/UK---Hertfordshire---Ware/Quality-Science-Graduate-Programme---Ware--UK--2027_448227) <sub>2027</sub> | Other Graduate Scheme | Graduate scheme | UK - Hertfordshire - Ware | 24 Sep |
-| Johnson & Johnson | [Research & Development Leadership Development Program (RDLDP)- Full-Time Class of 2027](https://jj.wd5.myworkdayjobs.com/en-US/JJ/job/Santa-Clara-California-United-States-of-America/Research---Development-Leadership-Development-Program--RDLDP---Full-Time-Class-of-2027_R-096443) <sub>2027</sub> | Other Graduate Scheme | Graduate scheme | Santa Clara, California, United States… | 24 Sep |
-| Johnson & Johnson | [2027 MedTech Marketing Leadership Development Program (MLDP)- Full-Time](https://jj.wd5.myworkdayjobs.com/en-US/JJ/job/Raritan-New-Jersey-United-States-of-America/XMLNAME-2027-MedTech-Marketing-Leadership-Development-Program--MLDP---Full-Time_R-100842) <sub>2027</sub> | Other Graduate Scheme | Graduate scheme | Raritan, New Jersey, United States of A… | 24 Sep |
 | Fortrea | [Site Start-Up Specialist](https://fortrea.wd1.myworkdayjobs.com/en-US/Fortrea/job/Maidenhead/Site-Start-Up-Specialist_251030) <sub>asks for experience</sub> | Clinical Operations | Check seniority | Maidenhead; Warsaw; Dublin | 24 Sep |
 | IQVIA | [Clinical Independent Rater for Clinical Trial - Polish Speaking](https://iqvia.wd1.myworkdayjobs.com/en-US/IQVIA/job/Warsaw-Poland/Clinical-Independent-Rater---Polish-Speaking_R1565158) <sub>asks for experience</sub> | Clinical Operations | Check seniority | Warsaw, Poland; Noumea, France; Taucha,… | 24 Sep |
 | IQVIA | [Freelance Site Activation Specialist (Study Start-Up / Regulatory Submissions) – UK Remote](https://iqvia.wd1.myworkdayjobs.com/en-US/IQVIA/job/London-United-Kingdom/Freelance-Site-Activation-Specialist--Study-Start-Up---Regulatory-Submissions----UK-Remote_R1565336) <sub>asks for experience</sub> | Regulatory Affairs | Check seniority | London, United Kingdom; Edinburgh, Scot… | 24 Sep |
@@ -120,7 +116,7 @@ This section is rewritten automatically on every run.
 |---|---|---|---|---|
 | Johnson & Johnson | [Medical Affairs Specialist](https://jj.wd5.myworkdayjobs.com/en-US/JJ/job/Brussels-Brussels-Capital-Region-Belgium/Medical-Affairs-Specialist_R-018387) | Check seniority | Brussels, Brussels-Capital Region, Belg… | 24 Sep |
 
-### Clinical Operations (24)
+### Clinical Operations (22)
 
 | Company | Role | Level | Location | Found |
 |---|---|---|---|---|
@@ -131,7 +127,6 @@ This section is rewritten automatically on every run.
 | ICON | [Clinical Site Contracting Coordinator](https://icon.wd3.myworkdayjobs.com/en-US/broadbean_external/job/Regional-Great-Britain-Northern-Ireland/Clinical-Site-Contracting-Coordinator_JR157722) | Entry level | Regional Great Britain (Northern Irelan… | 24 Sep |
 | ICON | [Patient Recruitment Associate I](https://icon.wd3.myworkdayjobs.com/en-US/broadbean_external/job/UK-Warwickshire/Patient-Recruitment-Associate-I_JR156686-1) | Entry level | UK, Warwickshire | 24 Sep |
 | IQVIA | [Clinical Research Associate](https://iqvia.wd1.myworkdayjobs.com/en-US/IQVIA/job/Reading-Berkshire-United-Kingdom/Clinical-Research-Associate---Ireland_R1514135) | Entry level | Reading, Berkshire, United Kingdom; Oxf… | 24 Sep |
-| MSD | [Clinical Research Associate (CRA)](https://msd.wd5.myworkdayjobs.com/en-US/SearchJobs/job/AUS---New-South-Wales---Macquarie-Park/Clinical-Research-Associate--CRA-_R417178-1) | Entry level | AUS - New South Wales - Macquarie Park | 24 Sep |
 | MSD | [Clinical Research Associate - North West England](https://msd.wd5.myworkdayjobs.com/en-US/SearchJobs/job/GBR---London---London-Moorgate-WeWork/Clinical-Research-Associate---North-West-England_R416129) | Entry level | GBR - London - London (Moorgate WeWork) | 24 Sep |
 | Novartis | [Project Coordinator - Global Clinical Operations](https://novartis.wd3.myworkdayjobs.com/en-US/Novartis_Careers/job/London-The-Westworks/Project-Coordinator---Global-Clinical-Operations_REQ-10087071-1) | Entry level | London (The Westworks) | 24 Sep |
 | Thermo Fisher (PPD) | [Assistant CRA](https://thermofisher.wd5.myworkdayjobs.com/en-US/ThermoFisherCareers/job/Remote-United-Kingdom/Assistant-CRA_R-01339167) | Entry level | Remote, United Kingdom | 24 Sep |
@@ -141,7 +136,6 @@ This section is rewritten automatically on every run.
 | ICON | [CRA](https://icon.wd3.myworkdayjobs.com/en-US/broadbean_external/job/UK-Reading/CRA_JR146722) | Check seniority | UK, Reading; UK, Livingston; UK, Swansea | 24 Sep |
 | ICON | [Site Contract and Budget Specialist 4](https://icon.wd3.myworkdayjobs.com/en-US/broadbean_external/job/Regional-Great-Britain-Northern-Ireland/Site-Contract-and-Budget-Specialist-4_JR159465) | Check seniority | Regional Great Britain (Northern Irelan… | 24 Sep |
 | IQVIA | [Experienced CRA - Single Sponsor Dedicated](https://iqvia.wd1.myworkdayjobs.com/en-US/IQVIA/job/Reading-Berkshire-United-Kingdom/Experienced-CRA---Single-Sponsor-Dedicated_R1524544) | Check seniority | Reading, Berkshire, United Kingdom | 24 Sep |
-| PSI CRO | [Clinical Trial Liaison (Oncology)](https://jobs.smartrecruiters.com/PSICRO/744000149413559) <sub>location unclear</sub> | Check seniority | Remote, REMOTE, United States | 24 Sep |
 | Syneos Health | [CRA - Future Roles (UK)](https://syneoshealth.wd12.myworkdayjobs.com/en-US/Syneos_Health_External_Site/job/GBR-London-Hybrid/CRA---Future-Roles--UK-_25106983) | Check seniority | GBR-London-Hybrid | 24 Sep |
 | Syneos Health | [CRA UK](https://syneoshealth.wd12.myworkdayjobs.com/en-US/Syneos_Health_External_Site/job/GBR-Remote/CRA-UK_25112022) | Check seniority | GBR-Remote | 24 Sep |
 | ICON | [Clinical Research Associate](https://icon.wd3.myworkdayjobs.com/en-US/broadbean_external/job/UK-Reading/CRA2---sponsor-dedicated_JR157317) <sub>asks for experience</sub> | Entry level | UK, Reading | 24 Sep |
@@ -149,7 +143,7 @@ This section is rewritten automatically on every run.
 | Fortrea | [Site Start-Up Specialist](https://fortrea.wd1.myworkdayjobs.com/en-US/Fortrea/job/Maidenhead/Site-Start-Up-Specialist_251030) <sub>asks for experience</sub> | Check seniority | Maidenhead; Warsaw; Dublin | 24 Sep |
 | IQVIA | [Clinical Independent Rater for Clinical Trial - Polish Speaking](https://iqvia.wd1.myworkdayjobs.com/en-US/IQVIA/job/Warsaw-Poland/Clinical-Independent-Rater---Polish-Speaking_R1565158) <sub>asks for experience</sub> | Check seniority | Warsaw, Poland; Noumea, France; Taucha,… | 24 Sep |
 
-### Other roles worth a look (7)
+### Other roles worth a look (5)
 
 <details><summary>Drug safety, clinical data, medical writing and other graduate schemes</summary>
 
@@ -159,20 +153,22 @@ This section is rewritten automatically on every run.
 | GSK | [Communications and Government Affairs Graduate Programme, UK, 2027](https://gsk.wd5.myworkdayjobs.com/en-US/GSKCareers/job/UK--London--New-Oxford-Street/Communications-and-Government-Affairs-Graduate-Programme--UK--2027_448163) <sub>2027</sub> | Other Graduate Scheme | Graduate scheme | UK – London – New Oxford Street | 24 Sep |
 | GSK | [Quality Science Graduate Programme – Barnard Castle, UK, 2027](https://gsk.wd5.myworkdayjobs.com/en-US/GSKCareers/job/UK---County-Durham---Barnard-Castle/Quality-Science-Graduate-Programme---Barnard-Castle--UK--2027_448225) <sub>2027</sub> | Other Graduate Scheme | Graduate scheme | UK - County Durham - Barnard Castle | 24 Sep |
 | GSK | [Quality Science Graduate Programme – Ware, UK, 2027](https://gsk.wd5.myworkdayjobs.com/en-US/GSKCareers/job/UK---Hertfordshire---Ware/Quality-Science-Graduate-Programme---Ware--UK--2027_448227) <sub>2027</sub> | Other Graduate Scheme | Graduate scheme | UK - Hertfordshire - Ware | 24 Sep |
-| Johnson & Johnson | [2027 MedTech Marketing Leadership Development Program (MLDP)- Full-Time](https://jj.wd5.myworkdayjobs.com/en-US/JJ/job/Raritan-New-Jersey-United-States-of-America/XMLNAME-2027-MedTech-Marketing-Leadership-Development-Program--MLDP---Full-Time_R-100842) <sub>2027</sub> | Other Graduate Scheme | Graduate scheme | Raritan, New Jersey, United States of A… | 24 Sep |
-| Johnson & Johnson | [Research & Development Leadership Development Program (RDLDP)- Full-Time Class of 2027](https://jj.wd5.myworkdayjobs.com/en-US/JJ/job/Santa-Clara-California-United-States-of-America/Research---Development-Leadership-Development-Program--RDLDP---Full-Time-Class-of-2027_R-096443) <sub>2027</sub> | Other Graduate Scheme | Graduate scheme | Santa Clara, California, United States… | 24 Sep |
 | Worldwide Clinical Trials | [Pharmacovigilance Specialist - US - Remote](https://worldwide.wd1.myworkdayjobs.com/en-US/External/job/Durham-North-Carolina/Pharmacovigilance-Specialist---US---Remote_JR102334) | Drug Safety / PV | Check seniority | Durham, North Carolina; Brasilia, Brazi… | 24 Sep |
 
 </details>
 
 ### Earlier intakes and closed roles
 
-<details><summary>0 earlier-intake adverts still up, 17 closed recently</summary>
+<details><summary>0 earlier-intake adverts still up, 21 closed recently</summary>
 
 **Closed recently**
 
 | Company | Role | Closed |
 |---|---|---|
+| Johnson & Johnson | [Research & Development Leadership Development Program (RDLDP)- Full-Time Class of 2027](https://jj.wd5.myworkdayjobs.com/en-US/JJ/job/Santa-Clara-California-United-States-of-America/Research---Development-Leadership-Development-Program--RDLDP---Full-Time-Class-of-2027_R-096443) <sub>2027</sub> | 24 Sep |
+| Johnson & Johnson | [2027 MedTech Marketing Leadership Development Program (MLDP)- Full-Time](https://jj.wd5.myworkdayjobs.com/en-US/JJ/job/Raritan-New-Jersey-United-States-of-America/XMLNAME-2027-MedTech-Marketing-Leadership-Development-Program--MLDP---Full-Time_R-100842) <sub>2027</sub> | 24 Sep |
+| MSD | [Clinical Research Associate (CRA)](https://msd.wd5.myworkdayjobs.com/en-US/SearchJobs/job/AUS---New-South-Wales---Macquarie-Park/Clinical-Research-Associate--CRA-_R417178-1) | 24 Sep |
+| PSI CRO | [Clinical Trial Liaison (Oncology)](https://jobs.smartrecruiters.com/PSICRO/744000149413559) <sub>location unclear</sub> | 24 Sep |
 | Regeneron | [Clinical Study Specialist](https://regeneron.wd1.myworkdayjobs.com/en-US/Careers/job/Uxbridge1/Clinical-Study-Specialist_R50053) | 24 Sep |
 | Regeneron | [Medical Specialist I-Allergy/ENT-Seattle, Tacoma, WA & Anchorage, AK](https://regeneron.wd1.myworkdayjobs.com/en-US/Careers/job/Remote---United-States/Medical-Specialist-I-Allergy-ENT-Seattle--Tacoma--WA---Anchorage--AK_R50509) <sub>location unclear</sub> | 24 Sep |
 | Thermo Fisher (PPD) | [Trial Delivery Specialist/ Clinical Trial Coordination, FSP](https://thermofisher.wd5.myworkdayjobs.com/en-US/ThermoFisherCareers/job/Remote-Poland/Clinical-Trial-Coordinator--FSP_R-01326868) <sub>location unclear</sub> | 24 Sep |
@@ -211,24 +207,24 @@ Schemes that open at set times of year or are advertised outside the job boards 
 | Medpace | [Entry Level Clinical Research Associate (PACE training)](https://www.medpace.com/careers/) | Clinical Operations | London office-based at first, with Medpace's CRA training programme. Also checked automatically. |
 | Hammersmith Medicines Research | [Careers and apprenticeships](https://www.hmrlondon.com/careers) | Clinical Operations | Early-phase unit in London. Offers a Clinical Trials Specialist apprenticeship with the University of Kent. Its site blocks automated checks, so look at it by hand every week or two. |
 | Parexel | [APEX Clinical Research Associate training programme](https://jobs.parexel.com/en/APEX-CRA-Program) | Clinical Operations | Six months of CRA training for recent life-science graduates, then a CRA I role. The UK intake needs the right to work in the UK without sponsorship. Parexel's early-careers page is https://jobs.parexel.com/en/emerging-talent. |
+| Eli Lilly | [UK early careers and graduate roles](https://careers.lilly.com/) | Various | Lilly's job board blocks automated checks, so search it by hand for UK roles (Bracknell and London). |
 | Cencora PharmaLex | [Trainee, Regulatory Affairs](https://careers.cencora.com/us/en/united-kingdom-jobs) | Regulatory Affairs | Regulatory consultancy that hires trainees; its job board is checked automatically. |
 
 **Other places to look:** [Bright Network pharma deadlines](https://www.brightnetwork.co.uk/application-deadlines/jobs/graduate-schemes/pharmaceuticals-science/) · [TARGETjobs medical & healthcare](https://targetjobs.co.uk/graduate-jobs/medical-healthcare) · [Prospects science graduate schemes](https://www.prospects.ac.uk/jobs-and-work-experience/job-sectors/science-and-pharmaceuticals/science-graduate-schemes/) · [TOPRA regulatory apprenticeships](https://www.topra.org/TOPRA/TOPRA_Member/Apprenticeships_in_Regulatory_Affairs.aspx)
 
 ### Job board status
 
-<details><summary>40 of 42 job boards read successfully on the last run</summary>
+<details><summary>40 of 41 job boards read successfully on the last run</summary>
 
 | Company | Board | Status | Jobs read | Matches | Notes |
 |---|---|---|---|---|---|
-| Eli Lilly | workday | Failing (3x) | 0 | 0 | RetryError: HTTPSConnectionPool(host='lilly.wd5.myworkdayjobs.com', port=443):… |
-| Medpace | jibe | Failing (1x) | 0 | 0 | The Jibe jobs API returned no jobs |
-| AbbVie | attrax | OK | 250 | 0 |  |
+| Medpace | jibe | Failing (2x) | 0 | 0 | The Jibe jobs API returned no jobs |
+| AbbVie | attrax | OK | 250 | 0 | newest 250 roles |
 | Amgen | workday | OK | 13 | 1 | filtered by location (country) |
 | Astellas | successfactors | OK | 8 | 0 | country filter |
-| AstraZeneca | workday | OK | 52 | 1 | filtered by location (9 offices) |
+| AstraZeneca | workday | OK | 53 | 1 | filtered by location (9 offices) |
 | AstraZeneca | workday | OK | 18 | 0 | filtered by location (4 offices) |
-| Bayer | eightfold | OK | 400 | 0 |  |
+| Bayer | eightfold | OK | 400 | 0 | newest 400 of 639 jobs |
 | BeOne Medicines | workday | OK | 4 | 0 | filtered by location (country) |
 | Biogen | workday | OK | 1 | 0 | filtered by location (country) |
 | Boehringer Ingelheim | successfactors | OK | 188 | 0 | location search |
@@ -246,8 +242,8 @@ Schemes that open at set times of year or are advertised outside the job boards 
 | Johnson & Johnson | workday | OK | 47 | 1 | filtered by location (9 offices) |
 | Labcorp | workday | OK | 16 | 0 | filtered by location (5 offices) |
 | MAC Clinical Research | pagewatch | OK | 6 | 0 |  |
-| Moderna | workday | OK | 157 | 0 | keyword search (board has no country filter) |
-| MSD | workday | OK | 120 | 1 | filtered by location (4 offices) |
+| Moderna | workday | OK | 157 | 0 | keyword search (board has no location filter) |
+| MSD | workday | OK | 14 | 1 | filtered by location (3 offices) |
 | Novartis | workday | OK | 30 | 1 | filtered by location (country) |
 | Novo Nordisk | successfactors | OK | 3 | 0 | country filter |
 | Parexel | workday | OK | 33 | 0 | filtered by location (country) |
