@@ -16,6 +16,9 @@ from tracker.classify import classify, extract_facts, location_status
     ("R&D Graduate Programme - Bioscience - UK", "other_graduate", "graduate_scheme"),
     ("Future Leaders Programme - Health Outcomes", "other_graduate", "graduate_scheme"),
     ("Clinical Trials Associate", "clinical_operations", "entry_level"),
+    ("Clinical Trials Associate - UK or Serbia - Remote", "clinical_operations", "entry_level"),
+    ("Clinical Trial Assistant (English Speaking)", "clinical_operations", "entry_level"),
+    ("REGISTER YOUR INTEREST: Early Talent UK Opportunities, 2027", "other_graduate", "graduate_scheme"),
 ])
 def test_relevant_titles(search, title, category, level):
     result = classify(title, search)
@@ -40,6 +43,12 @@ def test_relevant_titles(search, title, category, level):
     "PhD Studentship in Pharmacology",
     "Sales Representative",
     "Software Engineer",
+    "Experienced CRA (multi-sponsor, home-based)",
+    "Clinical Trial Site Relationship Coordinator (Finnish Speaking)",
+    "Freelance Site Activation Specialist (Study Start-Up)",
+    "Site Contract and Budget Specialist 4",
+    "Pharmacovigilance Specialist - US - Remote",
+    "Medical Science Liaison, Lung",
 ])
 def test_irrelevant_titles(search, title):
     assert not classify(title, search).relevant

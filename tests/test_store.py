@@ -104,3 +104,12 @@ def test_partial_boards_expire_instead_of_closing():
     later = DAY1 + dt.timedelta(days=store.PARTIAL_EXPIRY_DAYS + 1)
     changes = store.merge(state, [partial], later, KEYS)
     assert [j["id"] for j in changes["closed"]] == ["b"]
+
+
+def test_baseline_marks_roles_open_at_start():
+    state = store.empty_state()
+    store.merge(state, [result([rec("a")])], DAY1, KEYS)
+    store.merge(state, [result([rec("a"), rec("b")])], DAY2, KEYS)
+    assert state["jobs"]["a"]["baseline"] is True
+    assert state["jobs"]["b"]["baseline"] is False
+    assert state["meta"]["source_first_ok"] == {"gsk/workday": DAY1.isoformat()}

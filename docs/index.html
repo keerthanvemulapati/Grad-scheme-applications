@@ -246,7 +246,7 @@ footer { margin-top: 32px; color: var(--muted); font-size: .82rem; }
     return d.toLocaleDateString("en-GB", { day: "numeric", month: "short" });
   }
   function areaOf(job) { return PRIORITY.indexOf(job.category) >= 0 ? job.category : "other"; }
-  function isNew(job) { return daysAgo(job.first_seen) < 7; }
+  function isNew(job) { return !job.baseline && daysAgo(job.first_seen) < 7; }
 
   function chips(containerId, options, isOn, onClick) {
     var box = $(containerId);

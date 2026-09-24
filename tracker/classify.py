@@ -85,6 +85,8 @@ def classify(
         return Classification(False, reason="outside target countries")
     if _any(cfg.exclude, t):
         return Classification(False, reason="excluded title (internship, placement, student or test advert)")
+    if _any(cfg.location_elsewhere, t) and not _any(cfg.location_match, t):
+        return Classification(False, reason="title names a location outside the target countries")
 
     is_scheme = _any(cfg.scheme, t)
     if not is_scheme and _any(cfg.senior, t):

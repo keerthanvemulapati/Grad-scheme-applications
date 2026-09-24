@@ -73,4 +73,8 @@ def test_feed_and_dashboard(tmp_path, monkeypatch):
     render.write_dashboard_data(_state(), {}, load_watchlist(), now)
     feed = (tmp_path / "feed.xml").read_text()
     assert feed.count("<item>") == 1 and "GSK — Regulatory Affairs" in feed
+    state = _state()
+    state["jobs"]["gsk:1"]["baseline"] = True
+    render.write_feed(state, now)
+    assert (tmp_path / "feed.xml").read_text().count("<item>") == 0
     assert '"generated": "2026-09-24T09:00:00Z"' in (tmp_path / "jobs.json").read_text()

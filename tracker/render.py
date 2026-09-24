@@ -25,7 +25,7 @@ PRIORITY_ORDER = ["regulatory_affairs", "medical_affairs", "clinical_operations"
 NEW_DAYS = 7
 PUBLIC_FIELDS = ("id", "company", "company_type", "title", "url", "location", "posted",
                  "category", "category_label", "priority", "level", "tags", "score",
-                 "first_seen", "last_seen", "status", "closed_on")
+                 "first_seen", "last_seen", "status", "closed_on", "baseline")
 
 
 def repo_slug() -> str:
@@ -103,7 +103,7 @@ def build_readme_section(state: dict, health: dict, watchlist: dict, now: dt.dat
     old_intake = [j for j in open_jobs if "old_intake" in j.get("tags", [])]
     closed = sorted([j for j in jobs if j.get("status") == "closed"],
                     key=lambda j: j.get("closed_on") or "", reverse=True)
-    recent = [j for j in current if j.get("first_seen") and
+    recent = [j for j in current if j.get("first_seen") and not j.get("baseline") and
               (today - dt.date.fromisoformat(j["first_seen"])).days < NEW_DAYS]
     recent.sort(key=lambda j: (j["first_seen"], j.get("score", 0)), reverse=True)
 
@@ -131,7 +131,12 @@ def build_readme_section(state: dict, health: dict, watchlist: dict, now: dt.dat
         out.append(f"| {label} | " + " | ".join(row) + " |")
     out.append("")
 
-    out += [f"### New in the last {NEW_DAYS} days ({len(recent)})", "", _table(recent, True)]
+    out += [f"### New in the last {NEW_DAYS} days ({len(recent)})", ""]
+    if not recent and all(j.get("baseline") for j in current):
+        out += ["_Nothing yet. Everything below was already open when the tracker started; "
+                "new postings will appear here._", ""]
+    else:
+        out.append(_table(recent, True))
 
     for key in PRIORITY_ORDER:
         group = _sort([j for j in current if j["category"] == key])
@@ -216,7 +221,8 @@ def write_dashboard_data(state: dict, health: dict, watchlist: dict, now: dt.dat
 
 def write_feed(state: dict, now: dt.datetime) -> None:
     jobs = [j for j in state["jobs"].values()
-            if j.get("status") == "open" and "old_intake" not in j.get("tags", [])]
+            if j.get("status") == "open" and "old_intake" not in j.get("tags", [])
+            and not j.get("baseline")]
     jobs.sort(key=lambda j: (j.get("first_seen") or "", j.get("score", 0)), reverse=True)
     link = dashboard_url() or f"https://github.com/{repo_slug()}"
     items = []

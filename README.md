@@ -1,19 +1,26 @@
 # Pharma Graduate Scheme Tracker (2027 intake)
 
-This tracker checks the job boards of about 40 pharma companies, CROs and regulatory consultancies every three hours. It looks for UK graduate schemes and entry-level roles. **Regulatory affairs, medical affairs and clinical operations** come first. When a new role appears, it updates the tables below and alerts you.
+This tracker checks the job boards of 40 pharma companies, CROs and regulatory consultancies every three hours. It looks for UK graduate schemes and entry-level roles. **Regulatory affairs, medical affairs and clinical operations** come first. When a new role appears, it updates the tables below and alerts you.
 
-It covers GSK, AstraZeneca, J&J, AbbVie, Vertex, Pfizer, Novartis, Roche, Sanofi, MSD, BMS, Takeda, Lilly, Amgen, Gilead, Biogen, Moderna, CSL, Ipsen, Daiichi Sankyo, Regeneron, Bayer, Boehringer Ingelheim, UCB and Haleon. It also covers Medpace, Hammersmith Medicines Research, IQVIA, ICON, Parexel, Syneos Health, Thermo Fisher (PPD), Fortrea, Labcorp, Worldwide Clinical Trials, Richmond Pharmacology, PSI, MAC Clinical Research, Quotient Sciences and Cencora PharmaLex. The full list is in [`config/companies.yaml`](config/companies.yaml).
+**Pharma:** GSK, AstraZeneca (including its separate graduate job board), Johnson & Johnson, AbbVie, Vertex, Pfizer, Novartis, Roche, Sanofi, MSD, Bristol Myers Squibb, Takeda, Amgen, Gilead, Biogen, Moderna, CSL, Ipsen, Daiichi Sankyo, Regeneron, Bayer, Boehringer Ingelheim, UCB, Novo Nordisk, Astellas, BeOne Medicines and Haleon.
+
+**CROs and consultancies:** Medpace, IQVIA, ICON, Parexel, Syneos Health, Thermo Fisher (PPD), Fortrea, Labcorp, Worldwide Clinical Trials, Richmond Pharmacology, PSI, MAC Clinical Research and Cencora PharmaLex.
+
+**Checked by hand:** Hammersmith Medicines Research and Eli Lilly block automated visitors, so they are listed under "Programmes to watch" with direct links. So are schemes advertised away from company job boards, such as Parexel's APEX CRA programme and MSD's 2027 schemes.
+
+The full list is in [`config/companies.yaml`](config/companies.yaml).
 
 ## How it works
 
 1. A GitHub Actions job runs every three hours. It reads each company's job board directly, filtered to UK roles.
-2. Each role is sorted into an area (regulatory, medical, clinical operations, drug safety, clinical data, medical writing, or another graduate scheme) and a level:
+2. Roles are kept only if they are clearly in the UK. A location that names another country overrides a UK town name, so "Cambridge, MA" doesn't count.
+3. Each role is sorted into an area (regulatory, medical, clinical operations, drug safety, clinical data, medical writing, or another graduate scheme) and a level:
    - **Graduate scheme:** the title says graduate, future leaders, early talent and so on.
    - **Entry level:** trainee, assistant, associate, "CRA I" and similar.
    - **Check seniority:** the title doesn't say. The tracker reads the full advert and flags roles that ask for 2+ years' experience.
-3. It skips senior roles, internships, placements and PhD posts. It also skips graduate schemes in unrelated functions such as engineering, IT and finance.
-4. Adverts naming an earlier intake, such as "Graduate Programme 2026", are moved to a separate section. That keeps 2027 roles at the top.
-5. New roles trigger alerts. A role that disappears from its job board is marked closed.
+4. It skips senior and "experienced" roles, internships, placements, PhD posts, roles needing a second language, and Medical Science Liaison roles, which usually need a PhD, PharmD or medical degree. It also skips graduate schemes in unrelated functions such as engineering, IT and finance.
+5. Adverts naming an earlier intake, such as "Graduate Programme 2026", are moved to a separate section. That keeps 2027 roles at the top.
+6. Roles already open when the tracker first read a board count as the starting list. Anything that appears after that is new and triggers an alert. A role that disappears from its job board is marked closed.
 
 The rules live in [`config/search.yaml`](config/search.yaml), which you can edit without touching any code.
 
@@ -38,7 +45,7 @@ Your statuses and notes are saved in your browser. Use **Export backup** on the 
 
 Open any of the company's job adverts and look at the web address. Then add an entry to [`config/companies.yaml`](config/companies.yaml). The comments at the top of that file show the format for each job-board platform, and Workday (`myworkdayjobs.com`) is the most common. Commit the change and the tracker runs straight away. The "Job board status" table below shows whether it worked.
 
-If you can't tell which platform a company uses, run the **Probe job boards** workflow from the Actions tab. It inspects every careers page and reports what it finds.
+If you can't tell which platform a company uses, run the **Probe job boards** workflow from the Actions tab. It inspects every careers page and reports what it finds. To see exactly what one board returns and why each role was kept or skipped, run `python -m tracker diagnose --only <company>`.
 
 ## Running it yourself
 
@@ -47,6 +54,7 @@ pip install -r requirements-dev.txt
 python -m tracker run --no-notify     # check every board and update the files
 python -m tracker run --only gsk,medpace --dry-run
 python -m tracker render              # rebuild README and dashboard from saved data
+python -m tracker diagnose --only medpace   # show what a board returns and why
 python -m pytest -q                   # tests
 ```
 

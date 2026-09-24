@@ -173,6 +173,11 @@ senior_patterns:
   - 'medical\s+director'
   - '(?-i:\b(?:II|III|IV|V)\b)'
   - '\blevel\s*[2-9]\b'
+  - '\b(?:specialist|associate|coordinator|analyst|scientist|cra|officer)\s+[2-9]\b'
+  - '\bexperienced\b'
+  - '\bpsychiatrist\b'
+  - 'product\s+owner'
+  - '\bfreelance\b'
 
 # Titles that are never relevant for a final-year student looking for a
 # graduate job (internships, placements, PhD studentships...).
@@ -188,6 +193,7 @@ exclude_patterns:
   - '\binsight\s+(?:week|day|programme|program)'
   - '\bph\.?\s?d\b'
   - '\bsandwich\s+year\b'
+  - '\b(?!english\b)[a-z]+[- ]speaking\b'
   - 'do\s+not\s+apply'
   - '\btest\s+req\b'
 

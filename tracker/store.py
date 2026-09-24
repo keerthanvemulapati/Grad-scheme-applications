@@ -97,7 +97,26 @@ def merge(state: dict, results: list[SourceResult], today: dt.date,
                 del jobs[jid]
 
     meta["sources_seen_ok"] = sorted(known_ok | ok_keys)
+    mark_baseline(state, today)
     return changes
+
+
+def mark_baseline(state: dict, today: dt.date) -> None:
+    """Flag roles that were already open when their board was first read.
+
+    Those aren't 'new' openings, so they stay out of alerts, the 'new' lists
+    and the feed. Roles that appear later are new.
+    """
+    meta = state["meta"]
+    first_ok: dict = meta.setdefault("source_first_ok", {})
+    for key in meta.get("sources_seen_ok", []):
+        if key not in first_ok:
+            dates = [j["first_seen"] for j in state["jobs"].values()
+                     if j.get("source_key") == key and j.get("first_seen")]
+            first_ok[key] = min(dates) if dates else today.isoformat()
+    for job in state["jobs"].values():
+        start = first_ok.get(job.get("source_key"))
+        job["baseline"] = bool(start and job.get("first_seen") and job["first_seen"] <= start)
 
 
 def update_health(health: dict, results: list[SourceResult], today: dt.date,

@@ -147,6 +147,11 @@ class WorkdaySource(Source):
         location = posting.get("locationsText") or ""
         if in_country is None:
             in_country = self.where(location)
+            parts = path.strip("/").split("/")
+            if in_country is None and len(parts) == 3:  # /job/<Location>/<Title_ID>
+                hint = parts[1].replace("-", " ")
+                in_country = self.where(hint)
+                location = location or hint
         return RawJob(
             source_id=source_id,
             title=title,
