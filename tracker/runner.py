@@ -75,6 +75,8 @@ def run_source(company: Company, src_cfg, search: SearchConfig, known: dict) -> 
             if prev.get("facts") is not None and not raw.enriched:
                 raw.location = prev.get("location") or raw.location
                 raw.posted = raw.posted or prev.get("posted")
+            if in_country is not True:
+                continue  # location unknown or elsewhere; a board that can say will be re-read next run
             cls = classify(raw.title, search, facts=facts, in_country=in_country)
             if not cls.relevant:
                 continue

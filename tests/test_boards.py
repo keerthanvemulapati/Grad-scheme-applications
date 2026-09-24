@@ -182,3 +182,21 @@ def test_icims(search):
     assert [j.source_id for j in jobs] == ["11844"]
     assert jobs[0].title == "Entry Level - Clinical Research Associate"
     assert jobs[0].url == "https://x.icims.com/jobs/11844/entry-level-cra/job"
+
+
+def test_attrax_tiles(search):
+    tile = """<div class="attrax-vacancy-tile attrax-vacancy-tile--{cls}" data-jobid="{jid}">
+      <a class="attrax-vacancy-tile__title" href="/en/job/{slug}-jid-{jid}">{title}</a>
+      <div class="attrax-vacancy-tile__location-freetext"><p class="attrax-vacancy-tile__item-value"> {city} </p></div>
+      <div class="attrax-vacancy-tile__option-location"><p class="attrax-vacancy-tile__item-value">{country}</p></div></div>"""
+    page1 = tile.format(cls="united-kingdom", jid=1, slug="ra", title="Regulatory Affairs Associate",
+                        city="Maidenhead", country="United Kingdom") + \
+        tile.format(cls="netherlands", jid=2, slug="qa", title="QA Manager", city="Zwolle", country="Netherlands")
+
+    def page(method, url, kwargs):
+        return page1 if kwargs["params"]["page"] == 1 else "<div></div>"
+
+    src = make(search, "attrax", {"url": "https://careers.acme.com/en/jobs"}, FakeHTTP({"/en/jobs": page}))
+    jobs = src.fetch()
+    assert [(j.source_id, j.location) for j in jobs] == [("1", "Maidenhead, United Kingdom")]
+    assert jobs[0].url == "https://careers.acme.com/en/job/ra-jid-1"

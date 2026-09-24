@@ -76,8 +76,8 @@ class JibeSource(Source):
         for page in range(1, MAX_PAGES + 1):
             data = self.http.get(
                 f"{base}/api/jobs",
-                params={"page": page, "limit": 100, "sortBy": "posted_date", "descending": "true",
-                        "internal": "false"},
+                params={"page": page, "limit": 100, "lang": "en-us", "sortBy": "relevance",
+                        "descending": "false", "internal": "false"},
                 headers={"Accept": "application/json"},
             ).json()
             if "jobs" not in data:
@@ -104,6 +104,8 @@ class JibeSource(Source):
                 ))
             if not data["jobs"] or len(jobs) >= total:
                 break
+        if not jobs:
+            raise SourceError("The Jibe jobs API returned no jobs")
         self.scanned = len(jobs)
         return list(jobs.values())
 
@@ -127,7 +129,8 @@ class PhenomSource(Source):
     def fetch(self) -> list[RawJob]:
         base = self.require("url")
         jobs: dict[str, RawJob] = {}
-        for query in self.search.fallback_queries:
+        queries = self.options.get("keywords") or self.search.fallback_queries
+        for query in queries:
             for page in range(self.PAGES_PER_QUERY):
                 html = self.http.get(
                     f"{base}/search-results",
@@ -257,7 +260,7 @@ class SuccessFactorsCSBSource(Source):
                 loc = "; ".join(x.strip() for x in locs if x.strip())
                 in_country = True if any(c in self.search.countries for c in countries) \
                     else self.where(f"{loc}; {'; '.join(countries)}")
-                slug = r.get("unifiedUrlTitle") or r.get("urlTitle") or "job"
+                slug = htmllib.unescape(r.get("unifiedUrlTitle") or r.get("urlTitle") or "job")
                 jobs.setdefault(jid, RawJob(
                     source_id=jid,
                     title=(r.get("unifiedStandardTitle") or r.get("title") or "").strip(),
@@ -304,12 +307,14 @@ class RadancySource(Source):
                 loc = " ".join(loc_el.get_text(" ").split()) if loc_el else ""
                 date_el = box.select_one(".job-date-posted, [class*=date]")
                 m = re.search(r"/(\d+)/?$", href)
+                city = re.search(r"/job/([^/]+)/", href)
+                hint = city.group(1).replace("-", " ") if city else ""
                 jobs[href] = RawJob(
                     source_id=a.get("data-job-id") or (m.group(1) if m else href),
                     title=title,
                     url=href,
                     location=loc,
-                    in_country=self.where(loc),
+                    in_country=self.where(f"{loc} {hint}" if self.where(loc) is None else loc),
                     posted=iso_date(date_el.get_text(strip=True)) if date_el else None,
                 )
                 added += 1
@@ -357,6 +362,45 @@ class ICIMSSource(Source):
                 break
         if not jobs:
             raise SourceError("No jobs found on the iCIMS portal")
+        self.scanned = len(jobs)
+        return [j for j in jobs.values() if j.in_country is not False]
+
+
+class AttraxSource(Source):
+    """Attrax career sites that list vacancy tiles 10 per page (e.g. careers.abbvie.com)."""
+
+    type = "attrax"
+
+    def fetch(self) -> list[RawJob]:
+        url = self.require("url")
+        params = dict(self.options.get("params") or {})
+        max_pages = int(self.options.get("max_pages", 150))
+        jobs: dict[str, RawJob] = {}
+        for page in range(1, max_pages + 1):
+            html = self.http.get(url, params=dict(params, page=page),
+                                 headers={"Accept": "text/html"}).text
+            soup = BeautifulSoup(html, "html.parser")
+            added = 0
+            for tile in soup.select("div.attrax-vacancy-tile"):
+                link = tile.select_one("a.attrax-vacancy-tile__title")
+                if not link or not link.get("href"):
+                    continue
+                href = urljoin(url, link["href"])
+                jid = tile.get("data-jobid") or href
+                if jid in jobs:
+                    continue
+                free = tile.select_one(".attrax-vacancy-tile__location-freetext .attrax-vacancy-tile__item-value")
+                country = tile.select_one(".attrax-vacancy-tile__option-location .attrax-vacancy-tile__item-value")
+                loc = ", ".join(" ".join(el.get_text(" ").split()) for el in (free, country) if el)
+                classes = " ".join(tile.get("class", []))
+                in_country = True if "--united-kingdom" in classes else self.where(loc)
+                jobs[jid] = RawJob(source_id=str(jid), title=" ".join(link.get_text(" ").split()),
+                                   url=href, location=loc, in_country=in_country)
+                added += 1
+            if not added:
+                break
+        if not jobs:
+            raise SourceError("No vacancy tiles found on the page")
         self.scanned = len(jobs)
         return [j for j in jobs.values() if j.in_country is not False]
 

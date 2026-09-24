@@ -11,6 +11,7 @@
 #   successfactors_csb url: https://careers.<company>.com  (newer Career Site Builder)
 #   radancy         url: https://jobs.<company>.com       (sites with /search-jobs)
 #   icims           url: https://<name>.icims.com
+#   attrax          url: https://careers.<company>.com/en/jobs
 #   greenhouse      board: <board token>
 #   lever           company: <lever slug>
 #   smartrecruiters company: <smartrecruiters id>
@@ -53,9 +54,8 @@ companies:
     type: pharma
     careers_url: https://careers.abbvie.com/en/jobs
     sources:
-      - type: pagewatch
+      - type: attrax
         url: https://careers.abbvie.com/en/jobs
-        link_pattern: '/en/job/'
 
   - name: Vertex Pharmaceuticals
     type: pharma
@@ -197,6 +197,7 @@ companies:
     sources:
       - type: phenom
         url: https://careers.ucb.com/global/en
+        keywords: [United Kingdom, Slough, graduate, regulatory, medical, clinical]
 
   - name: Novo Nordisk
     type: pharma
@@ -231,8 +232,8 @@ companies:
     type: cro
     careers_url: https://www.medpace.com/careers/
     sources:
-      - type: icims
-        url: https://international-medpace.icims.com
+      - type: jibe
+        url: https://careers.medpace.com
 
   # Hammersmith Medicines Research isn't checked automatically: its website
   # blocks automated visitors. It's listed under "Programmes to watch" instead.
@@ -314,6 +315,7 @@ companies:
     sources:
       - type: pagewatch
         url: https://www.clinicalresearchjobs.co/job-vacancies
+        link_pattern: '/(?:single-)?post/'
         uk_only: true
         default_location: UK
 

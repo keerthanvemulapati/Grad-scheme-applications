@@ -150,7 +150,7 @@ def cmd_diagnose(args) -> int:
             kept = []
             for job in jobs:
                 cls = classify(job.title, search, in_country=job.in_country)
-                if cls.relevant:
+                if cls.relevant and job.in_country is True:
                     kept.append(f"  KEEP {cls.category_label} / {cls.level}: {job.title} | {job.location}")
             for line in kept:
                 print(line)

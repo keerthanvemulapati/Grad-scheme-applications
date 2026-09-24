@@ -3,6 +3,7 @@ from __future__ import annotations
 
 from .base import Source, SourceError
 from .boards import (
+    AttraxSource,
     EightfoldSource,
     GreenhouseSource,
     ICIMSSource,
@@ -23,7 +24,7 @@ REGISTRY: dict[str, type[Source]] = {
     for cls in (
         WorkdaySource, EightfoldSource, JibeSource, PhenomSource, SuccessFactorsSource,
         SuccessFactorsCSBSource, RadancySource, ICIMSSource, GreenhouseSource, LeverSource,
-        SmartRecruitersSource, PinpointSource, PageWatchSource,
+        SmartRecruitersSource, PinpointSource, PageWatchSource, AttraxSource,
     )
 }
 

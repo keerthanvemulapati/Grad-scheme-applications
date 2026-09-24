@@ -28,6 +28,8 @@ class SearchConfig:
     target_year: int
     countries: list[str]
     location_match: list[re.Pattern]
+    location_places: list[re.Pattern]
+    location_elsewhere: list[re.Pattern]
     location_ambiguous: list[re.Pattern]
     categories: list[Category]
     other_graduate_label: str
@@ -70,6 +72,8 @@ def load_search(path: Path | None = None) -> SearchConfig:
         target_year=int(data.get("target_intake_year", 2027)),
         countries=list(loc.get("countries", ["United Kingdom"])),
         location_match=_compile(loc.get("match")),
+        location_places=_compile(loc.get("places")),
+        location_elsewhere=_compile(loc.get("elsewhere")),
         location_ambiguous=_compile(loc.get("ambiguous")),
         categories=[
             Category(c["key"], c["label"], bool(c.get("priority")), _compile(c["patterns"]))

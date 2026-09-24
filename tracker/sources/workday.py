@@ -4,6 +4,8 @@ from __future__ import annotations
 import re
 from urllib.parse import urlparse
 
+import requests
+
 from ..classify import location_status
 from ..models import RawJob
 from .base import Source, SourceError, html_to_text, relative_posted
@@ -78,10 +80,25 @@ class WorkdaySource(Source):
         self.site = parts[0]
         self.api = f"https://{self.host}/wday/cxs/{self.tenant}/{self.site}"
         self.public = f"https://{self.host}/en-US/{self.site}"
+        self._csrf: str | None = None
 
     def _page(self, text: str, facets: dict, offset: int) -> dict:
         body = {"appliedFacets": facets, "limit": PAGE_SIZE, "offset": offset, "searchText": text}
-        return self.http.post(f"{self.api}/jobs", json=body, headers=JSON_HEADERS).json()
+        try:
+            return self.http.post(f"{self.api}/jobs", json=body, headers=self._headers()).json()
+        except requests.HTTPError as exc:
+            if exc.response is None or exc.response.status_code != 422 or self._csrf is not None:
+                raise
+        # Some boards want the session cookie and CSRF token their own page sets.
+        self.http.get(self.public, headers={"Accept": "text/html"})
+        self._csrf = self.http.session.cookies.get("CALYPSO_CSRF_TOKEN") or ""
+        return self.http.post(f"{self.api}/jobs", json=body, headers=self._headers()).json()
+
+    def _headers(self) -> dict:
+        headers = dict(JSON_HEADERS, Origin=f"https://{self.host}", Referer=self.public)
+        if self._csrf:
+            headers["X-CALYPSO-CSRF-TOKEN"] = self._csrf
+        return headers
 
     def fetch(self) -> list[RawJob]:
         first = self._page("", {}, 0)
@@ -140,7 +157,7 @@ class WorkdaySource(Source):
         )
 
     def enrich(self, job: RawJob) -> RawJob:
-        data = self.http.get(f"{self.api}{job.extra['path']}", headers=JSON_HEADERS).json()
+        data = self.http.get(f"{self.api}{job.extra['path']}", headers=self._headers()).json()
         info = data.get("jobPostingInfo") or {}
         locations = [info.get("location") or ""] + list(info.get("additionalLocations") or [])
         loc_text = "; ".join(dict.fromkeys(l for l in locations if l))

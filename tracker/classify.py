@@ -28,12 +28,33 @@ def _any(patterns: list[re.Pattern], text: str) -> bool:
     return any(p.search(text) for p in patterns)
 
 
-def location_status(text: str, cfg: SearchConfig) -> bool | None:
-    """True if the location text is in a target country, False if clearly not, None if unclear."""
-    text = text or ""
-    if _any(cfg.location_match, text):
+SEGMENT_SPLIT = re.compile(r"[;|\n]+")
+
+
+def _segment_status(seg: str, cfg: SearchConfig) -> bool | None:
+    if _any(cfg.location_match, seg):
         return True
-    if _any(cfg.location_ambiguous, text):
+    if _any(cfg.location_elsewhere, seg):
+        return False
+    if _any(cfg.location_places, seg):
+        return True
+    if _any(cfg.location_ambiguous, seg):
+        return None
+    return False
+
+
+def location_status(text: str, cfg: SearchConfig) -> bool | None:
+    """True if a location is in a target country, False if clearly not, None if unclear.
+
+    Several locations can be separated by ';' or '|'. One match is enough.
+    """
+    segments = [s for s in SEGMENT_SPLIT.split(text or "") if s.strip()]
+    if not segments:
+        return None
+    results = [_segment_status(seg, cfg) for seg in segments]
+    if True in results:
+        return True
+    if None in results:
         return None
     return False
 
@@ -63,7 +84,7 @@ def classify(
     if in_country is False:
         return Classification(False, reason="outside target countries")
     if _any(cfg.exclude, t):
-        return Classification(False, reason="internship/placement/student role")
+        return Classification(False, reason="excluded title (internship, placement, student or test advert)")
 
     is_scheme = _any(cfg.scheme, t)
     if not is_scheme and _any(cfg.senior, t):

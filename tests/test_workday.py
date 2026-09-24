@@ -120,3 +120,38 @@ def test_workday_fallback_keyword_search(search):
     assert found["1"].in_country is True
     assert found["2"].in_country is False
     assert "keyword" in src.note
+
+
+def test_workday_retries_with_csrf_token(search):
+    import requests
+
+    from tracker.http import PoliteSession
+
+    class Resp:
+        def __init__(self, status, payload=None):
+            self.status_code, self._payload, self.text = status, payload, ""
+
+        def json(self):
+            return self._payload
+
+        def raise_for_status(self):
+            if self.status_code >= 400:
+                raise requests.HTTPError(response=self)
+
+    http = PoliteSession(delay=0)
+    seen = []
+
+    def fake_post(url, **kw):
+        seen.append(kw["headers"].get("X-CALYPSO-CSRF-TOKEN"))
+        if not kw["headers"].get("X-CALYPSO-CSRF-TOKEN"):
+            return Resp(422)
+        return Resp(200, {"total": 0, "facets": [], "jobPostings": []})
+
+    def fake_get(url, **kw):
+        http.session.cookies.set("CALYPSO_CSRF_TOKEN", "tok")
+        return Resp(200)
+
+    http.session.post, http.session.get = fake_post, fake_get
+    src = _source(search, http)
+    assert src._page("", {}, 0)["total"] == 0
+    assert seen == [None, "tok"]
