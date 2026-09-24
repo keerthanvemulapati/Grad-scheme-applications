@@ -28,58 +28,6 @@
    "title": "Product Owner - Clinical Trial Supplier Enablement",
    "url": "https://amgen.wd1.myworkdayjobs.com/en-US/Careers/job/United-Kingdom---Cambridge/Product-Owner---Clinical-Trial-Supplier-Enablement_R-251395-1"
   },
-  "amgen:R-254067": {
-   "category": "medical_affairs",
-   "category_label": "Medical Affairs",
-   "closed_on": null,
-   "company": "Amgen",
-   "company_type": "pharma",
-   "facts": {
-    "graduate_friendly": false,
-    "mentions_target_year": false,
-    "min_years": null
-   },
-   "first_seen": "2026-09-24",
-   "id": "amgen:R-254067",
-   "in_country": true,
-   "last_seen": "2026-09-24",
-   "level": "check",
-   "location": "United Kingdom - Cambridge; United Kingdom - London; United Kingdom - Manchester; United Kingdom - Uxbridge",
-   "missed": 0,
-   "posted": "2026-09-03",
-   "priority": true,
-   "score": 100,
-   "source_key": "amgen/workday",
-   "source_type": "workday",
-   "status": "open",
-   "tags": [],
-   "title": "Snr Medical Science Liaison (Obesity)",
-   "url": "https://amgen.wd1.myworkdayjobs.com/en-US/Careers/job/United-Kingdom---Cambridge/Snr-Medical-Science-Liaison--Obesity-_R-254067"
-  },
-  "astellas:1430935400": {
-   "category": "medical_affairs",
-   "category_label": "Medical Affairs",
-   "closed_on": null,
-   "company": "Astellas",
-   "company_type": "pharma",
-   "facts": null,
-   "first_seen": "2026-09-24",
-   "id": "astellas:1430935400",
-   "in_country": true,
-   "last_seen": "2026-09-24",
-   "level": "check",
-   "location": "Addlestone, GB, KT15 2NX",
-   "missed": 0,
-   "posted": "2026-09-17",
-   "priority": true,
-   "score": 100,
-   "source_key": "astellas/successfactors",
-   "source_type": "successfactors",
-   "status": "open",
-   "tags": [],
-   "title": "Medical Science Liaison, Lung",
-   "url": "https://careers.astellas.com/job/Addlestone-Medical-Science-Liaison%2C-Lung-KT15-2NX/1430935400/"
-  },
   "astrazeneca:R-260336": {
    "category": "clinical_operations",
    "category_label": "Clinical Operations",
@@ -107,34 +55,6 @@
    "tags": [],
    "title": "Clinical Research Associate",
    "url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/Field-UK/Clinical-Research-Associate_R-260336"
-  },
-  "astrazeneca:R-260499": {
-   "category": "medical_affairs",
-   "category_label": "Medical Affairs",
-   "closed_on": null,
-   "company": "AstraZeneca",
-   "company_type": "pharma",
-   "facts": {
-    "graduate_friendly": false,
-    "mentions_target_year": false,
-    "min_years": null
-   },
-   "first_seen": "2026-09-24",
-   "id": "astrazeneca:R-260499",
-   "in_country": true,
-   "last_seen": "2026-09-24",
-   "level": "check",
-   "location": "Field-UK",
-   "missed": 0,
-   "posted": "2026-09-23",
-   "priority": true,
-   "score": 100,
-   "source_key": "astrazeneca/workday",
-   "source_type": "workday",
-   "status": "open",
-   "tags": [],
-   "title": "Medical Science Liaison - Alexion",
-   "url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/Field-UK/Medical-Science-Liaison---Alexion_R-260499"
   },
   "fortrea:251030": {
    "category": "clinical_operations",
@@ -573,34 +493,6 @@
    "title": "Site Contract and Budget Specialist 4",
    "url": "https://icon.wd3.myworkdayjobs.com/en-US/broadbean_external/job/Regional-Great-Britain-Northern-Ireland/Site-Contract-and-Budget-Specialist-4_JR159465"
   },
-  "ipsen:R-22038": {
-   "category": "medical_affairs",
-   "category_label": "Medical Affairs",
-   "closed_on": null,
-   "company": "Ipsen",
-   "company_type": "pharma",
-   "facts": {
-    "graduate_friendly": false,
-    "mentions_target_year": false,
-    "min_years": null
-   },
-   "first_seen": "2026-09-24",
-   "id": "ipsen:R-22038",
-   "in_country": true,
-   "last_seen": "2026-09-24",
-   "level": "check",
-   "location": "London (UK)",
-   "missed": 0,
-   "posted": "2026-07-27",
-   "priority": true,
-   "score": 100,
-   "source_key": "ipsen/workday",
-   "source_type": "workday",
-   "status": "open",
-   "tags": [],
-   "title": "Medical Science Liaison - Neuroscience",
-   "url": "https://ipsen.wd103.myworkdayjobs.com/en-US/Ipsen_Careers/job/London-UK/Medical-Science-Liaison---Neuroscience_R-22038"
-  },
   "iqvia:R1514135": {
    "category": "clinical_operations",
    "category_label": "Clinical Operations",
@@ -762,7 +654,7 @@
    "last_seen": "2026-09-24",
    "level": "graduate_scheme",
    "location": "Santa Clara, California, United States of America; Jacksonville, Florida, United States of America; Raritan, New Jersey, United States of America; Cincinnati, Ohio, United States of America; Redwood City, California, United States of America; Irvine, California, United States of America",
-   "missed": 0,
+   "missed": 1,
    "posted": "2026-08-28",
    "priority": false,
    "score": 85,
@@ -792,7 +684,7 @@
    "last_seen": "2026-09-24",
    "level": "graduate_scheme",
    "location": "Raritan, New Jersey, United States of America; Jacksonville, Florida, United States of America; Santa Clara, California, United States of America; Cincinnati, Ohio, United States of America; Irvine, California, United States of America; Danvers, Massachusetts, United States of America",
-   "missed": 0,
+   "missed": 1,
    "posted": "2026-09-21",
    "priority": false,
    "score": 85,
@@ -804,36 +696,6 @@
    ],
    "title": "2027 MedTech Marketing Leadership Development Program (MLDP)- Full-Time",
    "url": "https://jj.wd5.myworkdayjobs.com/en-US/JJ/job/Raritan-New-Jersey-United-States-of-America/XMLNAME-2027-MedTech-Marketing-Leadership-Development-Program--MLDP---Full-Time_R-100842"
-  },
-  "moderna:R19547": {
-   "category": "medical_affairs",
-   "category_label": "Medical Affairs",
-   "closed_on": null,
-   "company": "Moderna",
-   "company_type": "pharma",
-   "facts": {
-    "graduate_friendly": false,
-    "mentions_target_year": false,
-    "min_years": null
-   },
-   "first_seen": "2026-09-24",
-   "id": "moderna:R19547",
-   "in_country": null,
-   "last_seen": "2026-09-24",
-   "level": "check",
-   "location": "Remote - US; Medical Affairs",
-   "missed": 0,
-   "posted": "2026-08-04",
-   "priority": true,
-   "score": 100,
-   "source_key": "moderna/workday",
-   "source_type": "workday",
-   "status": "open",
-   "tags": [
-    "location_unclear"
-   ],
-   "title": "Field Medical Advisor, Oncology",
-   "url": "https://modernatx.wd1.myworkdayjobs.com/en-US/M_tx/job/Remote---US/Field-Medical-Advisor--Oncology_R19547"
   },
   "msd:R416129": {
    "category": "clinical_operations",
@@ -880,7 +742,7 @@
    "last_seen": "2026-09-24",
    "level": "entry_level",
    "location": "AUS - New South Wales - Macquarie Park",
-   "missed": 0,
+   "missed": 1,
    "posted": "2026-09-14",
    "priority": true,
    "score": 120,
@@ -932,7 +794,7 @@
    "last_seen": "2026-09-24",
    "level": "check",
    "location": "Remote, REMOTE, United States",
-   "missed": 0,
+   "missed": 1,
    "posted": "2026-09-14",
    "priority": true,
    "score": 100,
@@ -948,7 +810,7 @@
   "regeneron:R50053": {
    "category": "clinical_operations",
    "category_label": "Clinical Operations",
-   "closed_on": null,
+   "closed_on": "2026-09-24",
    "company": "Regeneron",
    "company_type": "pharma",
    "facts": {
@@ -962,13 +824,13 @@
    "last_seen": "2026-09-24",
    "level": "check",
    "location": "Uxbridge1; Armonk; Warren",
-   "missed": 1,
+   "missed": 2,
    "posted": "2026-08-17",
    "priority": true,
    "score": 100,
    "source_key": "regeneron/workday",
    "source_type": "workday",
-   "status": "open",
+   "status": "closed",
    "tags": [],
    "title": "Clinical Study Specialist",
    "url": "https://regeneron.wd1.myworkdayjobs.com/en-US/Careers/job/Uxbridge1/Clinical-Study-Specialist_R50053"
@@ -976,7 +838,7 @@
   "regeneron:R50509": {
    "category": "medical_affairs",
    "category_label": "Medical Affairs",
-   "closed_on": null,
+   "closed_on": "2026-09-24",
    "company": "Regeneron",
    "company_type": "pharma",
    "facts": {
@@ -990,102 +852,18 @@
    "last_seen": "2026-09-24",
    "level": "entry_level",
    "location": "Remote - United States; Seattle, WA; Anchorage, AK; Remote - Washington; Tacoma, WA",
-   "missed": 1,
+   "missed": 2,
    "posted": "2026-09-21",
    "priority": true,
    "score": 120,
    "source_key": "regeneron/workday",
    "source_type": "workday",
-   "status": "open",
+   "status": "closed",
    "tags": [
     "location_unclear"
    ],
    "title": "Medical Specialist I-Allergy/ENT-Seattle, Tacoma, WA & Anchorage, AK",
    "url": "https://regeneron.wd1.myworkdayjobs.com/en-US/Careers/job/Remote---United-States/Medical-Specialist-I-Allergy-ENT-Seattle--Tacoma--WA---Anchorage--AK_R50509"
-  },
-  "roche:202603-107122-1": {
-   "category": "clinical_operations",
-   "category_label": "Clinical Operations",
-   "closed_on": null,
-   "company": "Roche",
-   "company_type": "pharma",
-   "facts": {
-    "graduate_friendly": false,
-    "mentions_target_year": false,
-    "min_years": null
-   },
-   "first_seen": "2026-09-24",
-   "id": "roche:202603-107122-1",
-   "in_country": true,
-   "last_seen": "2026-09-24",
-   "level": "check",
-   "location": "Welwyn",
-   "missed": 0,
-   "posted": "2026-09-17",
-   "priority": true,
-   "score": 100,
-   "source_key": "roche/workday",
-   "source_type": "workday",
-   "status": "open",
-   "tags": [],
-   "title": "Country Study Start-Up Team Leader (cSTL)",
-   "url": "https://roche.wd3.myworkdayjobs.com/en-US/roche-ext/job/Welwyn/Country-Study-Start-Up-Team-Leader--cSTL-_202603-107122-1"
-  },
-  "roche:202608-121489-1": {
-   "category": "regulatory_affairs",
-   "category_label": "Regulatory Affairs",
-   "closed_on": null,
-   "company": "Roche",
-   "company_type": "pharma",
-   "facts": {
-    "graduate_friendly": false,
-    "mentions_target_year": false,
-    "min_years": null
-   },
-   "first_seen": "2026-09-24",
-   "id": "roche:202608-121489-1",
-   "in_country": true,
-   "last_seen": "2026-09-24",
-   "level": "check",
-   "location": "Welwyn; South San Francisco; Mississauga; Basel",
-   "missed": 0,
-   "posted": "2026-09-10",
-   "priority": true,
-   "score": 100,
-   "source_key": "roche/workday",
-   "source_type": "workday",
-   "status": "open",
-   "tags": [],
-   "title": "Regulatory Innovation & Sustainment Leader",
-   "url": "https://roche.wd3.myworkdayjobs.com/en-US/roche-ext/job/Welwyn/Regulatory-Innovation---Sustainment-Leader_202608-121489-1"
-  },
-  "roche:202609-122666-1": {
-   "category": "clinical_operations",
-   "category_label": "Clinical Operations",
-   "closed_on": null,
-   "company": "Roche",
-   "company_type": "pharma",
-   "facts": {
-    "graduate_friendly": false,
-    "mentions_target_year": false,
-    "min_years": null
-   },
-   "first_seen": "2026-09-24",
-   "id": "roche:202609-122666-1",
-   "in_country": true,
-   "last_seen": "2026-09-24",
-   "level": "check",
-   "location": "Indianapolis; Vienna; Sant Cugat del Vallès; United Kingdom",
-   "missed": 0,
-   "posted": "2026-09-11",
-   "priority": true,
-   "score": 100,
-   "source_key": "roche/workday",
-   "source_type": "workday",
-   "status": "open",
-   "tags": [],
-   "title": "Clinical Development Leader",
-   "url": "https://roche.wd3.myworkdayjobs.com/en-US/roche-ext/job/Indianapolis/Clinical-Development-Leader_202609-122666-1"
   },
   "syneos-health:25106983": {
    "category": "clinical_operations",
@@ -1143,114 +921,10 @@
    "title": "CRA UK",
    "url": "https://syneoshealth.wd12.myworkdayjobs.com/en-US/Syneos_Health_External_Site/job/GBR-Remote/CRA-UK_25112022"
   },
-  "takeda:100074859664": {
-   "category": "medical_affairs",
-   "category_label": "Medical Affairs",
-   "closed_on": null,
-   "company": "Takeda",
-   "company_type": "pharma",
-   "facts": null,
-   "first_seen": "2026-09-24",
-   "id": "takeda:100074859664",
-   "in_country": null,
-   "last_seen": "2026-09-24",
-   "level": "check",
-   "location": "Remote",
-   "missed": 0,
-   "posted": null,
-   "priority": true,
-   "score": 100,
-   "source_key": "takeda/radancy",
-   "source_type": "radancy",
-   "status": "open",
-   "tags": [
-    "location_unclear"
-   ],
-   "title": "MSL Plasma-derived Therapies",
-   "url": "https://jobs.takeda.com/job/zurich/msl-plasma-derived-therapies/1113/100074859664"
-  },
-  "takeda:100102263232": {
-   "category": "medical_affairs",
-   "category_label": "Medical Affairs",
-   "closed_on": null,
-   "company": "Takeda",
-   "company_type": "pharma",
-   "facts": null,
-   "first_seen": "2026-09-24",
-   "id": "takeda:100102263232",
-   "in_country": null,
-   "last_seen": "2026-09-24",
-   "level": "check",
-   "location": "Remote",
-   "missed": 0,
-   "posted": null,
-   "priority": true,
-   "score": 100,
-   "source_key": "takeda/radancy",
-   "source_type": "radancy",
-   "status": "open",
-   "tags": [
-    "location_unclear"
-   ],
-   "title": "Medical Science Liaison, Rare Diseases",
-   "url": "https://jobs.takeda.com/job/toronto/medical-science-liaison-rare-diseases/1113/100102263232"
-  },
-  "takeda:90773933056": {
-   "category": "medical_affairs",
-   "category_label": "Medical Affairs",
-   "closed_on": null,
-   "company": "Takeda",
-   "company_type": "pharma",
-   "facts": null,
-   "first_seen": "2026-09-24",
-   "id": "takeda:90773933056",
-   "in_country": null,
-   "last_seen": "2026-09-24",
-   "level": "check",
-   "location": "Remote",
-   "missed": 0,
-   "posted": null,
-   "priority": true,
-   "score": 100,
-   "source_key": "takeda/radancy",
-   "source_type": "radancy",
-   "status": "open",
-   "tags": [
-    "location_unclear"
-   ],
-   "title": "Medical Science Liaison, Dermatology (Central)",
-   "url": "https://jobs.takeda.com/job/toronto/medical-science-liaison-dermatology-central/1113/90773933056"
-  },
-  "takeda:98699480816": {
-   "category": "medical_affairs",
-   "category_label": "Medical Affairs",
-   "closed_on": null,
-   "company": "Takeda",
-   "company_type": "pharma",
-   "facts": null,
-   "first_seen": "2026-09-24",
-   "id": "takeda:98699480816",
-   "in_country": null,
-   "last_seen": "2026-09-24",
-   "level": "check",
-   "location": "Multiple Locations",
-   "missed": 0,
-   "posted": null,
-   "priority": true,
-   "score": 100,
-   "source_key": "takeda/radancy",
-   "source_type": "radancy",
-   "status": "open",
-   "tags": [
-    "location_unclear"
-   ],
-   "title": "MSL, Medical Engagement, Japan Medical Office, JPBU / JPBU ジャパンメディカルオフィス メディカルエンゲージメント メディカルサイエンスリエゾン（MSL）（免疫疾患・腎疾患領域）",
-   "url": "https://jobs.takeda.com/job/tokyo/msl-medical-engagement-japan-medical-office-jpbu-jpbu-%e3%82%b7%e3%83%a3%e3%83%8f%e3%83%b3%e3%83%a1%e3%83%86%e3%82%a3%e3%82%ab%e3%83%ab%e3%82%aa%e3%83%95%e3%82%a3%e3%82%b9-%e3%83%a1%e3%83%86%e3%82%a3%e3%82%ab%e3%83%ab%e3%82%a8%e3%83%b3%e3%82%b1%e3%83%bc%e3%82%b7%e3%83%a1%e3%83%b3%e3%83%88-%e3%83%a1%e3%83%86%e3%82%a3%e3%82%ab%e3%83%ab%e3%82%b5%e3%82%a4%e3%82%a8%e3%83%b3%e3%82%b9%e3%83%aa%e3%82%a8%e3%82%bd%e3%83%b3-ms/1113/98699480816"
-  },
   "thermo-fisher-ppd:R-01326868": {
    "category": "clinical_operations",
    "category_label": "Clinical Operations",
-   "closed_on": null,
+   "closed_on": "2026-09-24",
    "company": "Thermo Fisher (PPD)",
    "company_type": "cro",
    "facts": {
@@ -1264,13 +938,13 @@
    "last_seen": "2026-09-24",
    "level": "check",
    "location": "Remote, Poland; Remote, Bulgaria; Remote, Serbia",
-   "missed": 1,
+   "missed": 2,
    "posted": "2026-01-16",
    "priority": true,
    "score": 100,
    "source_key": "thermo-fisher-ppd/workday",
    "source_type": "workday",
-   "status": "open",
+   "status": "closed",
    "tags": [
     "location_unclear"
    ],
@@ -1308,7 +982,7 @@
   "thermo-fisher-ppd:R-01340398": {
    "category": "clinical_operations",
    "category_label": "Clinical Operations",
-   "closed_on": null,
+   "closed_on": "2026-09-24",
    "company": "Thermo Fisher (PPD)",
    "company_type": "cro",
    "facts": {
@@ -1322,13 +996,13 @@
    "last_seen": "2026-09-24",
    "level": "entry_level",
    "location": "Remote, Turkey",
-   "missed": 1,
+   "missed": 2,
    "posted": "2026-09-17",
    "priority": true,
    "score": 120,
    "source_key": "thermo-fisher-ppd/workday",
    "source_type": "workday",
-   "status": "open",
+   "status": "closed",
    "tags": [
     "location_unclear"
    ],
@@ -1366,7 +1040,7 @@
   "thermo-fisher-ppd:R-01361157": {
    "category": "drug_safety",
    "category_label": "Drug Safety / PV",
-   "closed_on": null,
+   "closed_on": "2026-09-24",
    "company": "Thermo Fisher (PPD)",
    "company_type": "cro",
    "facts": {
@@ -1380,13 +1054,13 @@
    "last_seen": "2026-09-24",
    "level": "check",
    "location": "Remote, Philippines",
-   "missed": 1,
+   "missed": 2,
    "posted": "2026-08-29",
    "priority": false,
    "score": 40,
    "source_key": "thermo-fisher-ppd/workday",
    "source_type": "workday",
-   "status": "open",
+   "status": "closed",
    "tags": [
     "location_unclear"
    ],
@@ -1396,7 +1070,7 @@
   "thermo-fisher-ppd:R-01361506": {
    "category": "regulatory_affairs",
    "category_label": "Regulatory Affairs",
-   "closed_on": null,
+   "closed_on": "2026-09-24",
    "company": "Thermo Fisher (PPD)",
    "company_type": "cro",
    "facts": {
@@ -1410,13 +1084,13 @@
    "last_seen": "2026-09-24",
    "level": "check",
    "location": "Remote, Belgium",
-   "missed": 1,
+   "missed": 2,
    "posted": "2026-08-13",
    "priority": true,
    "score": 75,
    "source_key": "thermo-fisher-ppd/workday",
    "source_type": "workday",
-   "status": "open",
+   "status": "closed",
    "tags": [
     "experience_required",
     "location_unclear"
@@ -1427,7 +1101,7 @@
   "thermo-fisher-ppd:R-01362164": {
    "category": "clinical_operations",
    "category_label": "Clinical Operations",
-   "closed_on": null,
+   "closed_on": "2026-09-24",
    "company": "Thermo Fisher (PPD)",
    "company_type": "cro",
    "facts": {
@@ -1441,13 +1115,13 @@
    "last_seen": "2026-09-24",
    "level": "entry_level",
    "location": "Remote, Philippines",
-   "missed": 1,
+   "missed": 2,
    "posted": "2026-09-19",
    "priority": true,
    "score": 120,
    "source_key": "thermo-fisher-ppd/workday",
    "source_type": "workday",
-   "status": "open",
+   "status": "closed",
    "tags": [
     "location_unclear"
    ],
@@ -1457,7 +1131,7 @@
   "thermo-fisher-ppd:R-01362190": {
    "category": "drug_safety",
    "category_label": "Drug Safety / PV",
-   "closed_on": null,
+   "closed_on": "2026-09-24",
    "company": "Thermo Fisher (PPD)",
    "company_type": "cro",
    "facts": {
@@ -1471,13 +1145,13 @@
    "last_seen": "2026-09-24",
    "level": "entry_level",
    "location": "Remote, Philippines",
-   "missed": 1,
+   "missed": 2,
    "posted": "2026-08-29",
    "priority": false,
    "score": 60,
    "source_key": "thermo-fisher-ppd/workday",
    "source_type": "workday",
-   "status": "open",
+   "status": "closed",
    "tags": [
     "location_unclear"
    ],
@@ -1487,7 +1161,7 @@
   "thermo-fisher-ppd:R-01364066": {
    "category": "regulatory_affairs",
    "category_label": "Regulatory Affairs",
-   "closed_on": null,
+   "closed_on": "2026-09-24",
    "company": "Thermo Fisher (PPD)",
    "company_type": "cro",
    "facts": {
@@ -1501,13 +1175,13 @@
    "last_seen": "2026-09-24",
    "level": "entry_level",
    "location": "Remote, Belgium",
-   "missed": 1,
+   "missed": 2,
    "posted": "2026-08-13",
    "priority": true,
    "score": 120,
    "source_key": "thermo-fisher-ppd/workday",
    "source_type": "workday",
-   "status": "open",
+   "status": "closed",
    "tags": [
     "location_unclear"
    ],
@@ -1517,7 +1191,7 @@
   "thermo-fisher-ppd:R-01364421": {
    "category": "drug_safety",
    "category_label": "Drug Safety / PV",
-   "closed_on": null,
+   "closed_on": "2026-09-24",
    "company": "Thermo Fisher (PPD)",
    "company_type": "cro",
    "facts": {
@@ -1531,13 +1205,13 @@
    "last_seen": "2026-09-24",
    "level": "entry_level",
    "location": "Remote, Philippines",
-   "missed": 1,
+   "missed": 2,
    "posted": "2026-08-29",
    "priority": false,
    "score": 60,
    "source_key": "thermo-fisher-ppd/workday",
    "source_type": "workday",
-   "status": "open",
+   "status": "closed",
    "tags": [
     "location_unclear"
    ],
@@ -1547,7 +1221,7 @@
   "thermo-fisher-ppd:R-01364928-1": {
    "category": "clinical_operations",
    "category_label": "Clinical Operations",
-   "closed_on": null,
+   "closed_on": "2026-09-24",
    "company": "Thermo Fisher (PPD)",
    "company_type": "cro",
    "facts": {
@@ -1561,13 +1235,13 @@
    "last_seen": "2026-09-24",
    "level": "entry_level",
    "location": "Remote, Minnesota, USA",
-   "missed": 1,
+   "missed": 2,
    "posted": "2026-09-18",
    "priority": true,
    "score": 120,
    "source_key": "thermo-fisher-ppd/workday",
    "source_type": "workday",
-   "status": "open",
+   "status": "closed",
    "tags": [
     "location_unclear"
    ],
@@ -1577,7 +1251,7 @@
   "thermo-fisher-ppd:R-01366361": {
    "category": "drug_safety",
    "category_label": "Drug Safety / PV",
-   "closed_on": null,
+   "closed_on": "2026-09-24",
    "company": "Thermo Fisher (PPD)",
    "company_type": "cro",
    "facts": {
@@ -1591,13 +1265,13 @@
    "last_seen": "2026-09-24",
    "level": "check",
    "location": "Remote, Philippines",
-   "missed": 1,
+   "missed": 2,
    "posted": "2026-08-29",
    "priority": false,
    "score": 40,
    "source_key": "thermo-fisher-ppd/workday",
    "source_type": "workday",
-   "status": "open",
+   "status": "closed",
    "tags": [
     "location_unclear"
    ],
@@ -1607,7 +1281,7 @@
   "thermo-fisher-ppd:R-01366514": {
    "category": "drug_safety",
    "category_label": "Drug Safety / PV",
-   "closed_on": null,
+   "closed_on": "2026-09-24",
    "company": "Thermo Fisher (PPD)",
    "company_type": "cro",
    "facts": {
@@ -1621,13 +1295,13 @@
    "last_seen": "2026-09-24",
    "level": "check",
    "location": "Remote, Bulgaria; Remote, Romania; Remote, Greece; Milan, Italy; Remote, Hungary; Remote, Portugal; Remote, Poland; Remote, Spain; Remote, Croatia",
-   "missed": 1,
+   "missed": 2,
    "posted": "2026-08-28",
    "priority": false,
    "score": 40,
    "source_key": "thermo-fisher-ppd/workday",
    "source_type": "workday",
-   "status": "open",
+   "status": "closed",
    "tags": [
     "location_unclear"
    ],
@@ -1637,7 +1311,7 @@
   "thermo-fisher-ppd:R-01366912": {
    "category": "clinical_operations",
    "category_label": "Clinical Operations",
-   "closed_on": null,
+   "closed_on": "2026-09-24",
    "company": "Thermo Fisher (PPD)",
    "company_type": "cro",
    "facts": {
@@ -1651,13 +1325,13 @@
    "last_seen": "2026-09-24",
    "level": "entry_level",
    "location": "Remote, Mexico; Remote, Brazil; Remote, Colombia",
-   "missed": 1,
+   "missed": 2,
    "posted": "2026-09-17",
    "priority": true,
    "score": 120,
    "source_key": "thermo-fisher-ppd/workday",
    "source_type": "workday",
-   "status": "open",
+   "status": "closed",
    "tags": [
     "location_unclear"
    ],
@@ -1667,7 +1341,7 @@
   "thermo-fisher-ppd:R-01366921": {
    "category": "clinical_operations",
    "category_label": "Clinical Operations",
-   "closed_on": null,
+   "closed_on": "2026-09-24",
    "company": "Thermo Fisher (PPD)",
    "company_type": "cro",
    "facts": {
@@ -1681,13 +1355,13 @@
    "last_seen": "2026-09-24",
    "level": "check",
    "location": "Remote, Mexico",
-   "missed": 1,
+   "missed": 2,
    "posted": "2026-09-18",
    "priority": true,
    "score": 100,
    "source_key": "thermo-fisher-ppd/workday",
    "source_type": "workday",
-   "status": "open",
+   "status": "closed",
    "tags": [
     "location_unclear"
    ],
@@ -1697,7 +1371,7 @@
   "thermo-fisher-ppd:R-01368834": {
    "category": "clinical_operations",
    "category_label": "Clinical Operations",
-   "closed_on": null,
+   "closed_on": "2026-09-24",
    "company": "Thermo Fisher (PPD)",
    "company_type": "cro",
    "facts": {
@@ -1711,53 +1385,23 @@
    "last_seen": "2026-09-24",
    "level": "entry_level",
    "location": "Remote, Serbia",
-   "missed": 1,
+   "missed": 2,
    "posted": "2026-09-24",
    "priority": true,
    "score": 120,
    "source_key": "thermo-fisher-ppd/workday",
    "source_type": "workday",
-   "status": "open",
+   "status": "closed",
    "tags": [
     "location_unclear"
    ],
    "title": "FSP Clinical Trial Coordinator",
    "url": "https://thermofisher.wd5.myworkdayjobs.com/en-US/ThermoFisherCareers/job/Remote-Serbia/FSP-Clinical-Trial-Coordinator_R-01368834"
   },
-  "thermo-fisher-ppd:R-01369212": {
-   "category": "clinical_operations",
-   "category_label": "Clinical Operations",
-   "closed_on": null,
-   "company": "Thermo Fisher (PPD)",
-   "company_type": "cro",
-   "facts": {
-    "graduate_friendly": false,
-    "mentions_target_year": false,
-    "min_years": null
-   },
-   "first_seen": "2026-09-24",
-   "id": "thermo-fisher-ppd:R-01369212",
-   "in_country": null,
-   "last_seen": "2026-09-24",
-   "level": "entry_level",
-   "location": "Remote, Hungary",
-   "missed": 1,
-   "posted": "2026-09-23",
-   "priority": true,
-   "score": 120,
-   "source_key": "thermo-fisher-ppd/workday",
-   "source_type": "workday",
-   "status": "open",
-   "tags": [
-    "location_unclear"
-   ],
-   "title": "DO NOT APPLY - TEST REQ - CRG - (DO NOT USE) CRA (Level I) - Budapest Hungary",
-   "url": "https://thermofisher.wd5.myworkdayjobs.com/en-US/ThermoFisherCareers/job/Remote-Hungary/DO-NOT-APPLY---TEST-REQ---CRG----DO-NOT-USE--CRA--Level-I----Budapest-Hungary_R-01369212"
-  },
   "thermo-fisher-ppd:R-01369299": {
    "category": "drug_safety",
    "category_label": "Drug Safety / PV",
-   "closed_on": null,
+   "closed_on": "2026-09-24",
    "company": "Thermo Fisher (PPD)",
    "company_type": "cro",
    "facts": {
@@ -1771,13 +1415,13 @@
    "last_seen": "2026-09-24",
    "level": "entry_level",
    "location": "Remote, Philippines",
-   "missed": 1,
+   "missed": 2,
    "posted": "2026-09-23",
    "priority": false,
    "score": 60,
    "source_key": "thermo-fisher-ppd/workday",
    "source_type": "workday",
-   "status": "open",
+   "status": "closed",
    "tags": [
     "location_unclear"
    ],
@@ -1842,9 +1486,10 @@
   }
  },
  "meta": {
-  "last_run": "2026-09-24T09:31:59Z",
+  "last_run": "2026-09-24T09:38:03Z",
   "snapshot_issue": null,
   "sources_seen_ok": [
+   "abbvie/attrax",
    "abbvie/pagewatch",
    "amgen/workday",
    "astellas/successfactors",

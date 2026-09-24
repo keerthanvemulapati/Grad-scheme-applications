@@ -1,5 +1,5 @@
 {
- "abbvie/pagewatch": {
+ "abbvie/attrax": {
   "company": "AbbVie",
   "error": null,
   "failures_in_a_row": 0,
@@ -7,15 +7,15 @@
   "matches": 0,
   "note": "",
   "ok": true,
-  "scanned": 10,
-  "type": "pagewatch"
+  "scanned": 250,
+  "type": "attrax"
  },
  "amgen/workday": {
   "company": "Amgen",
   "error": null,
   "failures_in_a_row": 0,
   "last_ok": "2026-09-24",
-  "matches": 2,
+  "matches": 1,
   "note": "filtered by location (country)",
   "ok": true,
   "scanned": 13,
@@ -26,7 +26,7 @@
   "error": null,
   "failures_in_a_row": 0,
   "last_ok": "2026-09-24",
-  "matches": 1,
+  "matches": 0,
   "note": "country filter",
   "ok": true,
   "scanned": 8,
@@ -37,10 +37,10 @@
   "error": null,
   "failures_in_a_row": 0,
   "last_ok": "2026-09-24",
-  "matches": 2,
-  "note": "filtered by location (11 offices)",
+  "matches": 1,
+  "note": "filtered by location (9 offices)",
   "ok": true,
-  "scanned": 80,
+  "scanned": 52,
   "type": "workday"
  },
  "astrazeneca/workday-2": {
@@ -144,8 +144,8 @@
  },
  "eli-lilly/workday": {
   "company": "Eli Lilly",
-  "error": "HTTPError: 422 Client Error: Unprocessable Entity for url: https://lilly.wd5.myworkdayjobs.com/wday/cxs/lilly/LLY/jobs",
-  "failures_in_a_row": 2,
+  "error": "RetryError: HTTPSConnectionPool(host='lilly.wd5.myworkdayjobs.com', port=443): Max retries exceeded with url: /en-US/LLY (Caused by ResponseError('too many 500 error responses'))",
+  "failures_in_a_row": 3,
   "last_ok": null,
   "matches": 0,
   "note": "",
@@ -205,7 +205,7 @@
   "matches": 7,
   "note": "filtered by location (country)",
   "ok": true,
-  "scanned": 105,
+  "scanned": 106,
   "type": "workday"
  },
  "ipsen/workday": {
@@ -213,7 +213,7 @@
   "error": null,
   "failures_in_a_row": 0,
   "last_ok": "2026-09-24",
-  "matches": 1,
+  "matches": 0,
   "note": "filtered by location (country)",
   "ok": true,
   "scanned": 70,
@@ -235,10 +235,10 @@
   "error": null,
   "failures_in_a_row": 0,
   "last_ok": "2026-09-24",
-  "matches": 3,
-  "note": "filtered by location (13 offices)",
+  "matches": 1,
+  "note": "filtered by location (9 offices)",
   "ok": true,
-  "scanned": 153,
+  "scanned": 47,
   "type": "workday"
  },
  "labcorp/workday": {
@@ -247,9 +247,9 @@
   "failures_in_a_row": 0,
   "last_ok": "2026-09-24",
   "matches": 0,
-  "note": "filtered by location (12 offices)",
+  "note": "filtered by location (5 offices)",
   "ok": true,
-  "scanned": 32,
+  "scanned": 16,
   "type": "workday"
  },
  "mac-clinical-research/pagewatch": {
@@ -260,26 +260,26 @@
   "matches": 0,
   "note": "",
   "ok": true,
-  "scanned": 20,
+  "scanned": 6,
   "type": "pagewatch"
  },
- "medpace/icims": {
+ "medpace/jibe": {
   "company": "Medpace",
-  "error": "No jobs found on the iCIMS portal",
+  "error": "The Jibe jobs API returned no jobs",
   "failures_in_a_row": 1,
   "last_ok": null,
   "matches": 0,
   "note": "",
   "ok": false,
   "scanned": 0,
-  "type": "icims"
+  "type": "jibe"
  },
  "moderna/workday": {
   "company": "Moderna",
   "error": null,
   "failures_in_a_row": 0,
   "last_ok": "2026-09-24",
-  "matches": 1,
+  "matches": 0,
   "note": "keyword search (board has no country filter)",
   "ok": true,
   "scanned": 157,
@@ -290,10 +290,10 @@
   "error": null,
   "failures_in_a_row": 0,
   "last_ok": "2026-09-24",
-  "matches": 2,
-  "note": "filtered by location (9 offices)",
+  "matches": 1,
+  "note": "filtered by location (4 offices)",
   "ok": true,
-  "scanned": 146,
+  "scanned": 120,
   "type": "workday"
  },
  "novartis/workday": {
@@ -326,7 +326,7 @@
   "matches": 0,
   "note": "filtered by location (country)",
   "ok": true,
-  "scanned": 35,
+  "scanned": 33,
   "type": "workday"
  },
  "pfizer/workday": {
@@ -345,7 +345,7 @@
   "error": null,
   "failures_in_a_row": 0,
   "last_ok": "2026-09-24",
-  "matches": 1,
+  "matches": 0,
   "note": "",
   "ok": true,
   "scanned": 217,
@@ -357,9 +357,9 @@
   "failures_in_a_row": 0,
   "last_ok": "2026-09-24",
   "matches": 0,
-  "note": "filtered by location (3 offices)",
+  "note": "filtered by location (2 offices)",
   "ok": true,
-  "scanned": 27,
+  "scanned": 25,
   "type": "workday"
  },
  "richmond-pharmacology/pinpoint": {
@@ -378,7 +378,7 @@
   "error": null,
   "failures_in_a_row": 0,
   "last_ok": "2026-09-24",
-  "matches": 3,
+  "matches": 0,
   "note": "filtered by location (2 offices)",
   "ok": true,
   "scanned": 36,
@@ -411,7 +411,7 @@
   "error": null,
   "failures_in_a_row": 0,
   "last_ok": "2026-09-24",
-  "matches": 4,
+  "matches": 0,
   "note": "",
   "ok": true,
   "scanned": 844,
@@ -423,9 +423,9 @@
   "failures_in_a_row": 0,
   "last_ok": "2026-09-24",
   "matches": 2,
-  "note": "filtered by location (27 offices)",
+  "note": "filtered by location (25 offices)",
   "ok": true,
-  "scanned": 164,
+  "scanned": 160,
   "type": "workday"
  },
  "ucb/phenom": {
