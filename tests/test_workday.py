@@ -1,5 +1,5 @@
 from tracker.config import Company, SourceConfig
-from tracker.sources.workday import WorkdaySource, find_country_facet
+from tracker.sources.workday import WorkdaySource, find_location_facet
 
 from .conftest import FakeHTTP
 
@@ -14,10 +14,31 @@ FACETS = [
 ]
 
 
-def test_find_country_facet_nested():
-    assert find_country_facet(FACETS, ["United Kingdom"]) == (
-        "locationCountry", ["29247e57dbaf46fb855b224e03170bc7"])
-    assert find_country_facet(FACETS, ["France"]) is None
+def test_country_facet_preferred(search):
+    assert find_location_facet(FACETS, search) == (
+        "locationCountry", ["29247e57dbaf46fb855b224e03170bc7"], "country")
+
+
+def test_hierarchy_facet_with_country_code_suffix(search):
+    facets = [{"facetParameter": "locationMainGroup", "values": [
+        {"facetParameter": "locations", "values": [{"descriptor": "Uxbridge - GB", "id": "ux"}]},
+        {"facetParameter": "locationHierarchy2", "values": [
+            {"descriptor": "United Kingdom (GB)", "id": "gb"}, {"descriptor": "France (FR)", "id": "fr"}]},
+    ]}]
+    assert find_location_facet(facets, search) == ("locationHierarchy2", ["gb"], "region")
+
+
+def test_office_locations_used_when_no_country_facet(search):
+    facets = [{"facetParameter": "locationMainGroup", "values": [
+        {"facetParameter": "locations", "values": [
+            {"descriptor": "UK - Cambridge", "id": "a"}, {"descriptor": "GBR - London - Moorgate", "id": "b"},
+            {"descriptor": "High Wycombe, Buckinghamshire, United Kingdom", "id": "c"},
+            {"descriptor": "Cambridge, MA", "id": "x"}, {"descriptor": "Kingsport, Tennessee", "id": "y"},
+            {"descriptor": "CAN - British Columbia - Penticton", "id": "z"}]}]}]
+    param, ids, kind = find_location_facet(facets, search)
+    assert param == "locations" and ids == ["a", "b", "c"] and kind == "3 offices"
+    assert find_location_facet([{"facetParameter": "timeType", "values": [{"descriptor": "Full", "id": "f"}]}],
+                               search) is None
 
 
 def _source(search, http):

@@ -48,7 +48,7 @@ programmes:
     programme: Global Graduate Programme
     area: Various
     url: https://www.novonordisk.com/careers/early-career-programmes/graduate.html
-    notes: Novo Nordisk's site says applications open 6 December 2026 and close 5 January 2027. Its job board isn't checked automatically.
+    notes: Novo Nordisk's site says applications open 6 December 2026 and close 5 January 2027.
   - company: Medpace
     programme: Entry Level Clinical Research Associate (PACE training)
     area: Clinical Operations
@@ -58,7 +58,12 @@ programmes:
     programme: Careers and apprenticeships
     area: Clinical Operations
     url: https://www.hmrlondon.com/careers
-    notes: Early-phase unit in London. Offers a Clinical Trials Specialist apprenticeship with the University of Kent. Page checked automatically.
+    notes: Early-phase unit in London. Offers a Clinical Trials Specialist apprenticeship with the University of Kent. Its site blocks automated checks, so look at it by hand every week or two.
+  - company: Parexel
+    programme: APEX Clinical Research Associate training programme
+    area: Clinical Operations
+    url: https://jobs.parexel.com/en/APEX-CRA-Program
+    notes: Six months of CRA training for recent life-science graduates, then a CRA I role. The UK intake needs the right to work in the UK without sponsorship. Parexel's early-careers page is https://jobs.parexel.com/en/emerging-talent.
   - company: Cencora PharmaLex
     programme: Trainee, Regulatory Affairs
     area: Regulatory Affairs

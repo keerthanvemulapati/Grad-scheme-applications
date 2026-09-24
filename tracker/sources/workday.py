@@ -4,6 +4,7 @@ from __future__ import annotations
 import re
 from urllib.parse import urlparse
 
+from ..classify import location_status
 from ..models import RawJob
 from .base import Source, SourceError, html_to_text, relative_posted
 
@@ -12,34 +13,50 @@ MAX_JOBS = 3000
 FALLBACK_PAGES = 5
 LOCALE_RE = re.compile(r"^[a-z]{2}(?:-[A-Z]{2})?$")
 REQ_RE = re.compile(r"_([A-Za-z]{0,5}-?\d[\w-]*)$")
+JSON_HEADERS = {"Accept": "application/json", "Content-Type": "application/json",
+                "Accept-Language": "en-US,en;q=0.9"}
 
 
-def find_country_facet(facets: list, countries: list[str]) -> tuple[str, list[str]] | None:
-    """Find the facet that filters by country, and the ids of the wanted countries."""
-    wanted = {c.strip().lower() for c in countries}
-    best: tuple[int, str, list[str]] | None = None
+def _norm_country(text: str) -> str:
+    return re.sub(r"\s*\([^)]*\)\s*$", "", (text or "").strip().lower())
+
+
+def find_location_facet(facets: list, search) -> tuple[str, list[str], str] | None:
+    """Work out how to ask a Workday board for jobs in the target countries.
+
+    Boards differ: some have a country facet, some a location hierarchy, and some
+    only list individual office locations. Returns (facet parameter, ids, kind).
+    """
+    wanted = {c.strip().lower() for c in search.countries}
+    best: tuple[int, str, list[str], str] | None = None
+
+    def consider(score: int, param: str, ids: list[str], kind: str) -> None:
+        nonlocal best
+        if ids and (best is None or score > best[0]):
+            best = (score, param, ids, kind)
 
     def walk(items) -> None:
-        nonlocal best
         for facet in items or []:
             if not isinstance(facet, dict):
                 continue
             param = facet.get("facetParameter")
-            values = facet.get("values") or []
+            values = [v for v in facet.get("values") or [] if isinstance(v, dict)]
             if param and values:
-                ids = [
-                    v["id"] for v in values
-                    if isinstance(v, dict) and v.get("id")
-                    and (v.get("descriptor") or "").strip().lower() in wanted
-                ]
-                if ids:
-                    score = 2 if "country" in param.lower() else 1
-                    if best is None or score > best[0]:
-                        best = (score, param, ids)
+                exact = [v["id"] for v in values
+                         if v.get("id") and _norm_country(v.get("descriptor")) in wanted]
+                lowered = param.lower()
+                if "country" in lowered:
+                    consider(3, param, exact, "country")
+                elif "hierarchy" in lowered:
+                    consider(2, param, exact, "region")
+                elif lowered == "locations":
+                    matched = [v["id"] for v in values if v.get("id")
+                               and location_status(v.get("descriptor") or "", search) is True]
+                    consider(1, param, matched, f"{len(matched)} offices")
                 walk(values)
 
     walk(facets)
-    return (best[1], best[2]) if best else None
+    return (best[1], best[2], best[3]) if best else None
 
 
 class WorkdaySource(Source):
@@ -64,21 +81,18 @@ class WorkdaySource(Source):
 
     def _page(self, text: str, facets: dict, offset: int) -> dict:
         body = {"appliedFacets": facets, "limit": PAGE_SIZE, "offset": offset, "searchText": text}
-        return self.http.post(
-            f"{self.api}/jobs", json=body,
-            headers={"Accept": "application/json", "Content-Type": "application/json"},
-        ).json()
+        return self.http.post(f"{self.api}/jobs", json=body, headers=JSON_HEADERS).json()
 
     def fetch(self) -> list[RawJob]:
         first = self._page("", {}, 0)
         if "jobPostings" not in first:
             raise SourceError("Unexpected Workday response (no jobPostings)")
         jobs: dict[str, RawJob] = {}
-        facet = find_country_facet(first.get("facets", []), self.search.countries)
+        facet = find_location_facet(first.get("facets", []), self.search)
         if facet:
-            param, ids = facet
+            param, ids, kind = facet
             self._collect("", {param: ids}, jobs, in_country=True)
-            self.note = f"filtered by country ({param})"
+            self.note = f"filtered by location ({kind})"
         else:
             for query in self.search.fallback_queries:
                 self._collect(query, {}, jobs, in_country=None, max_pages=FALLBACK_PAGES)
@@ -126,9 +140,7 @@ class WorkdaySource(Source):
         )
 
     def enrich(self, job: RawJob) -> RawJob:
-        data = self.http.get(
-            f"{self.api}{job.extra['path']}", headers={"Accept": "application/json"}
-        ).json()
+        data = self.http.get(f"{self.api}{job.extra['path']}", headers=JSON_HEADERS).json()
         info = data.get("jobPostingInfo") or {}
         locations = [info.get("location") or ""] + list(info.get("additionalLocations") or [])
         loc_text = "; ".join(dict.fromkeys(l for l in locations if l))

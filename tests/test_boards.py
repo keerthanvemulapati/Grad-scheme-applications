@@ -101,3 +101,84 @@ def test_pinpoint(search):
                FakeHTTP({"postings.json": payload}))
     job = src.fetch()[0]
     assert job.title == "Clinical Trials Associate" and job.in_country is True
+
+
+def test_successfactors_tile_layout_and_fallback(search):
+    tiles = """
+    <ul><li class="job-tile job-id-1"><a class="jobTitle-link" href="/job/Bracknell-Clinical-Trial-Assistant/1412878433/">Clinical Trial Assistant</a>
+      <div class="section-field location"><div>Bracknell, GB</div></div></li>
+    <li class="job-tile job-id-2"><a class="jobTitle-link" href="/job/Ingelheim-Scientist/1412878434/">Scientist</a>
+      <div class="section-field location"><div>Ingelheim, DE</div></div></li></ul>"""
+
+    def page(method, url, kwargs):
+        params = kwargs["params"]
+        if "optionsFacetsDD_country" in params or params["startrow"] > 0:
+            return "<html></html>"  # facet not supported here; later pages empty
+        return tiles
+
+    src = make(search, "successfactors", {"url": "https://jobs.acme.com"}, FakeHTTP({"/search/": page}))
+    jobs = src.fetch()
+    assert [j.title for j in jobs] == ["Clinical Trial Assistant"]
+    assert src.note == "location search"
+
+
+def test_eightfold_filters_locally(search):
+    payload = {"count": 2, "positions": [
+        {"id": 1, "name": "Regulatory Affairs Graduate", "location": "Reading,Berkshire,United Kingdom"},
+        {"id": 2, "name": "Regulatory Affairs Graduate", "location": "Berlin,Berlin,Germany"}]}
+    src = make(search, "eightfold", {"url": "https://talent.acme.com", "domain": "acme.com"},
+               FakeHTTP({"/api/apply/v2/jobs": payload}))
+    jobs = src.fetch()
+    assert [j.source_id for j in jobs] == ["1"] and jobs[0].in_country is True
+
+
+def test_successfactors_csb(search):
+    payload = {"totalJobs": 2, "jobSearchResult": [
+        {"response": {"id": 5501, "unifiedStandardTitle": "Medical Information Associate",
+                      "unifiedUrlTitle": "Medical-Information-Associate-Uxbridge",
+                      "jobLocationShort": ["London, GBR, UB8 1DH<br/>"], "jobLocationCountry": ["United Kingdom"],
+                      "unifiedStandardStart": "2026-09-20"}},
+        {"response": {"id": 5502, "unifiedStandardTitle": "Scientist", "unifiedUrlTitle": "Scientist",
+                      "jobLocationShort": ["Munich, DEU"], "jobLocationCountry": ["Germany"]}}]}
+    src = make(search, "successfactors_csb", {"url": "https://careers.acme.com"},
+               FakeHTTP({"/services/recruiting/v1/jobs": payload}))
+    jobs = src.fetch()
+    assert len(jobs) == 1 and jobs[0].title == "Medical Information Associate"
+    assert jobs[0].url == "https://careers.acme.com/job/Medical-Information-Associate-Uxbridge/5501-en_US"
+    assert jobs[0].location == "London, GBR, UB8 1DH" and jobs[0].posted == "2026-09-20"
+
+
+def test_radancy(search):
+    html = """<section id="search-results-list"><ul>
+      <li><a href="/job/london/clinical-trial-administrator/1113/100001" data-job-id="100001">
+        <h2>Clinical Trial Administrator</h2><span class="job-location">London, England, United Kingdom</span></a></li>
+      <li><a href="/job/mumbai/medical-science-liaison/1113/100002" data-job-id="100002">
+        <h2>Medical Science Liaison</h2><span class="job-location">Mumbai, India</span></a></li>
+    </ul></section>"""
+
+    def page(method, url, kwargs):
+        return {"results": html if kwargs["params"]["CurrentPage"] == 1 else "", "hasJobs": True}
+
+    src = make(search, "radancy", {"url": "https://jobs.acme.com"}, FakeHTTP({"search-jobs/results": page}))
+    jobs = src.fetch()
+    assert [(j.source_id, j.title) for j in jobs] == [("100001", "Clinical Trial Administrator")]
+    assert jobs[0].url == "https://jobs.acme.com/job/london/clinical-trial-administrator/1113/100001"
+
+
+def test_icims(search):
+    html = """<div class="iCIMS_JobsTable">
+      <div class="row"><div class="title"><a href="https://x.icims.com/jobs/11844/entry-level-cra/job?in_iframe=1">
+        <h3>Entry Level - Clinical Research Associate</h3></a></div>
+        <div class="header left"><span>Job Locations</span> <span>UK-London</span></div></div>
+      <div class="row"><div class="title"><a href="https://x.icims.com/jobs/2/cra/job?in_iframe=1"><h3>CRA</h3></a></div>
+        <div class="header left"><span>Job Locations</span> <span>US-OH-Cincinnati</span></div></div>
+    </div>"""
+
+    def page(method, url, kwargs):
+        return html if kwargs["params"]["pr"] == 0 else "<div></div>"
+
+    src = make(search, "icims", {"url": "https://x.icims.com"}, FakeHTTP({"/jobs/search": page}))
+    jobs = src.fetch()
+    assert [j.source_id for j in jobs] == ["11844"]
+    assert jobs[0].title == "Entry Level - Clinical Research Associate"
+    assert jobs[0].url == "https://x.icims.com/jobs/11844/entry-level-cra/job"

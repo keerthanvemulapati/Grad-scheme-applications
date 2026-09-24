@@ -3,6 +3,7 @@
   python -m tracker run      check every job board, update data, send alerts
   python -m tracker render   rebuild README/dashboard from saved data only
   python -m tracker probe    find which job-board platform each careers page uses
+  python -m tracker diagnose show what each job board returns and why roles are kept
 """
 from __future__ import annotations
 
@@ -118,6 +119,48 @@ def cmd_render(_args) -> int:
     return 0
 
 
+def cmd_diagnose(args) -> int:
+    """Show what each job board returns and why each role is kept or skipped."""
+    import requests
+
+    from .sources import build_source
+
+    search = load_search()
+    only = {o.strip().lower() for o in args.only.split(",")} if args.only else None
+    for company in load_companies():
+        if only and company.slug not in only and company.name.lower() not in only:
+            continue
+        for src in company.sources:
+            print(f"\n=== {company.name} [{src.key}] ===")
+            try:
+                source = build_source(company, src, search)
+                jobs = source.fetch()
+            except requests.HTTPError as exc:
+                body = exc.response.text[:300] if exc.response is not None else ""
+                print(f"ERROR {exc}\n{body}")
+                continue
+            except Exception as exc:  # noqa: BLE001
+                print(f"ERROR {type(exc).__name__}: {exc}")
+                continue
+            where = {True: 0, None: 0, False: 0}
+            for job in jobs:
+                where[job.in_country] += 1
+            print(f"{source.note or ''} | read {source.scanned} | returned {len(jobs)} | "
+                  f"UK {where[True]} unclear {where[None]} other {where[False]}")
+            kept = []
+            for job in jobs:
+                cls = classify(job.title, search, in_country=job.in_country)
+                if cls.relevant:
+                    kept.append(f"  KEEP {cls.category_label} / {cls.level}: {job.title} | {job.location}")
+            for line in kept:
+                print(line)
+            for job in jobs[: args.limit]:
+                cls = classify(job.title, search, in_country=job.in_country)
+                print(f"  sample: {job.title} | {job.location} | uk={job.in_country} | "
+                      f"{'kept' if cls.relevant else cls.reason} | {job.url}")
+    return 0
+
+
 def cmd_probe(_args) -> int:
     from .probe import main
     main()
@@ -136,6 +179,10 @@ def main(argv: list[str] | None = None) -> int:
     run.set_defaults(func=cmd_run)
     sub.add_parser("render", help="rebuild outputs from saved data").set_defaults(func=cmd_render)
     sub.add_parser("probe", help="detect job-board platforms").set_defaults(func=cmd_probe)
+    diag = sub.add_parser("diagnose", help="show what each job board returns and why")
+    diag.add_argument("--only", help="comma-separated company names")
+    diag.add_argument("--limit", type=int, default=8, help="sample jobs to print per board")
+    diag.set_defaults(func=cmd_diagnose)
     args = parser.parse_args(argv)
     logging.basicConfig(level=logging.DEBUG if args.verbose else logging.INFO,
                         format="%(message)s", stream=sys.stdout)

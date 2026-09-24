@@ -7,7 +7,10 @@
 #   eightfold       url: https://talent.<company>.com   domain: <company>.com
 #   jibe            url: https://careers.<company>.com
 #   phenom          url: https://careers.<company>.com/<region>/<lang>
-#   successfactors  url: https://jobs.<company>.com
+#   successfactors  url: https://jobs.<company>.com       (classic /search/ page)
+#   successfactors_csb url: https://careers.<company>.com  (newer Career Site Builder)
+#   radancy         url: https://jobs.<company>.com       (sites with /search-jobs)
+#   icims           url: https://<name>.icims.com
 #   greenhouse      board: <board token>
 #   lever           company: <lever slug>
 #   smartrecruiters company: <smartrecruiters id>
@@ -50,8 +53,9 @@ companies:
     type: pharma
     careers_url: https://careers.abbvie.com/en/jobs
     sources:
-      - type: phenom
-        url: https://careers.abbvie.com/en
+      - type: pagewatch
+        url: https://careers.abbvie.com/en/jobs
+        link_pattern: '/en/job/'
 
   - name: Vertex Pharmaceuticals
     type: pharma
@@ -106,8 +110,8 @@ companies:
     type: pharma
     careers_url: https://www.takeda.com/en-gb/careers/graduate-internship-programmes/
     sources:
-      - type: workday
-        url: https://takeda.wd3.myworkdayjobs.com/External
+      - type: radancy
+        url: https://jobs.takeda.com
 
   - name: Eli Lilly
     type: pharma
@@ -160,10 +164,10 @@ companies:
 
   - name: Daiichi Sankyo
     type: pharma
-    careers_url: https://www.daiichi-sankyo.co.uk/about-us/who-we-are/career/working-for-daiichi-sankyo/
+    careers_url: https://careers.daiichisankyo.com/
     sources:
-      - type: workday
-        url: https://daiichisankyo.wd1.myworkdayjobs.com/DSI
+      - type: successfactors_csb
+        url: https://careers.daiichisankyo.com
 
   - name: Regeneron
     type: pharma
@@ -194,6 +198,27 @@ companies:
       - type: phenom
         url: https://careers.ucb.com/global/en
 
+  - name: Novo Nordisk
+    type: pharma
+    careers_url: https://www.novonordisk.com/careers/early-career-programmes/graduate.html
+    sources:
+      - type: successfactors
+        url: https://careers.novonordisk.com
+
+  - name: Astellas
+    type: pharma
+    careers_url: https://careers.astellas.com/
+    sources:
+      - type: successfactors
+        url: https://careers.astellas.com
+
+  - name: BeOne Medicines
+    type: pharma
+    careers_url: https://beigene.wd5.myworkdayjobs.com/BeiGene
+    sources:
+      - type: workday
+        url: https://beigene.wd5.myworkdayjobs.com/BeiGene
+
   - name: Haleon
     type: pharma
     careers_url: https://www.haleon.com/careers
@@ -206,17 +231,11 @@ companies:
     type: cro
     careers_url: https://www.medpace.com/careers/
     sources:
-      - type: jibe
-        url: https://careers.medpace.com
+      - type: icims
+        url: https://international-medpace.icims.com
 
-  - name: Hammersmith Medicines Research
-    type: cro
-    careers_url: https://www.hmrlondon.com/careers
-    sources:
-      - type: pagewatch
-        url: https://www.hmrlondon.com/careers
-        uk_only: true
-        default_location: London, UK
+  # Hammersmith Medicines Research isn't checked automatically: its website
+  # blocks automated visitors. It's listed under "Programmes to watch" instead.
 
   - name: IQVIA
     type: cro
@@ -286,24 +305,17 @@ companies:
     type: cro
     careers_url: https://psi-cro.com/careers/
     sources:
-      - type: pagewatch
-        url: https://psi-cro.com/careers-filter/
+      - type: smartrecruiters
+        company: PSICRO
 
   - name: MAC Clinical Research
     type: cro
     careers_url: https://www.clinicalresearchjobs.co/
     sources:
       - type: pagewatch
-        url: https://www.clinicalresearchjobs.co/
+        url: https://www.clinicalresearchjobs.co/job-vacancies
         uk_only: true
         default_location: UK
-
-  - name: Quotient Sciences
-    type: cro
-    careers_url: https://www.quotientsciences.com/careers
-    sources:
-      - type: greenhouse
-        board: quotientsciences
 
   # ------------------------------------------------ Regulatory consultancies
   - name: Cencora PharmaLex

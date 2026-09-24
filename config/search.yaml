@@ -177,7 +177,7 @@ exclude_patterns:
 # pharmacology degree. Delete a line to start tracking that function.
 exclude_functions:
   - 'engineer'
-  - '\btechnology\b'
+  - '(?<!pharmaceutical )\btechnology\b'
   - '\btech\b'
   - '\bdigital\b'
   - '\bsoftware\b'

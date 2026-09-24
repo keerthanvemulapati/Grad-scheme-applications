@@ -24,36 +24,34 @@ class EightfoldSource(Source):
         base = self.require("url")
         domain = self.require("domain")
         jobs: dict[str, RawJob] = {}
-        for country in self.search.countries:
-            start = 0
-            for _ in range(MAX_PAGES):
-                data = self.http.get(
-                    f"{base}/api/apply/v2/jobs",
-                    params={"domain": domain, "start": start, "num": 50,
-                            "location": country, "sort_by": "timestamp"},
-                    headers={"Accept": "application/json"},
-                ).json()
-                positions = data.get("positions")
-                if positions is None:
-                    raise SourceError("Unexpected Eightfold response (no positions)")
-                for p in positions:
-                    locs = p.get("locations") or [p.get("location") or ""]
-                    loc = "; ".join(l for l in locs if l)
-                    jid = str(p.get("id"))
-                    jobs.setdefault(jid, RawJob(
-                        source_id=jid,
-                        title=(p.get("name") or "").strip(),
-                        url=p.get("canonicalPositionUrl") or f"{base}/careers?pid={jid}&domain={domain}",
-                        location=loc,
-                        in_country=self.where(loc),
-                        posted=iso_date(p.get("t_create")),
-                        extra={"id": jid},
-                    ))
-                start += len(positions)
-                if not positions or start >= int(data.get("count") or 0):
-                    break
+        start = 0
+        for _ in range(MAX_PAGES):
+            data = self.http.get(
+                f"{base}/api/apply/v2/jobs",
+                params={"domain": domain, "start": start, "num": 100, "sort_by": "timestamp"},
+                headers={"Accept": "application/json"},
+            ).json()
+            positions = data.get("positions")
+            if positions is None:
+                raise SourceError("Unexpected Eightfold response (no positions)")
+            for p in positions:
+                locs = p.get("locations") or [p.get("location") or ""]
+                loc = "; ".join(l for l in locs if l)
+                jid = str(p.get("id"))
+                jobs.setdefault(jid, RawJob(
+                    source_id=jid,
+                    title=(p.get("name") or "").strip(),
+                    url=p.get("canonicalPositionUrl") or f"{base}/careers?pid={jid}&domain={domain}",
+                    location=loc,
+                    in_country=self.where(loc),
+                    posted=iso_date(p.get("t_create")),
+                    extra={"id": jid},
+                ))
+            start += len(positions)
+            if not positions or start >= int(data.get("count") or 0):
+                break
         self.scanned = len(jobs)
-        return list(jobs.values())
+        return [j for j in jobs.values() if j.in_country is not False]
 
     def enrich(self, job: RawJob) -> RawJob:
         base, domain = self.require("url"), self.require("domain")
@@ -161,48 +159,206 @@ class PhenomSource(Source):
 
 
 class SuccessFactorsSource(Source):
-    """SAP SuccessFactors career sites (jobs.<company>.com/search/)."""
+    """SAP SuccessFactors career sites with a /search/ page (jobs.<company>.com)."""
 
     type = "successfactors"
     PAGE = 25
 
+    def _page(self, base: str, params: dict, startrow: int) -> list[RawJob]:
+        html = self.http.get(f"{base}/search/", params=dict(params, startrow=startrow),
+                             headers={"Accept": "text/html"}).text
+        soup = BeautifulSoup(html, "html.parser")
+        out: dict[str, RawJob] = {}
+        for link in soup.select("a.jobTitle-link"):
+            href = link.get("href")
+            if not href:
+                continue
+            full = urljoin(base + "/", href)
+            box = link.find_parent(["tr", "li"]) or link.find_parent(
+                class_=re.compile(r"job-tile|data-row|job-row")) or link.parent
+            loc_el = box.select_one(".jobLocation, [class*=location], [class*=Location]") if box else None
+            date_el = box.select_one(".jobDate, [class*=date]") if box else None
+            loc = " ".join(loc_el.get_text(" ").split()) if loc_el else ""
+            m = re.search(r"/(\d+)/?$", full)
+            out.setdefault(full, RawJob(
+                source_id=m.group(1) if m else full,
+                title=" ".join(link.get_text(" ").split()),
+                url=full,
+                location=loc,
+                in_country=self.where(loc) if loc else None,
+                posted=iso_date(" ".join(date_el.get_text(" ").split())) if date_el else None,
+            ))
+        return list(out.values())
+
+    def fetch(self) -> list[RawJob]:
+        base = self.require("url")
+        code = self.options.get("country_code", "GB")
+        modes = [("country filter", {"q": "", "optionsFacetsDD_country": code}),
+                 ("location search", {"q": "", "locationsearch": self.search.countries[0]}),
+                 ("all jobs", {"q": ""})]
+        jobs: dict[str, RawJob] = {}
+        for name, params in modes:
+            first = self._page(base, params, 0)
+            if not first:
+                continue
+            filtered = name != "all jobs"
+            for job in first:
+                jobs.setdefault(job.url, job)
+            for page in range(1, MAX_PAGES):
+                batch = self._page(base, params, page * self.PAGE)
+                new = [j for j in batch if j.url not in jobs]
+                for job in new:
+                    jobs[job.url] = job
+                if not new:
+                    break
+            self.note = name
+            if filtered:
+                in_uk = [j for j in jobs.values() if j.in_country is not False]
+                if not in_uk:  # the site ignored the filter and nothing is in the UK
+                    jobs.clear()
+                    continue
+                if len(in_uk) == len(jobs):  # the filter worked, so unlabelled jobs are UK too
+                    for job in in_uk:
+                        job.in_country = True
+                self.scanned = len(jobs)
+                return in_uk
+            break
+        if not jobs:
+            raise SourceError("No jobs found on the SuccessFactors search page")
+        self.scanned = len(jobs)
+        return [j for j in jobs.values() if j.in_country is not False]
+
+
+class SuccessFactorsCSBSource(Source):
+    """Newer SAP SuccessFactors 'Career Site Builder' sites with a JSON jobs API."""
+
+    type = "successfactors_csb"
+
     def fetch(self) -> list[RawJob]:
         base = self.require("url")
         jobs: dict[str, RawJob] = {}
-        for country in self.search.countries:
-            for page in range(MAX_PAGES):
-                html = self.http.get(
-                    f"{base}/search/",
-                    params={"q": "", "locationsearch": country, "startrow": page * self.PAGE},
-                ).text
-                soup = BeautifulSoup(html, "html.parser")
-                rows = soup.select("tr.data-row")
-                if page == 0 and not rows and not soup.select("#searchresults, .searchResults"):
-                    raise SourceError("Page is not a SuccessFactors job search")
-                added = 0
-                for row in rows:
-                    link = row.select_one("a.jobTitle-link")
-                    if not link or not link.get("href"):
-                        continue
-                    href = urljoin(base + "/", link["href"])
-                    loc_el = row.select_one("span.jobLocation")
-                    date_el = row.select_one("span.jobDate")
-                    loc = " ".join(loc_el.get_text(" ").split()) if loc_el else country
-                    if href not in jobs:
-                        added += 1
-                        m = re.search(r"/(\d+)/?$", href)
-                        jobs[href] = RawJob(
-                            source_id=m.group(1) if m else href,
-                            title=" ".join(link.get_text(" ").split()),
-                            url=href,
-                            location=loc,
-                            in_country=self.where(f"{loc}; {country}"),
-                            posted=iso_date(date_el.get_text(strip=True)) if date_el else None,
-                        )
-                if len(rows) == 0 or added == 0:
-                    break
+        for page in range(MAX_PAGES):
+            body = {"locale": "en_US", "pageNumber": page, "sortBy": "date", "keywords": "",
+                    "location": self.search.countries[0], "facetFilters": {}, "brand": "",
+                    "skills": [], "categoryId": 0, "alertId": "", "rcmCandidateId": ""}
+            data = self.http.post(f"{base}/services/recruiting/v1/jobs", json=body,
+                                  headers={"Accept": "application/json",
+                                           "Content-Type": "application/json"}).json()
+            results = data.get("jobSearchResult")
+            if results is None:
+                raise SourceError("Unexpected SuccessFactors response (no jobSearchResult)")
+            for item in results:
+                r = item.get("response", item)
+                jid = str(r.get("id") or r.get("unifiedUrlTitle") or "")
+                if not jid:
+                    continue
+                countries = r.get("jobLocationCountry") or []
+                locs = [re.sub(r"<[^>]+>", "", x) for x in r.get("jobLocationShort") or []]
+                loc = "; ".join(x.strip() for x in locs if x.strip())
+                in_country = True if any(c in self.search.countries for c in countries) \
+                    else self.where(f"{loc}; {'; '.join(countries)}")
+                slug = r.get("unifiedUrlTitle") or r.get("urlTitle") or "job"
+                jobs.setdefault(jid, RawJob(
+                    source_id=jid,
+                    title=(r.get("unifiedStandardTitle") or r.get("title") or "").strip(),
+                    url=f"{base}/job/{slug}/{jid}-en_US",
+                    location=loc,
+                    in_country=in_country,
+                    posted=iso_date(r.get("unifiedStandardStart")),
+                ))
+            total = int(data.get("totalJobs") or 0)
+            if not results or len(jobs) >= total:
+                break
         self.scanned = len(jobs)
-        return list(jobs.values())
+        return [j for j in jobs.values() if j.in_country is not False]
+
+
+class RadancySource(Source):
+    """Radancy (TalentBrew) career sites with /search-jobs (e.g. jobs.takeda.com)."""
+
+    type = "radancy"
+    PAGE = 100
+
+    def fetch(self) -> list[RawJob]:
+        base = self.require("url")
+        jobs: dict[str, RawJob] = {}
+        for page in range(1, MAX_PAGES + 1):
+            data = self.http.get(
+                f"{base}/search-jobs/results",
+                params={"ActiveFacetID": 0, "CurrentPage": page, "RecordsPerPage": self.PAGE,
+                        "Keywords": "", "Location": "", "SearchResultsModuleName": "Search Results",
+                        "SearchFiltersModuleName": "Search Filters", "SortCriteria": 0,
+                        "SortDirection": 0, "SearchType": 5},
+                headers={"Accept": "application/json", "X-Requested-With": "XMLHttpRequest"},
+            ).json()
+            soup = BeautifulSoup(data.get("results") or "", "html.parser")
+            added = 0
+            for a in soup.select("a[href*='/job/']"):
+                href = urljoin(base + "/", a["href"])
+                if href in jobs:
+                    continue
+                title_el = a.select_one("h2, h3, .job-title, [class*=title]")
+                title = " ".join((title_el or a).get_text(" ").split())
+                box = a.find_parent("li") or a
+                loc_el = box.select_one(".job-location, [class*=location]")
+                loc = " ".join(loc_el.get_text(" ").split()) if loc_el else ""
+                date_el = box.select_one(".job-date-posted, [class*=date]")
+                m = re.search(r"/(\d+)/?$", href)
+                jobs[href] = RawJob(
+                    source_id=a.get("data-job-id") or (m.group(1) if m else href),
+                    title=title,
+                    url=href,
+                    location=loc,
+                    in_country=self.where(loc),
+                    posted=iso_date(date_el.get_text(strip=True)) if date_el else None,
+                )
+                added += 1
+            if not added or data.get("hasJobs") is False:
+                break
+        if not jobs:
+            raise SourceError("No jobs found on the Radancy search page")
+        self.scanned = len(jobs)
+        return [j for j in jobs.values() if j.in_country is not False]
+
+
+class ICIMSSource(Source):
+    """iCIMS job portals (<name>.icims.com/jobs)."""
+
+    type = "icims"
+
+    def fetch(self) -> list[RawJob]:
+        base = self.require("url")
+        jobs: dict[str, RawJob] = {}
+        for page in range(MAX_PAGES):
+            html = self.http.get(f"{base}/jobs/search",
+                                 params={"pr": page, "in_iframe": 1, "schemaId": "", "o": ""}).text
+            soup = BeautifulSoup(html, "html.parser")
+            added = 0
+            for a in soup.find_all("a", href=re.compile(r"/jobs/\d+/[^/]+/job")):
+                href = a["href"].split("?")[0]
+                m = re.search(r"/jobs/(\d+)/", href)
+                jid = m.group(1)
+                if jid in jobs:
+                    continue
+                title_el = a.find(["h2", "h3"])
+                title = " ".join((title_el or a).get_text(" ").split())
+                title = re.sub(r"^Job Title\s*", "", title)
+                if not title or title.lower() in {"apply", "view details"}:
+                    continue
+                box = a.find_parent(class_=re.compile(r"row|iCIMS_JobsTable")) or a.parent
+                text = " ".join(box.get_text(" ").split()) if box else ""
+                loc_m = re.search(r"Locations?\s*:?\s*(.{2,80}?)(?:\s{2,}|Category|Job ID|ID|Posted|$)",
+                                  text)
+                loc = loc_m.group(1).strip() if loc_m else text[:120]
+                jobs[jid] = RawJob(source_id=jid, title=title, url=urljoin(base + "/", href),
+                                   location=loc, in_country=self.where(loc))
+                added += 1
+            if not added:
+                break
+        if not jobs:
+            raise SourceError("No jobs found on the iCIMS portal")
+        self.scanned = len(jobs)
+        return [j for j in jobs.values() if j.in_country is not False]
 
 
 class GreenhouseSource(Source):
